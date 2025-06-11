@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodots Backgammon Libraries - TypeScript Game Engine & Type Definitions</title>
+    <meta name="description" content="Professional TypeScript libraries for backgammon game development. Complete game engine, comprehensive type definitions, and proven algorithms for developers.">
+    <meta name="keywords" content="backgammon library, typescript, game engine, backgammon API, npm package, game development, board game library">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://backgammon.nodots.com">
+    <meta property="og:title" content="Nodots Backgammon Libraries - TypeScript Game Engine & Type Definitions">
+    <meta property="og:description" content="Professional TypeScript libraries for backgammon game development with complete game engine and type definitions.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://backgammon.nodots.com">
+    <meta property="twitter:title" content="Nodots Backgammon - Master the World's Oldest Board Game">
+    <meta property="twitter:description" content="Modern backgammon platform with AI opponents, online multiplayer, and tools for serious players.">
+    
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Nodots Backgammon</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#packages" class="nav-link">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#documentation" class="nav-link">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#examples" class="nav-link">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#install" class="nav-link cta-button">Install</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Professional <span class="highlight">TypeScript Backgammon Libraries</span></h1>
+                <p class="hero-subtitle">Complete game engine and type definitions for building backgammon applications. Mathematically precise, fully tested, and production-ready.</p>
+                <div class="hero-buttons">
+                    <a href="#install" class="btn btn-primary">npm install</a>
+                    <a href="#documentation" class="btn btn-secondary">Documentation</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">86%</div>
+                        <div class="stat-label">Test Coverage</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">TypeScript</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">MIT</div>
+                        <div class="stat-label">Licensed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="board-preview">
+                    <!-- Simplified board representation -->
+                    <div class="board-half top">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="bar"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                    <div class="board-half bottom">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="bar"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="features">
+        <div class="container">
+            <h2 class="section-title">Core Libraries</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>@nodots-llc/backgammon-core</h3>
+                    <p>Complete game engine with move validation, board state management, and rule implementation. 86% test coverage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>@nodots-llc/backgammon-types</h3>
+                    <p>Comprehensive TypeScript definitions for game states, moves, players, and all backgammon entities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Move Validation Engine</h3>
+                    <p>Handles all move types: PointToPoint, BearOff, and Reenter with complete rule validation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Board State Management</h3>
+                    <p>Dual directional counting, pip tracking, and complete game state transitions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎲</div>
+                    <h3>Dice & Cube Logic</h3>
+                    <p>Rolling mechanics, doubles handling, and doubling cube implementation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Production Ready</h3>
+                    <p>Battle-tested algorithms with comprehensive Jest testing and TypeScript safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="documentation">
+        <div class="container">
+            <h2 class="section-title">API Documentation</h2>
+            
+            <!-- Documentation Links -->
+            <div class="doc-section">
+                <h3>Complete Documentation</h3>
+                <div class="doc-links">
+                    <div class="doc-link-card">
+                        <h4><a href="types-guide.html">📘 TypeScript Types Guide</a></h4>
+                        <div class="doc-link-desc">Complete reference for @nodots-llc/backgammon-types with 42+ type definitions, discriminated unions, and runtime validation.</div>
+                        <ul>
+                            <li>Core Types (BackgammonColor, BackgammonDieValue)</li>
+                            <li>Board & Player State Management</li>
+                            <li>Game Flow Type Safety</li>
+                            <li>Move Validation & Error Handling</li>
+                        </ul>
+                    </div>
+                    <div class="doc-link-card">
+                        <h4><a href="core-api-reference.html">🔧 Core API Reference</a></h4>
+                        <div class="doc-link-desc">Complete API documentation for @nodots-llc/backgammon-core with methods, parameters, and advanced usage examples.</div>
+                        <ul>
+                            <li>Board Manipulation & Validation</li>
+                            <li>Player State Management</li>
+                            <li>Game Flow Control</li>
+                            <li>Move Generation & Execution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Start -->
+            <div class="doc-section">
+                <h3>Quick Start</h3>
+                <div class="code-block">
+                    <pre><code>npm install @nodots-llc/backgammon-core
+npm install @nodots-llc/backgammon-types  # Peer dependency</code></pre>
+                </div>
+                <div class="code-block">
+                    <pre><code>import { Board, Player, Game, Dice } from '@nodots-llc/backgammon-core'
+
+// Initialize a new game
+const board = Board.initialize()
+const player1 = Player.initialize('black', 'clockwise')
+const player2 = Player.initialize('white', 'counterclockwise')
+const game = Game.initialize([player1, player2])
+
+// Roll dice and make moves
+const rolledGame = Game.roll(game)
+const possibleMoves = Board.getPossibleMoves(board, player1, 6)</code></pre>
+                </div>
+            </div>
+
+            <!-- Core Modules -->
+            <div class="doc-section">
+                <h3>Core Modules</h3>
+                <div class="api-grid">
+                    <div class="api-module">
+                        <h4>Board</h4>
+                        <p>Manages game board state, checker positions, and move validation.</p>
+                        <div class="api-methods">
+                            <div class="api-method">
+                                <code>Board.initialize()</code>
+                                <span>Creates new board with standard starting positions</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Board.moveChecker()</code>
+                                <span>Executes checker moves with hit handling</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Board.getPossibleMoves()</code>
+                                <span>Calculates all legal moves for a die value</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Board.getPipCounts()</code>
+                                <span>Calculates pip counts for both players</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="api-module">
+                        <h4>Player</h4>
+                        <p>Manages player state, dice, and movement logic.</p>
+                        <div class="api-methods">
+                            <div class="api-method">
+                                <code>Player.initialize()</code>
+                                <span>Creates player with color and direction</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Player.roll()</code>
+                                <span>Rolls dice for player in rolling state</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Player.move()</code>
+                                <span>Executes moves from specific origins</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Player.getHomeBoard()</code>
+                                <span>Gets home board points for player</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="api-module">
+                        <h4>Game</h4>
+                        <p>Orchestrates overall game flow and state management.</p>
+                        <div class="api-methods">
+                            <div class="api-method">
+                                <code>Game.initialize()</code>
+                                <span>Creates new game with two players</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Game.rollForStart()</code>
+                                <span>Determines which player goes first</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Game.roll()</code>
+                                <span>Rolls dice for the active player</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Game.move()</code>
+                                <span>Executes moves in game context</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="api-module">
+                        <h4>Dice</h4>
+                        <p>Handles dice rolling and state management.</p>
+                        <div class="api-methods">
+                            <div class="api-method">
+                                <code>Dice.initialize()</code>
+                                <span>Creates new dice for a player</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Dice.roll()</code>
+                                <span>Rolls dice and returns new state</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Dice.isDouble()</code>
+                                <span>Checks if roll is a double</span>
+                            </div>
+                            <div class="api-method">
+                                <code>Dice.switchDice()</code>
+                                <span>Swaps the order of dice values</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Type System -->
+            <div class="doc-section">
+                <h3>Type System</h3>
+                <div class="type-grid">
+                    <div class="type-category">
+                        <h4>Core Types</h4>
+                        <div class="type-list">
+                            <div class="type-item">
+                                <code>BackgammonColor</code>
+                                <span>'black' | 'white'</span>
+                            </div>
+                            <div class="type-item">
+                                <code>BackgammonMoveDirection</code>
+                                <span>'clockwise' | 'counterclockwise'</span>
+                            </div>
+                            <div class="type-item">
+                                <code>BackgammonDieValue</code>
+                                <span>1 | 2 | 3 | 4 | 5 | 6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="type-category">
+                        <h4>Board Types</h4>
+                        <div class="type-list">
+                            <div class="type-item">
+                                <code>BackgammonBoard</code>
+                                <span>Main board interface with 24 points</span>
+                            </div>
+                            <div class="type-item">
+                                <code>BackgammonPoint</code>
+                                <span>Individual board positions (1-24)</span>
+                            </div>
+                            <div class="type-item">
+                                <code>BackgammonChecker</code>
+                                <span>Individual game pieces</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="type-category">
+                        <h4>Game States</h4>
+                        <div class="type-list">
+                            <div class="type-item">
+                                <code>BackgammonGame</code>
+                                <span>Discriminated union by state</span>
+                            </div>
+                            <div class="type-item">
+                                <code>BackgammonPlayer</code>
+                                <span>9 different player states</span>
+                            </div>
+                            <div class="type-item">
+                                <code>BackgammonMove</code>
+                                <span>3 move types: PointToPoint, BearOff, Reenter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Usage -->
+            <div class="doc-section">
+                <h3>Example Usage</h3>
+                <div class="example-grid">
+                    <div class="example-block">
+                        <h4>Basic Game Setup</h4>
+                        <div class="code-block">
+                            <pre><code>// Create players
+const player1 = Player.initialize('black', 'clockwise')
+const player2 = Player.initialize('white', 'counterclockwise')
+
+// Initialize game
+const game = Game.initialize([player1, player2])
+
+// Determine starting player
+const startedGame = Game.rollForStart(game)</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="example-block">
+                        <h4>Move Execution</h4>
+                        <div class="code-block">
+                            <pre><code>// Roll dice
+const rolledGame = Game.roll(game)
+
+// Get possible moves
+const moves = Board.getPossibleMoves(
+  game.board, 
+  game.activePlayer, 
+  6
+)
+
+// Execute move
+const updatedGame = Game.move(game, originId)</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="example-block">
+                        <h4>Type Safety</h4>
+                        <div class="code-block">
+                            <pre><code>// All operations are fully typed
+function processGame(game: BackgammonGame): void {
+  if (game.stateKind === 'moving') {
+    // TypeScript knows this is BackgammonGameMoving
+    const activePlay = game.activePlay
+    const moves = activePlay.moves
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documentation Links -->
+            <div class="doc-section">
+                <h3>Complete Documentation</h3>
+                <div class="doc-links">
+                    <a href="docs/api-reference.md" class="doc-link">
+                        <div class="doc-link-title">Complete API Reference</div>
+                        <div class="doc-link-desc">Full documentation for @nodots-llc/backgammon-core with all methods, parameters, and examples</div>
+                    </a>
+                    <a href="docs/types-reference.md" class="doc-link">
+                        <div class="doc-link-title">TypeScript Types Guide</div>
+                        <div class="doc-link-desc">Comprehensive reference for @nodots-llc/backgammon-types with all interfaces and type definitions</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="technology">
+        <div class="container">
+            <h2 class="section-title">Usage Examples</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Basic Game Setup</h3>
+                    <ul class="tech-list">
+                        <li>Board.initialize()</li>
+                        <li>Player.create(color, direction)</li>
+                        <li>Game.start(player1, player2)</li>
+                        <li>Dice.roll() & Play.initialize()</li>
+                        <li>Move validation & execution</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Type Definitions</h3>
+                    <ul class="tech-list">
+                        <li>Game, Board, Player interfaces</li>
+                        <li>Move types: PointToPoint, BearOff, Reenter</li>
+                        <li>BackgammonColor & Direction enums</li>
+                        <li>Checker, Dice, Cube types</li>
+                        <li>Complete API type coverage</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Advanced Features</h3>
+                    <ul class="tech-list">
+                        <li>Doubles handling (4 moves)</li>
+                        <li>Bar re-entry validation</li>
+                        <li>Bearing off rules</li>
+                        <li>Pip count calculations</li>
+                        <li>Game state serialization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Install Section -->
+    <section id="install" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Your Backgammon App?</h2>
+                <p>Get started with production-ready TypeScript libraries that provide everything you need for professional backgammon development.</p>
+                <div class="cta-buttons">
+                    <div class="install-commands">
+                        <div class="install-command">
+                            <code>npm install @nodots-llc/backgammon-core</code>
+                        </div>
+                        <div class="install-command">
+                            <code>npm install @nodots-llc/backgammon-types</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-buttons" style="margin-top: 2rem;">
+                    <a href="https://github.com/nodots/nodots-backgammon" class="btn btn-secondary btn-large">View on GitHub</a>
+                    <a href="#" class="btn btn-secondary btn-large">API Documentation</a>
+                </div>
+                <div class="cta-note">
+                    <p>Open source • MIT Licensed • Built for developers, by developers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nodots Backgammon</h3>
+                    <p>The modern platform for serious backgammon players.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tech">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Developer</h4>
+                    <ul>
+                        <li><a href="https://github.com/nodots/nodots-backgammon">GitHub</a></li>
+                        <li><a href="#">API Docs</a></li>
+                        <li><a href="#">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:kenr@nodots.com">Ken Riley</a></li>
+                        <li><a href="https://nodots.com">Nodots LLC</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nodots LLC. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,25 @@
+{
+  "name": "nodots-backgammon-marketing",
+  "version": "1.0.0",
+  "description": "Static marketing website for Nodots Backgammon",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --host=localhost --port=3001 --open=/",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/style.min.css src/style.css",
+    "minify-js": "terser src/script.js -o dist/script.min.js",
+    "prepare-dist": "mkdir -p dist && cp index.html dist/ && cp -r assets dist/ || true"
+  },
+  "keywords": [
+    "backgammon",
+    "marketing",
+    "static-site"
+  ],
+  "author": "Ken Riley <kenr@nodots.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.24.0"
+  }
+}
