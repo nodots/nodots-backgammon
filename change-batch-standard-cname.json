@@ -1,0 +1,16 @@
+{
+    "Comment": "Standard CNAME setup for Netlify subdomain",
+    "Changes": [
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": "backgammon.nodots.com",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {"Value": "nodots-backgammon-tech-marketing.netlify.app"}
+                ]
+            }
+        }
+    ]
+}
