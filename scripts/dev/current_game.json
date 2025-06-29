@@ -1,0 +1,925 @@
+{
+  "id": "a4897f01-428d-4abd-83eb-a594fc2ab2c9",
+  "stateKind": "rolled",
+  "board": {
+    "id": "8cb063a7-5f3c-4799-b820-73713944ead5",
+    "bar": {
+      "clockwise": {
+        "id": "aa1733d2-80ad-49f3-95e9-68c83af8fa09",
+        "kind": "bar",
+        "checkers": [],
+        "position": "bar",
+        "direction": "clockwise"
+      },
+      "counterclockwise": {
+        "id": "256ba235-fe9e-465b-aa08-4bfa5368b94d",
+        "kind": "bar",
+        "checkers": [],
+        "position": "bar",
+        "direction": "counterclockwise"
+      }
+    },
+    "off": {
+      "clockwise": {
+        "id": "a2353909-fd1e-4262-8362-b76f6567905a",
+        "kind": "off",
+        "checkers": [],
+        "position": "off",
+        "direction": "clockwise"
+      },
+      "counterclockwise": {
+        "id": "115059e9-309a-4ee0-b585-bd4c966fe6d8",
+        "kind": "off",
+        "checkers": [],
+        "position": "off",
+        "direction": "counterclockwise"
+      }
+    },
+    "gnuPositionId": "",
+    "BackgammonPoints": [
+      {
+        "id": "a6385073-a618-411d-9708-ee8086f9b7ec",
+        "kind": "point",
+        "checkers": [
+          {
+            "id": "e5206220-71dd-40a3-93f5-3232efbe61a9",
+            "color": "white",
+            "checkercontainerId": "a6385073-a618-411d-9708-ee8086f9b7ec"
+          },
+          {
+            "id": "9c442ad8-910b-4edc-8f4c-96b45a659cb2",
+            "color": "white",
+            "checkercontainerId": "a6385073-a618-411d-9708-ee8086f9b7ec"
+          }
+        ],
+        "position": {
+          "clockwise": 1,
+          "counterclockwise": 24
+        }
+      },
+      {
+        "id": "3a717d09-10a0-47c8-813e-4cd417fe1675",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 2,
+          "counterclockwise": 23
+        }
+      },
+      {
+        "id": "939ec8a5-54d2-4b6d-8a18-7b7c73f053e8",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 3,
+          "counterclockwise": 22
+        }
+      },
+      {
+        "id": "a411aa27-4b53-4ab6-868b-e136dc8787f3",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 4,
+          "counterclockwise": 21
+        }
+      },
+      {
+        "id": "4d5b4138-583a-4cfc-aedd-b8d9a2e8edb7",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 5,
+          "counterclockwise": 20
+        }
+      },
+      {
+        "id": "233dbedb-ecc2-4462-9987-dba39448ac37",
+        "kind": "point",
+        "checkers": [
+          {
+            "id": "80f9d9c7-9a72-4616-97f8-b8dc69384f53",
+            "color": "white",
+            "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+          },
+          {
+            "id": "697a15d4-8085-4035-b690-71f1a47c3f39",
+            "color": "white",
+            "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+          },
+          {
+            "id": "58740b78-4e0d-43f9-b919-299f8c0c6ff4",
+            "color": "white",
+            "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+          },
+          {
+            "id": "64599e81-9029-48f9-a60a-37d30b3a7e97",
+            "color": "white",
+            "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+          },
+          {
+            "id": "2ee7f622-8739-45b0-8e73-42214d91f65d",
+            "color": "white",
+            "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+          }
+        ],
+        "position": {
+          "clockwise": 6,
+          "counterclockwise": 19
+        }
+      },
+      {
+        "id": "48878786-ea90-41b9-b7e4-681acecd7b46",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 7,
+          "counterclockwise": 18
+        }
+      },
+      {
+        "id": "e0a4671d-3b4f-49d8-b71e-c69fc3699a14",
+        "kind": "point",
+        "checkers": [
+          {
+            "id": "5e5b4cf8-f74c-4cfa-aa7a-35e4f7070789",
+            "color": "white",
+            "checkercontainerId": "e0a4671d-3b4f-49d8-b71e-c69fc3699a14"
+          },
+          {
+            "id": "c4cb9da5-9b16-4635-8731-43c8bbc022a2",
+            "color": "white",
+            "checkercontainerId": "e0a4671d-3b4f-49d8-b71e-c69fc3699a14"
+          },
+          {
+            "id": "30401b76-5680-45e8-bda4-03bd2f46b4ee",
+            "color": "white",
+            "checkercontainerId": "e0a4671d-3b4f-49d8-b71e-c69fc3699a14"
+          }
+        ],
+        "position": {
+          "clockwise": 8,
+          "counterclockwise": 17
+        }
+      },
+      {
+        "id": "2fe8e039-9946-4ade-8176-f844ced28625",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 9,
+          "counterclockwise": 16
+        }
+      },
+      {
+        "id": "b1e0ed1a-4849-4a24-882e-084dd8dbfeed",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 10,
+          "counterclockwise": 15
+        }
+      },
+      {
+        "id": "1e506cc2-09b9-40d0-a91e-3f7620eaef36",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 11,
+          "counterclockwise": 14
+        }
+      },
+      {
+        "id": "d0b8860c-e407-4c18-b0e0-351636c2c0a8",
+        "kind": "point",
+        "checkers": [
+          {
+            "id": "3994dc8f-b40e-4e0e-9da0-506a58d23f31",
+            "color": "black",
+            "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+          },
+          {
+            "id": "671811ee-b2ed-4e0c-b050-29340424b762",
+            "color": "black",
+            "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+          },
+          {
+            "id": "a0f1e442-6ad4-4286-8a92-3e7e5589d5fa",
+            "color": "black",
+            "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+          },
+          {
+            "id": "2adfdbe0-bf47-4d85-b844-89ac2b0ae90d",
+            "color": "black",
+            "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+          },
+          {
+            "id": "320f6c9e-3cbe-4ec5-8df1-1b596a51593c",
+            "color": "black",
+            "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+          }
+        ],
+        "position": {
+          "clockwise": 12,
+          "counterclockwise": 13
+        }
+      },
+      {
+        "id": "2c8ed805-7fdd-43c5-a381-a88bed151660",
+        "kind": "point",
+        "checkers": [
+          {
+            "id": "da2de94f-826a-447b-8de8-0d2d4e48b160",
+            "color": "white",
+            "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+          },
+          {
+            "id": "417343b9-932c-4945-8ccc-22e747fe17b9",
+            "color": "white",
+            "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+          },
+          {
+            "id": "219c9355-3dd1-40ab-89af-727fb23a10ea",
+            "color": "white",
+            "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+          },
+          {
+            "id": "344a824f-56e6-4fe2-b89a-a7a3c204f172",
+            "color": "white",
+            "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+          },
+          {
+            "id": "017f99c7-2353-451c-9348-71ba72c28b32",
+            "color": "white",
+            "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+          }
+        ],
+        "position": {
+          "clockwise": 13,
+          "counterclockwise": 12
+        }
+      },
+      {
+        "id": "bb7dd838-aa87-4db7-9f50-341ab28fafb4",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 14,
+          "counterclockwise": 11
+        }
+      },
+      {
+        "id": "2afae0f0-06d9-4bbf-97ce-ce581688fb9e",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 15,
+          "counterclockwise": 10
+        }
+      },
+      {
+        "id": "ad801fd2-d7a6-4da2-a0b9-54fcd26a75bf",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 16,
+          "counterclockwise": 9
+        }
+      },
+      {
+        "id": "8a9404e0-2858-47bf-a317-faa8c0868bc8",
+        "kind": "point",
+        "checkers": [
+          {
+            "id": "4922b4ed-6663-4371-9601-118573127475",
+            "color": "black",
+            "checkercontainerId": "8a9404e0-2858-47bf-a317-faa8c0868bc8"
+          },
+          {
+            "id": "58daec5c-ffd3-4f5b-9009-7acda28ee5fa",
+            "color": "black",
+            "checkercontainerId": "8a9404e0-2858-47bf-a317-faa8c0868bc8"
+          },
+          {
+            "id": "8c26e6f6-166d-4c66-95ad-00543ca925dc",
+            "color": "black",
+            "checkercontainerId": "8a9404e0-2858-47bf-a317-faa8c0868bc8"
+          }
+        ],
+        "position": {
+          "clockwise": 17,
+          "counterclockwise": 8
+        }
+      },
+      {
+        "id": "165e4330-e43b-43c3-a586-e810ef8822d3",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 18,
+          "counterclockwise": 7
+        }
+      },
+      {
+        "id": "722362eb-93fa-4b15-8756-f165db9c52f6",
+        "kind": "point",
+        "checkers": [
+          {
+            "id": "ad47b1bb-28dc-4b8b-8c7c-5f5f4dde8f83",
+            "color": "black",
+            "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+          },
+          {
+            "id": "2af5143e-2781-4f0a-8b1b-2a0f21652448",
+            "color": "black",
+            "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+          },
+          {
+            "id": "362b3a74-f7fc-4201-995d-5909c4c0ad41",
+            "color": "black",
+            "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+          },
+          {
+            "id": "222f5866-28e2-4526-8c9f-f31a6927922c",
+            "color": "black",
+            "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+          },
+          {
+            "id": "45675450-a47e-45f4-b5ad-66b27ee60eeb",
+            "color": "black",
+            "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+          }
+        ],
+        "position": {
+          "clockwise": 19,
+          "counterclockwise": 6
+        }
+      },
+      {
+        "id": "3b9fc2d6-5868-4f95-a62d-044eb647c14c",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 20,
+          "counterclockwise": 5
+        }
+      },
+      {
+        "id": "4f96bffb-75ec-413e-b6a0-5ff3840dee76",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 21,
+          "counterclockwise": 4
+        }
+      },
+      {
+        "id": "b038f6bd-8ae8-4625-86f8-07402e07d27f",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 22,
+          "counterclockwise": 3
+        }
+      },
+      {
+        "id": "fe81284a-c1c8-4897-acba-add48da00ec8",
+        "kind": "point",
+        "checkers": [],
+        "position": {
+          "clockwise": 23,
+          "counterclockwise": 2
+        }
+      },
+      {
+        "id": "cf7b4325-c7fb-4245-8144-068b2dd8aee1",
+        "kind": "point",
+        "checkers": [
+          {
+            "id": "9d078f7e-d0c7-4cc9-99e5-b9bdf69511bf",
+            "color": "black",
+            "checkercontainerId": "cf7b4325-c7fb-4245-8144-068b2dd8aee1"
+          },
+          {
+            "id": "b6b1b7c2-4db6-4910-8538-3d5c99a34b2c",
+            "color": "black",
+            "checkercontainerId": "cf7b4325-c7fb-4245-8144-068b2dd8aee1"
+          }
+        ],
+        "position": {
+          "clockwise": 24,
+          "counterclockwise": 1
+        }
+      }
+    ]
+  },
+  "players": [
+    {
+      "id": "3b92b10b-677c-4402-b4d5-5c9c2c5a9ecb",
+      "dice": {
+        "id": "fe1ea5b4-909d-4e78-adab-1bf67e3daec8",
+        "color": "black",
+        "stateKind": "inactive"
+      },
+      "color": "black",
+      "userId": "406c97dd-953a-455f-ad51-30566543ae45",
+      "isRobot": true,
+      "pipCount": 167,
+      "direction": "counterclockwise",
+      "stateKind": "inactive"
+    },
+    {
+      "id": "30305f98-5d44-438a-bae3-ec6df44982c0",
+      "dice": {
+        "id": "02cb8241-2eaf-4054-99ea-b496d3a7b5fd",
+        "color": "white",
+        "total": 4,
+        "stateKind": "rolled",
+        "currentRoll": [
+          2,
+          2
+        ]
+      },
+      "color": "white",
+      "userId": "ca841ed9-35d9-42ea-a90e-c4d6b668b34f",
+      "isRobot": true,
+      "pipCount": 167,
+      "direction": "clockwise",
+      "stateKind": "rolled"
+    }
+  ],
+  "cube": {
+    "id": "41cfcb9d-fdb8-4789-b399-ba7004464275",
+    "stateKind": "initialized"
+  },
+  "activeColor": "white",
+  "activePlay": {
+    "id": "c17b242e-15f4-4521-a116-2aeb485d72ee",
+    "board": {
+      "id": "8cb063a7-5f3c-4799-b820-73713944ead5",
+      "bar": {
+        "clockwise": {
+          "id": "aa1733d2-80ad-49f3-95e9-68c83af8fa09",
+          "kind": "bar",
+          "checkers": [],
+          "position": "bar",
+          "direction": "clockwise"
+        },
+        "counterclockwise": {
+          "id": "256ba235-fe9e-465b-aa08-4bfa5368b94d",
+          "kind": "bar",
+          "checkers": [],
+          "position": "bar",
+          "direction": "counterclockwise"
+        }
+      },
+      "off": {
+        "clockwise": {
+          "id": "a2353909-fd1e-4262-8362-b76f6567905a",
+          "kind": "off",
+          "checkers": [],
+          "position": "off",
+          "direction": "clockwise"
+        },
+        "counterclockwise": {
+          "id": "115059e9-309a-4ee0-b585-bd4c966fe6d8",
+          "kind": "off",
+          "checkers": [],
+          "position": "off",
+          "direction": "counterclockwise"
+        }
+      },
+      "gnuPositionId": "",
+      "BackgammonPoints": [
+        {
+          "id": "a6385073-a618-411d-9708-ee8086f9b7ec",
+          "kind": "point",
+          "checkers": [
+            {
+              "id": "e5206220-71dd-40a3-93f5-3232efbe61a9",
+              "color": "white",
+              "checkercontainerId": "a6385073-a618-411d-9708-ee8086f9b7ec"
+            },
+            {
+              "id": "9c442ad8-910b-4edc-8f4c-96b45a659cb2",
+              "color": "white",
+              "checkercontainerId": "a6385073-a618-411d-9708-ee8086f9b7ec"
+            }
+          ],
+          "position": {
+            "clockwise": 1,
+            "counterclockwise": 24
+          }
+        },
+        {
+          "id": "3a717d09-10a0-47c8-813e-4cd417fe1675",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 2,
+            "counterclockwise": 23
+          }
+        },
+        {
+          "id": "939ec8a5-54d2-4b6d-8a18-7b7c73f053e8",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 3,
+            "counterclockwise": 22
+          }
+        },
+        {
+          "id": "a411aa27-4b53-4ab6-868b-e136dc8787f3",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 4,
+            "counterclockwise": 21
+          }
+        },
+        {
+          "id": "4d5b4138-583a-4cfc-aedd-b8d9a2e8edb7",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 5,
+            "counterclockwise": 20
+          }
+        },
+        {
+          "id": "233dbedb-ecc2-4462-9987-dba39448ac37",
+          "kind": "point",
+          "checkers": [
+            {
+              "id": "80f9d9c7-9a72-4616-97f8-b8dc69384f53",
+              "color": "white",
+              "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+            },
+            {
+              "id": "697a15d4-8085-4035-b690-71f1a47c3f39",
+              "color": "white",
+              "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+            },
+            {
+              "id": "58740b78-4e0d-43f9-b919-299f8c0c6ff4",
+              "color": "white",
+              "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+            },
+            {
+              "id": "64599e81-9029-48f9-a60a-37d30b3a7e97",
+              "color": "white",
+              "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+            },
+            {
+              "id": "2ee7f622-8739-45b0-8e73-42214d91f65d",
+              "color": "white",
+              "checkercontainerId": "233dbedb-ecc2-4462-9987-dba39448ac37"
+            }
+          ],
+          "position": {
+            "clockwise": 6,
+            "counterclockwise": 19
+          }
+        },
+        {
+          "id": "48878786-ea90-41b9-b7e4-681acecd7b46",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 7,
+            "counterclockwise": 18
+          }
+        },
+        {
+          "id": "e0a4671d-3b4f-49d8-b71e-c69fc3699a14",
+          "kind": "point",
+          "checkers": [
+            {
+              "id": "5e5b4cf8-f74c-4cfa-aa7a-35e4f7070789",
+              "color": "white",
+              "checkercontainerId": "e0a4671d-3b4f-49d8-b71e-c69fc3699a14"
+            },
+            {
+              "id": "c4cb9da5-9b16-4635-8731-43c8bbc022a2",
+              "color": "white",
+              "checkercontainerId": "e0a4671d-3b4f-49d8-b71e-c69fc3699a14"
+            },
+            {
+              "id": "30401b76-5680-45e8-bda4-03bd2f46b4ee",
+              "color": "white",
+              "checkercontainerId": "e0a4671d-3b4f-49d8-b71e-c69fc3699a14"
+            }
+          ],
+          "position": {
+            "clockwise": 8,
+            "counterclockwise": 17
+          }
+        },
+        {
+          "id": "2fe8e039-9946-4ade-8176-f844ced28625",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 9,
+            "counterclockwise": 16
+          }
+        },
+        {
+          "id": "b1e0ed1a-4849-4a24-882e-084dd8dbfeed",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 10,
+            "counterclockwise": 15
+          }
+        },
+        {
+          "id": "1e506cc2-09b9-40d0-a91e-3f7620eaef36",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 11,
+            "counterclockwise": 14
+          }
+        },
+        {
+          "id": "d0b8860c-e407-4c18-b0e0-351636c2c0a8",
+          "kind": "point",
+          "checkers": [
+            {
+              "id": "3994dc8f-b40e-4e0e-9da0-506a58d23f31",
+              "color": "black",
+              "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+            },
+            {
+              "id": "671811ee-b2ed-4e0c-b050-29340424b762",
+              "color": "black",
+              "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+            },
+            {
+              "id": "a0f1e442-6ad4-4286-8a92-3e7e5589d5fa",
+              "color": "black",
+              "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+            },
+            {
+              "id": "2adfdbe0-bf47-4d85-b844-89ac2b0ae90d",
+              "color": "black",
+              "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+            },
+            {
+              "id": "320f6c9e-3cbe-4ec5-8df1-1b596a51593c",
+              "color": "black",
+              "checkercontainerId": "d0b8860c-e407-4c18-b0e0-351636c2c0a8"
+            }
+          ],
+          "position": {
+            "clockwise": 12,
+            "counterclockwise": 13
+          }
+        },
+        {
+          "id": "2c8ed805-7fdd-43c5-a381-a88bed151660",
+          "kind": "point",
+          "checkers": [
+            {
+              "id": "da2de94f-826a-447b-8de8-0d2d4e48b160",
+              "color": "white",
+              "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+            },
+            {
+              "id": "417343b9-932c-4945-8ccc-22e747fe17b9",
+              "color": "white",
+              "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+            },
+            {
+              "id": "219c9355-3dd1-40ab-89af-727fb23a10ea",
+              "color": "white",
+              "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+            },
+            {
+              "id": "344a824f-56e6-4fe2-b89a-a7a3c204f172",
+              "color": "white",
+              "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+            },
+            {
+              "id": "017f99c7-2353-451c-9348-71ba72c28b32",
+              "color": "white",
+              "checkercontainerId": "2c8ed805-7fdd-43c5-a381-a88bed151660"
+            }
+          ],
+          "position": {
+            "clockwise": 13,
+            "counterclockwise": 12
+          }
+        },
+        {
+          "id": "bb7dd838-aa87-4db7-9f50-341ab28fafb4",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 14,
+            "counterclockwise": 11
+          }
+        },
+        {
+          "id": "2afae0f0-06d9-4bbf-97ce-ce581688fb9e",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 15,
+            "counterclockwise": 10
+          }
+        },
+        {
+          "id": "ad801fd2-d7a6-4da2-a0b9-54fcd26a75bf",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 16,
+            "counterclockwise": 9
+          }
+        },
+        {
+          "id": "8a9404e0-2858-47bf-a317-faa8c0868bc8",
+          "kind": "point",
+          "checkers": [
+            {
+              "id": "4922b4ed-6663-4371-9601-118573127475",
+              "color": "black",
+              "checkercontainerId": "8a9404e0-2858-47bf-a317-faa8c0868bc8"
+            },
+            {
+              "id": "58daec5c-ffd3-4f5b-9009-7acda28ee5fa",
+              "color": "black",
+              "checkercontainerId": "8a9404e0-2858-47bf-a317-faa8c0868bc8"
+            },
+            {
+              "id": "8c26e6f6-166d-4c66-95ad-00543ca925dc",
+              "color": "black",
+              "checkercontainerId": "8a9404e0-2858-47bf-a317-faa8c0868bc8"
+            }
+          ],
+          "position": {
+            "clockwise": 17,
+            "counterclockwise": 8
+          }
+        },
+        {
+          "id": "165e4330-e43b-43c3-a586-e810ef8822d3",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 18,
+            "counterclockwise": 7
+          }
+        },
+        {
+          "id": "722362eb-93fa-4b15-8756-f165db9c52f6",
+          "kind": "point",
+          "checkers": [
+            {
+              "id": "ad47b1bb-28dc-4b8b-8c7c-5f5f4dde8f83",
+              "color": "black",
+              "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+            },
+            {
+              "id": "2af5143e-2781-4f0a-8b1b-2a0f21652448",
+              "color": "black",
+              "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+            },
+            {
+              "id": "362b3a74-f7fc-4201-995d-5909c4c0ad41",
+              "color": "black",
+              "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+            },
+            {
+              "id": "222f5866-28e2-4526-8c9f-f31a6927922c",
+              "color": "black",
+              "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+            },
+            {
+              "id": "45675450-a47e-45f4-b5ad-66b27ee60eeb",
+              "color": "black",
+              "checkercontainerId": "722362eb-93fa-4b15-8756-f165db9c52f6"
+            }
+          ],
+          "position": {
+            "clockwise": 19,
+            "counterclockwise": 6
+          }
+        },
+        {
+          "id": "3b9fc2d6-5868-4f95-a62d-044eb647c14c",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 20,
+            "counterclockwise": 5
+          }
+        },
+        {
+          "id": "4f96bffb-75ec-413e-b6a0-5ff3840dee76",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 21,
+            "counterclockwise": 4
+          }
+        },
+        {
+          "id": "b038f6bd-8ae8-4625-86f8-07402e07d27f",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 22,
+            "counterclockwise": 3
+          }
+        },
+        {
+          "id": "fe81284a-c1c8-4897-acba-add48da00ec8",
+          "kind": "point",
+          "checkers": [],
+          "position": {
+            "clockwise": 23,
+            "counterclockwise": 2
+          }
+        },
+        {
+          "id": "cf7b4325-c7fb-4245-8144-068b2dd8aee1",
+          "kind": "point",
+          "checkers": [
+            {
+              "id": "9d078f7e-d0c7-4cc9-99e5-b9bdf69511bf",
+              "color": "black",
+              "checkercontainerId": "cf7b4325-c7fb-4245-8144-068b2dd8aee1"
+            },
+            {
+              "id": "b6b1b7c2-4db6-4910-8538-3d5c99a34b2c",
+              "color": "black",
+              "checkercontainerId": "cf7b4325-c7fb-4245-8144-068b2dd8aee1"
+            }
+          ],
+          "position": {
+            "clockwise": 24,
+            "counterclockwise": 1
+          }
+        }
+      ]
+    },
+    "moves": {},
+    "player": {
+      "id": "30305f98-5d44-438a-bae3-ec6df44982c0",
+      "dice": {
+        "id": "02cb8241-2eaf-4054-99ea-b496d3a7b5fd",
+        "color": "white",
+        "total": 4,
+        "stateKind": "rolled",
+        "currentRoll": [
+          2,
+          2
+        ]
+      },
+      "color": "white",
+      "userId": "ca841ed9-35d9-42ea-a90e-c4d6b668b34f",
+      "isRobot": true,
+      "pipCount": 167,
+      "direction": "clockwise",
+      "stateKind": "rolled"
+    },
+    "stateKind": "rolled"
+  },
+  "activePlayer": {
+    "id": "30305f98-5d44-438a-bae3-ec6df44982c0",
+    "dice": {
+      "id": "02cb8241-2eaf-4054-99ea-b496d3a7b5fd",
+      "color": "white",
+      "total": 4,
+      "stateKind": "rolled",
+      "currentRoll": [
+        2,
+        2
+      ]
+    },
+    "color": "white",
+    "userId": "ca841ed9-35d9-42ea-a90e-c4d6b668b34f",
+    "isRobot": true,
+    "pipCount": 167,
+    "direction": "clockwise",
+    "stateKind": "rolled"
+  },
+  "inactivePlayer": {
+    "id": "3b92b10b-677c-4402-b4d5-5c9c2c5a9ecb",
+    "dice": {
+      "id": "fe1ea5b4-909d-4e78-adab-1bf67e3daec8",
+      "color": "black",
+      "stateKind": "inactive"
+    },
+    "color": "black",
+    "userId": "406c97dd-953a-455f-ad51-30566543ae45",
+    "isRobot": true,
+    "pipCount": 167,
+    "direction": "counterclockwise",
+    "stateKind": "inactive"
+  }
+}
