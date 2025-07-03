@@ -1,38 +1,44 @@
 import chalk from 'chalk'
-import { AuthService } from '../services/auth'
-import { GameService } from '../services/game'
+import { Command } from 'commander'
+import { ApiService } from '../services/api'
+import { CliConfig } from '../types'
+import { BoardDisplay } from '../utils/board-display'
 
-export async function rollCommand(gameId: string) {
-  console.log(chalk.blue(`🎲 Rolling dice for game: ${gameId}`))
+export class RollCommand extends Command {
+  constructor() {
+    super('roll')
+    this.description('Roll dice for current player')
+      .argument('<game-id>', 'Game ID')
+      .action(this.execute.bind(this))
+  }
 
-  const authService = new AuthService()
-  const gameService = new GameService()
+  private async execute(gameId: string): Promise<void> {
+    try {
+      const config: CliConfig = {
+        apiUrl: process.env.NODOTS_API_URL || 'http://localhost:3000',
+        userId: process.env.NODOTS_USER_ID,
+        apiKey: process.env.NODOTS_API_KEY,
+      }
 
-  try {
-    const token = await authService.requireAuth()
-    const result = await gameService.rollDice(gameId, token)
+      const apiService = new ApiService(config)
 
-    console.log(chalk.green('✅ Dice rolled!'))
-    
-    if (result.roll) {
-      console.log(chalk.yellow(`🎲 Roll: [${result.roll.join(', ')}]`))
+      // Roll dice
+      const gameResponse = await apiService.rollDice(gameId)
+      if (!gameResponse.success) {
+        console.error(chalk.red('Failed to roll dice:', gameResponse.error))
+        return
+      }
+
+      const game = gameResponse.data
+      if (!game) {
+        console.error(chalk.red('Game not found'))
+        return
+      }
+
+      console.log(chalk.green('Dice rolled successfully!'))
+      console.log(BoardDisplay.renderBoard(game))
+    } catch (error) {
+      console.error(chalk.red('Error rolling dice:'), error)
     }
-    
-    console.log(chalk.white(`🎯 New State: ${result.stateKind}`))
-    console.log(chalk.white(`🎮 Active Color: ${result.activeColor}`))
-    
-    if (result.message) {
-      console.log(chalk.cyan(`💬 ${result.message}`))
-    }
-
-    console.log(chalk.yellow('\n🎯 Next steps:'))
-    if (result.stateKind === 'rolled') {
-      console.log(chalk.gray(`• Make moves: backgammon play ${gameId}`))
-    }
-    console.log(chalk.gray(`• Check status: backgammon status ${gameId}`))
-
-  } catch (error) {
-    console.error(chalk.red(`❌ Failed to roll dice: ${error}`))
-    process.exit(1)
   }
 }

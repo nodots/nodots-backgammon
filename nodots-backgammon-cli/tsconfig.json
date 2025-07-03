@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2022",
     "module": "commonjs",
-    "lib": ["ES2020"],
+    "lib": ["ES2022"],
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
@@ -12,11 +12,11 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "removeComments": false,
     "resolveJsonModule": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["./node_modules/@types"]
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": [
     "src/**/*"
@@ -26,4 +26,4 @@
     "dist",
     "**/*.test.ts"
   ]
-}
+} 

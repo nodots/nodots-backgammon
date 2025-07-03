@@ -4,15 +4,21 @@ import { ApiService } from '../services/api'
 import { CliConfig } from '../types'
 import { BoardDisplay } from '../utils/board-display'
 
-export class StatusCommand extends Command {
+export class MoveCommand extends Command {
   constructor() {
-    super('status')
-    this.description('Show game status')
+    super('move')
+    this.description('Make a move')
       .argument('<game-id>', 'Game ID')
+      .argument('<from>', 'From position')
+      .argument('<to>', 'To position')
       .action(this.execute.bind(this))
   }
 
-  private async execute(gameId: string): Promise<void> {
+  private async execute(
+    gameId: string,
+    from: string,
+    to: string
+  ): Promise<void> {
     try {
       const config: CliConfig = {
         apiUrl: process.env.NODOTS_API_URL || 'http://localhost:3000',
@@ -22,10 +28,18 @@ export class StatusCommand extends Command {
 
       const apiService = new ApiService(config)
 
-      // Get game status
-      const gameResponse = await apiService.getGame(gameId)
+      const fromPos = parseInt(from, 10)
+      const toPos = parseInt(to, 10)
+
+      if (isNaN(fromPos) || isNaN(toPos)) {
+        console.error(chalk.red('Invalid positions. Must be numbers.'))
+        return
+      }
+
+      // Make the move
+      const gameResponse = await apiService.makeMove(gameId, fromPos, toPos)
       if (!gameResponse.success) {
-        console.error(chalk.red('Failed to fetch game:', gameResponse.error))
+        console.error(chalk.red('Failed to make move:', gameResponse.error))
         return
       }
 
@@ -35,10 +49,10 @@ export class StatusCommand extends Command {
         return
       }
 
-      // Display the board
+      console.log(chalk.green('Move made successfully!'))
       console.log(BoardDisplay.renderBoard(game))
     } catch (error) {
-      console.error(chalk.red('Error fetching game status:'), error)
+      console.error(chalk.red('Error making move:'), error)
     }
   }
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Beginner vs Intermediate Test",
+    "robot1Difficulty": "beginner",
+    "robot2Difficulty": "intermediate",
+    "speed": 1000
+  },
+  {
+    "name": "Advanced Robot Showdown",
+    "robot1Difficulty": "advanced",
+    "robot2Difficulty": "advanced",
+    "speed": 500
+  },
+  {
+    "name": "Training Simulation (Slow)",
+    "robot1Difficulty": "beginner",
+    "robot2Difficulty": "advanced",
+    "speed": 3000
+  },
+  {
+    "name": "Performance Test (Fast)",
+    "robot1Difficulty": "intermediate",
+    "robot2Difficulty": "intermediate",
+    "speed": 200
+  }
+]
