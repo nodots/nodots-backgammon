@@ -65,11 +65,4 @@ nodots-backgammon-types/dist/
 
 # AI specific
 nodots-backgammon-ai/lib/
-nodots-backgammon-ai/dist/
-
-# GNU Backgammon specific
-nodots-backgammon-gnubg/config.log
-nodots-backgammon-gnubg/config.status
-nodots-backgammon-gnubg/Makefile
-nodots-backgammon-gnubg/*.o
-nodots-backgammon-gnubg/gnubg 
+nodots-backgammon-ai/dist/ 
