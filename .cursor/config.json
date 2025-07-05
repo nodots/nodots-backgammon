@@ -1,0 +1,162 @@
+{
+  "version": "1.0.0",
+  "name": "Nodots Backgammon Ecosystem Cursor Rules",
+  "description": "Shared cursor rules configuration for the entire Nodots Backgammon ecosystem",
+  "lastUpdated": "2025-07-05T21:15:00Z",
+  "sharedRules": {
+    "core": {
+      "path": "shared-rules/core-rules.md",
+      "description": "Backgammon domain knowledge and game rules",
+      "required": true,
+      "appliesTo": [
+        "all"
+      ]
+    },
+    "development": {
+      "path": "shared-rules/development-workflow.md",
+      "description": "Development processes and communication standards including main branch naming",
+      "required": true,
+      "appliesTo": [
+        "all"
+      ]
+    },
+    "coding": {
+      "path": "shared-rules/coding-standards.md",
+      "description": "Architecture and code style guidelines",
+      "required": true,
+      "appliesTo": [
+        "all"
+      ]
+    },
+    "api": {
+      "path": "shared-rules/api-guidelines.md",
+      "description": "API-specific rules and patterns",
+      "required": false,
+      "appliesTo": [
+        "api",
+        "cli",
+        "client"
+      ]
+    },
+    "frontend": {
+      "path": "shared-rules/frontend-guidelines.md",
+      "description": "Frontend/UI-specific rules",
+      "required": false,
+      "appliesTo": [
+        "client",
+        "marketing"
+      ]
+    }
+  },
+  "repositories": {
+    "types": {
+      "path": "nodots-backgammon-types",
+      "type": "library",
+      "rules": [
+        "core",
+        "development",
+        "coding"
+      ],
+      "customRules": []
+    },
+    "core": {
+      "path": "nodots-backgammon-core",
+      "type": "library",
+      "rules": [
+        "core",
+        "development",
+        "coding"
+      ],
+      "customRules": []
+    },
+    "ai": {
+      "path": "nodots-backgammon-ai",
+      "type": "library",
+      "rules": [
+        "core",
+        "development",
+        "coding"
+      ],
+      "customRules": []
+    },
+    "api": {
+      "path": "nodots-backgammon-api",
+      "type": "backend",
+      "rules": [
+        "core",
+        "development",
+        "coding",
+        "api"
+      ],
+      "customRules": []
+    },
+    "cli": {
+      "path": "nodots-backgammon-cli",
+      "type": "frontend",
+      "rules": [
+        "core",
+        "development",
+        "coding",
+        "api"
+      ],
+      "customRules": []
+    },
+    "client": {
+      "path": "nodots-backgammon-client",
+      "type": "frontend",
+      "rules": [
+        "core",
+        "development",
+        "coding",
+        "api",
+        "frontend"
+      ],
+      "customRules": []
+    },
+    "marketing": {
+      "path": "nodots-backgammon-marketing",
+      "type": "frontend",
+      "rules": [
+        "core",
+        "development",
+        "coding",
+        "frontend"
+      ],
+      "customRules": []
+    }
+  },
+  "templates": {
+    "library": {
+      "description": "Template for library packages (types, core, ai)",
+      "defaultRules": [
+        "core",
+        "development",
+        "coding"
+      ]
+    },
+    "backend": {
+      "description": "Template for backend services (api)",
+      "defaultRules": [
+        "core",
+        "development",
+        "coding",
+        "api"
+      ]
+    },
+    "frontend": {
+      "description": "Template for frontend applications (cli, client, marketing)",
+      "defaultRules": [
+        "core",
+        "development",
+        "coding",
+        "frontend"
+      ]
+    }
+  },
+  "generation": {
+    "outputFile": "rules.md",
+    "includeTableOfContents": true,
+    "includeMetadata": true,
+    "mergeStrategy": "append"
+  }
+}
