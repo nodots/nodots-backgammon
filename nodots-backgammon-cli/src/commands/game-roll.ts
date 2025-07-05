@@ -1,6 +1,7 @@
 import chalk from 'chalk'
 import { Command } from 'commander'
 import axios from 'axios'
+import https from 'https'
 import { AuthService } from '../services/auth'
 
 export class GameRollCommand extends Command {
@@ -23,16 +24,22 @@ export class GameRollCommand extends Command {
         return
       }
 
-      const apiUrl = process.env.NODOTS_API_URL || 'http://localhost:3000'
+      const apiUrl = process.env.NODOTS_API_URL || 'https://localhost:3443'
+
+      // Create HTTPS agent for self-signed certificates
+      const httpsAgent = new https.Agent({
+        rejectUnauthorized: false
+      })
 
       const response = await axios.post(
-        `${apiUrl}/api/v1/games/${gameId}/roll`,
+        `${apiUrl}/api/v3.2/games/${gameId}/roll`,
         {},
         {
           headers: {
             'Authorization': `Bearer ${apiConfig.apiKey}`,
             'Content-Type': 'application/json'
-          }
+          },
+          httpsAgent
         }
       )
 
@@ -60,8 +67,6 @@ export class GameRollCommand extends Command {
     } catch (error: any) {
       if (error.response?.status === 401) {
         console.error(chalk.red('❌ Authentication failed. Please run: nodots-backgammon login'))
-      } else if (error.response?.status === 400) {
-        console.error(chalk.red(`❌ ${error.response?.data?.error || 'Invalid roll request'}`))
       } else if (error.response?.status === 404) {
         console.error(chalk.red('❌ Game not found'))
       } else {

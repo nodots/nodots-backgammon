@@ -1,6 +1,7 @@
 import chalk from 'chalk'
 import { Command } from 'commander'
 import axios from 'axios'
+import https from 'https'
 import { AuthService } from '../services/auth'
 
 export class GameStatusCommand extends Command {
@@ -23,14 +24,20 @@ export class GameStatusCommand extends Command {
         return
       }
 
-      const apiUrl = process.env.NODOTS_API_URL || 'http://localhost:3000'
+      const apiUrl = process.env.NODOTS_API_URL || 'https://localhost:3443'
+
+      // Create HTTPS agent for self-signed certificates
+      const httpsAgent = new https.Agent({
+        rejectUnauthorized: false
+      })
 
       const response = await axios.get(
-        `${apiUrl}/api/v1/games/${gameId}`,
+        `${apiUrl}/api/v3.2/games/${gameId}`,
         {
           headers: {
             'Authorization': `Bearer ${apiConfig.apiKey}`
-          }
+          },
+          httpsAgent
         }
       )
 
@@ -60,7 +67,7 @@ export class GameStatusCommand extends Command {
       })
 
       console.log(chalk.yellow('\n🎯 Available actions:'))
-      if (game.stateKind === 'rolling' || game.stateKind === 'rolling-for-start') {
+      if (game.stateKind === 'rolling' || game.stateKind === 'rolling-for-start' || game.stateKind === 'rolled-for-start') {
         console.log(chalk.gray(`• Roll dice: nodots-backgammon game-roll ${gameId}`))
       }
       if (game.stateKind === 'rolled') {

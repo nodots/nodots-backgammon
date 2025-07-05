@@ -3,7 +3,7 @@ import { AuthenticatedRequest } from '../middleware/auth'
 
 const router = Router()
 
-// In-memory game storage (simplified for development)
+// In-memory game storage
 const games = new Map<string, any>()
 
 // Robot automation
@@ -50,11 +50,11 @@ router.post('/', (req: AuthenticatedRequest, res: Response) => {
       return res.status(401).json({ error: 'User ID required' })
     }
 
-    // Create a simple game structure matching the expected format
+    // Create a new game structure
     const gameId = generateGameId()
     const game = {
       id: gameId,
-      stateKind: 'rolling-for-start',
+      stateKind: 'rolled-for-start',
       activeColor: 'black',
       players: [
         {
@@ -96,7 +96,7 @@ router.post('/', (req: AuthenticatedRequest, res: Response) => {
 // GET /api/v1/games/:id - Get specific game
 router.get('/:id', (req: AuthenticatedRequest, res: Response) => {
   try {
-    const game = games.get(req.params.id)
+    const game = games.get((req as any).params.id)
     
     if (!game) {
       return res.status(404).json({ error: 'Game not found' })
@@ -110,8 +110,14 @@ router.get('/:id', (req: AuthenticatedRequest, res: Response) => {
 
     // Convert null activePlay to undefined to fix serialization issue
     const responseGame = {
-      ...game,
-      activePlay: game.activePlay === null ? undefined : game.activePlay
+      id: game.id,
+      stateKind: game.stateKind,
+      activeColor: game.activeColor,
+      players: game.players,
+      board: game.board,
+      activePlay: game.activePlay === null ? undefined : game.activePlay,
+      lastRoll: game.lastRoll,
+      createdAt: game.createdAt
     }
 
     res.json(responseGame)
@@ -121,51 +127,74 @@ router.get('/:id', (req: AuthenticatedRequest, res: Response) => {
   }
 })
 
-// POST /api/v1/games/:id/roll - Roll dice
+// POST /api/v1/games/:id/roll - Roll dice with improved state handling
 router.post('/:id/roll', (req: AuthenticatedRequest, res: Response) => {
   try {
-    const game = games.get(req.params.id)
+    const game = games.get((req as any).params.id)
     const userId = req.user?.sub
 
     if (!game) {
       return res.status(404).json({ error: 'Game not found' })
     }
 
-    // Simple dice roll simulation
+    // Check if user is part of this game
+    const isPlayerInGame = game.players.some((p: any) => p.id === userId)
+    if (!isPlayerInGame) {
+      return res.status(403).json({ error: 'Access denied' })
+    }
+
+    // Generate dice roll
     const roll = [
       Math.floor(Math.random() * 6) + 1,
       Math.floor(Math.random() * 6) + 1
     ]
 
+    // Handle state transitions properly
+    let newState: string
+    if (game.stateKind === 'rolled-for-start') {
+      // First roll of the game - transition to rolled state
+      newState = 'rolled'
+    } else if (game.stateKind === 'rolling') {
+      // Normal turn - transition to rolled state
+      newState = 'rolled'
+    } else if (game.stateKind === 'rolling-for-start') {
+      // Rolling for start - transition to rolled-for-start
+      newState = 'rolled-for-start'
+    } else {
+      // Default to rolled state
+      newState = 'rolled'
+    }
+
     // Update game state
     const updatedGame = {
       ...game,
-      stateKind: 'rolled',
+      stateKind: newState,
       lastRoll: roll,
       updatedAt: new Date().toISOString()
     }
 
-    games.set(req.params.id, updatedGame)
+    games.set((req as any).params.id, updatedGame)
 
     res.json({
       id: updatedGame.id,
       stateKind: updatedGame.stateKind,
       activeColor: updatedGame.activeColor,
       roll: roll,
+      lastRoll: roll,
       message: `Rolled: ${roll.join(', ')}`
     })
 
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error rolling dice:', error)
-    res.status(500).json({ error: 'Failed to roll dice' })
+    res.status(500).json({ error: error.message || 'Failed to roll dice' })
   }
 })
 
 // POST /api/v1/games/:id/move - Make a move
 router.post('/:id/move', (req: AuthenticatedRequest, res: Response) => {
   try {
-    const game = games.get(req.params.id)
-    const { from, to } = req.body
+    const game = games.get((req as any).params.id)
+    const { from, to } = (req as any).body
 
     if (!game) {
       return res.status(404).json({ error: 'Game not found' })
@@ -179,7 +208,7 @@ router.post('/:id/move', (req: AuthenticatedRequest, res: Response) => {
       updatedAt: new Date().toISOString()
     }
 
-    games.set(req.params.id, updatedGame)
+    games.set((req as any).params.id, updatedGame)
 
     res.json({
       success: true,
@@ -196,7 +225,7 @@ router.post('/:id/move', (req: AuthenticatedRequest, res: Response) => {
 // POST /api/v1/games/:id/play - Attempt to complete turn
 router.post('/:id/play', (req: AuthenticatedRequest, res: Response) => {
   try {
-    const game = games.get(req.params.id)
+    const game = games.get((req as any).params.id)
 
     if (!game) {
       return res.status(404).json({ error: 'Game not found' })
@@ -210,7 +239,7 @@ router.post('/:id/play', (req: AuthenticatedRequest, res: Response) => {
       updatedAt: new Date().toISOString()
     }
 
-    games.set(req.params.id, updatedGame)
+    games.set((req as any).params.id, updatedGame)
 
     res.json({
       success: true,
