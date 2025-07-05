@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "test": "npm run test:types && npm run test:core && npm run test:api && npm run test:cli && npm run test:ai",
+    "test:types": "cd nodots-backgammon-types && npm test",
+    "test:core": "cd nodots-backgammon-core && npm test",
+    "test:api": "cd nodots-backgammon-api && npm test",
+    "test:cli": "cd nodots-backgammon-cli && npm test",
+    "test:ai": "cd nodots-backgammon-ai && npm test",
+    "test:client": "cd nodots-backgammon-client && npm test"
+  },
   "dependencies": {
     "axios": "^1.10.0",
     "node-fetch": "^2.7.0"
