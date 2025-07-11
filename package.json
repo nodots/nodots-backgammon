@@ -6,7 +6,11 @@
     "test:api": "cd nodots-backgammon-api && npm test",
     "test:cli": "cd nodots-backgammon-cli && npm test",
     "test:ai": "cd nodots-backgammon-ai && npm test",
-    "test:client": "cd nodots-backgammon-client && npm test"
+    "test:client": "cd nodots-backgammon-client && npm test",
+    "simulate:1000": "node run-1000-simulations-stats.js",
+    "simulate:100": "node run-100-simulations.js",
+    "simulate:10": "node run-10-simulations.js",
+    "simulate": "npm run simulate:1000"
   },
   "dependencies": {
     "axios": "^1.10.0",

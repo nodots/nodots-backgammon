@@ -2,16 +2,26 @@ const fetch = require('node-fetch')
 const fs = require('fs').promises
 const crypto = require('crypto')
 
-const API_BASE = 'http://localhost:3000/api/v1'
+const API_BASE = 'https://localhost:3443/api/v3.2'
 
 // Helper function to make API calls with retry logic
-async function apiCall(method, endpoint, body = null, retries = 3) {
+async function apiCall(
+  method,
+  endpoint,
+  body = null,
+  retries = 3,
+  gameId = null
+) {
   const url = `${API_BASE}${endpoint}`
+  const https = require('https')
   const options = {
     method,
     headers: {
       'Content-Type': 'application/json',
     },
+    agent: new https.Agent({
+      rejectUnauthorized: false, // Ignore SSL certificate errors for development
+    }),
   }
 
   if (body) {
@@ -25,6 +35,83 @@ async function apiCall(method, endpoint, body = null, retries = 3) {
 
       if (!response.ok) {
         console.error(`API Error (${response.status}):`, data)
+
+        // CRITICAL: Stop immediately on 400 errors and report the problem
+        if (response.status === 400) {
+          console.error('\n🚨 400 BAD REQUEST ERROR DETECTED 🚨')
+          console.error('='.repeat(50))
+          console.error(`Endpoint: ${method} ${endpoint}`)
+          console.error(
+            'Request Body:',
+            body ? JSON.stringify(body, null, 2) : 'None'
+          )
+          console.error('Response Status:', response.status)
+          console.error('Response Body:', JSON.stringify(data, null, 2))
+          console.error('='.repeat(50))
+
+          // NEW: If we have a gameId, fetch the current game state and show board
+          if (gameId) {
+            try {
+              console.error('\n🔍 FETCHING GAME STATE FOR DEBUGGING...')
+              const debugResponse = await fetch(`${API_BASE}/games/${gameId}`, {
+                agent: new https.Agent({
+                  rejectUnauthorized: false,
+                }),
+              })
+              const debugGame = await debugResponse.json()
+
+              console.error('\n📋 CURRENT GAME STATE CAUSING 400 ERROR:')
+              console.error('='.repeat(60))
+              console.error(`Game ID: ${gameId}`)
+              console.error(`State Kind: ${debugGame.stateKind}`)
+              console.error(`Active Color: ${debugGame.activeColor}`)
+              console.error(
+                `Active Player: ${JSON.stringify(
+                  debugGame.activePlayer,
+                  null,
+                  2
+                )}`
+              )
+
+              if (debugGame.activePlay) {
+                console.error(
+                  `Active Play State: ${debugGame.activePlay.stateKind}`
+                )
+                if (debugGame.activePlay.moves) {
+                  const movesArray = Array.isArray(debugGame.activePlay.moves)
+                    ? debugGame.activePlay.moves
+                    : Array.from(debugGame.activePlay.moves)
+                  console.error(`Active Play Moves: ${movesArray.length}`)
+                  movesArray.forEach((move, idx) => {
+                    console.error(
+                      `  Move ${idx}: ${move.stateKind}, die: ${move.dieValue}`
+                    )
+                  })
+                }
+              }
+
+              console.error('\n📋 CURRENT BOARD STATE:')
+              console.error(getAsciiBoard(debugGame))
+              console.error('='.repeat(60))
+            } catch (debugError) {
+              console.error(
+                '❌ Could not fetch game state for debugging:',
+                debugError.message
+              )
+            }
+          }
+
+          console.error('\n🛑 STOPPING SIMULATION DUE TO 400 ERROR')
+          console.error('='.repeat(50))
+
+          // Don't retry on 400 errors - throw immediately
+          throw new Error(
+            `400 BAD REQUEST - SIMULATION STOPPED: ${
+              data.message || data.error || 'Unknown error'
+            }`
+          )
+        }
+
         if (attempt === retries) {
           throw new Error(
             `API call failed: ${method} ${endpoint} - ${response.status}`
@@ -88,7 +175,7 @@ async function createRobotUsers() {
 // Helper function to get ASCII board representation
 function getAsciiBoard(game) {
   try {
-    const { Board } = require('./nodots-backgammon-core/dist/Board/index.js')
+    const { Board } = require('../nodots-backgammon-core/dist/Board/index.js')
     return Board.getAsciiGameBoard(
       game.board,
       game.players,
@@ -142,7 +229,10 @@ async function executeRobotTurn(gameId, currentGame, log) {
       // Get current possible moves
       const possibleMovesResponse = await apiCall(
         'GET',
-        `/games/${gameId}/possible-moves`
+        `/games/${gameId}/possible-moves`,
+        null,
+        3,
+        gameId
       )
 
       if (
@@ -160,7 +250,13 @@ async function executeRobotTurn(gameId, currentGame, log) {
 
           // WORKAROUND: Since there's no end-turn endpoint, we'll try to force a state transition
           try {
-            const currentGameState = await apiCall('GET', `/games/${gameId}`)
+            const currentGameState = await apiCall(
+              'GET',
+              `/games/${gameId}`,
+              null,
+              3,
+              gameId
+            )
             if (currentGameState.stateKind !== workingGame.stateKind) {
               log(
                 `✅ Game state changed externally: ${currentGameState.stateKind}`
@@ -231,9 +327,15 @@ async function executeRobotTurn(gameId, currentGame, log) {
       log(`   Checker color: ${correctChecker.color}`)
 
       // Execute the move with the correct checker
-      const moveResponse = await apiCall('POST', `/games/${gameId}/move`, {
-        checkerId: correctChecker.id,
-      })
+      const moveResponse = await apiCall(
+        'POST',
+        `/games/${gameId}/move`,
+        {
+          checkerId: correctChecker.id,
+        },
+        3,
+        gameId
+      )
 
       // Handle move response
       if (moveResponse.possibleMoves && moveResponse.possibleMoves.length > 0) {
@@ -400,7 +502,10 @@ async function simulateCompleteGame() {
             log('   Action: Rolling for start...')
             currentGame = await apiCall(
               'POST',
-              `/games/${gameId}/roll-for-start`
+              `/games/${gameId}/roll-for-start`,
+              null,
+              3,
+              gameId
             )
             log(`   Result: ${currentGame.stateKind}`)
 
@@ -413,7 +518,13 @@ async function simulateCompleteGame() {
 
           case 'rolled-for-start':
             log('   Action: Rolling dice to begin...')
-            currentGame = await apiCall('POST', `/games/${gameId}/roll`)
+            currentGame = await apiCall(
+              'POST',
+              `/games/${gameId}/roll`,
+              null,
+              3,
+              gameId
+            )
             log(`   Result: ${currentGame.stateKind}`)
 
             const activePlayer = currentGame.players.find(
@@ -434,7 +545,13 @@ async function simulateCompleteGame() {
 
           case 'rolling':
             log('   Action: Rolling dice...')
-            currentGame = await apiCall('POST', `/games/${gameId}/roll`)
+            currentGame = await apiCall(
+              'POST',
+              `/games/${gameId}/roll`,
+              null,
+              3,
+              gameId
+            )
             log(`   Result: ${currentGame.stateKind}`)
 
             const rollingPlayer = currentGame.players.find(

@@ -11,6 +11,15 @@ Reference: https://www.bkgm.com/rules.html
 - **Clockwise positions**: 1, 2, 3... 24 (clockwise player's perspective)
 - **Counterclockwise positions**: 1, 2, 3... 24 (counterclockwise player's perspective)
 
+## The Golden Rule
+
+Always calculate CheckerContainer (Point, Bar, Off) positions using this approach:
+
+- Always get a point position using game.board.points.filter(p => p.position[activePlayer.direction])
+- Always get a bar position using game.board.bar[activePlayer.direction]
+- Always get an off positing using game.board.off[activePlayer.direction]
+- Carefully review the checkercontainer class from types
+
 ### Starting Positions
 
 - **Clockwise player** starts with checkers on clockwise positions: 24, 13, 8, 6

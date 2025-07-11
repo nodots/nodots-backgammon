@@ -36,6 +36,9 @@ Thumbs.db
 *.log
 logs/
 
+# Simulation reports and output
+simulation-reports/
+
 # Temporary files
 tmp/
 temp/

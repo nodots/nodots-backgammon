@@ -243,6 +243,24 @@ X-RateLimit-Reset: 1641024000
 - Track performance degradation
 - Implement automated responses
 
+## Server Management
+
+### API Server Lifecycle
+
+- **CRITICAL**: Never manually restart the API server in nodots-backgammon-api
+- The server runs with nodemon and automatically restarts when code changes are detected
+- Do not use `kill-all-ports`, `start:dev:ssl`, or any manual restart commands
+- The server will restart itself and show in the logs when it's ready
+- Any attempt to manually restart causes port conflicts and crashes
+- Let the automated restart process handle server lifecycle management
+
+### Development Workflow
+
+- Make code changes and save files
+- Wait for nodemon to detect changes and restart automatically
+- Check logs for confirmation that server is ready
+- Only intervene if server fails to start (check logs for actual errors)
+
 ## Security Considerations
 
 ### Input Security

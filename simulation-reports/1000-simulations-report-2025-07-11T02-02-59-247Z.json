@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "totalGames": 1000,
+    "completedGames": 895,
+    "failedGames": 14481,
+    "timeoutGames": 52,
+    "totalDuration": 8206,
+    "avgGameDuration": 8.2
+  },
+  "winStatistics": {
+    "gnuWins": 606,
+    "nodotsWins": 289,
+    "gnuWinRate": 0.6770949720670391,
+    "nodotsWinRate": 0.3229050279329609
+  },
+  "gameMetrics": {
+    "totalTurns": 48421,
+    "totalMoves": 110568,
+    "avgTurnsPerGame": 54.101675977653635,
+    "avgMovesPerGame": 123.53966480446927,
+    "shortestGame": {
+      "gameNumber": 669,
+      "gameId": "b3301e69-7b96-4dbe-9e3b-48887708470a",
+      "winner": "NODOTS",
+      "turnCount": 20,
+      "gnuMoves": 38,
+      "nodotsMoves": 39,
+      "duration": 5,
+      "status": "completed",
+      "failureReason": null,
+      "failureTurn": null
+    },
+    "longestGame": {
+      "gameNumber": 21,
+      "gameId": "55317728-f73b-4832-bb83-ef284cde072b",
+      "winner": "GNU",
+      "turnCount": 50,
+      "gnuMoves": 78,
+      "nodotsMoves": 68,
+      "duration": 6,
+      "status": "completed",
+      "failureReason": null,
+      "failureTurn": null
+    },
+    "fastestGame": {
+      "gameNumber": 46,
+      "gameId": "a218ec7d-a7d4-4c68-8c71-90a3aa81c26f",
+      "winner": "GNU",
+      "turnCount": 31,
+      "gnuMoves": 51,
+      "nodotsMoves": 45,
+      "duration": 3,
+      "status": "completed",
+      "failureReason": null,
+      "failureTurn": null
+    },
+    "slowestGame": {
+      "gameNumber": 1,
+      "gameId": "096c5e58-9c3f-4bd7-aae5-3f4f2dff62ee",
+      "winner": "GNU",
+      "turnCount": 35,
+      "gnuMoves": 57,
+      "nodotsMoves": 57,
+      "duration": 190,
+      "status": "completed",
+      "failureReason": null,
+      "failureTurn": null
+    }
+  },
+  "reliability": {
+    "successRate": 0.895,
+    "failureRate": 14.481,
+    "timeoutRate": 0.052,
+    "avgFailureTurn": 162.2246391823769
+  },
+  "failureAnalysis": {
+    "staleMovesCount": 0,
+    "timeoutCount": 52,
+    "exceptionCount": 0,
+    "otherFailuresCount": 14481
+  }
+}

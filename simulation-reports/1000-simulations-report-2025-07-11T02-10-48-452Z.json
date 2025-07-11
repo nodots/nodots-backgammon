@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "totalGames": 1000,
+    "completedGames": 1000,
+    "failedGames": 0,
+    "timeoutGames": 0,
+    "totalDuration": 10892,
+    "avgGameDuration": 10.884
+  },
+  "winStatistics": {
+    "gnuWins": 640,
+    "nodotsWins": 360,
+    "gnuWinRate": 0.64,
+    "nodotsWinRate": 0.36
+  },
+  "gameMetrics": {
+    "totalTurns": 35137,
+    "totalMoves": 114347,
+    "avgTurnsPerGame": 35.137,
+    "avgMovesPerGame": 114.347,
+    "shortestGame": {
+      "gameNumber": 637,
+      "gameId": "64e28812-fea8-4071-ab72-96f9e833c451",
+      "winner": "GNU",
+      "turnCount": 21,
+      "gnuMoves": 41,
+      "nodotsMoves": 27,
+      "duration": 5,
+      "status": "completed",
+      "failureReason": null,
+      "failureTurn": null
+    },
+    "longestGame": {
+      "gameNumber": 401,
+      "gameId": "121fc31a-a01e-4f67-9a1f-6c2c4e91ada0",
+      "winner": "GNU",
+      "turnCount": 50,
+      "gnuMoves": 78,
+      "nodotsMoves": 72,
+      "duration": 13,
+      "status": "completed",
+      "failureReason": null,
+      "failureTurn": null
+    },
+    "fastestGame": {
+      "gameNumber": 637,
+      "gameId": "64e28812-fea8-4071-ab72-96f9e833c451",
+      "winner": "GNU",
+      "turnCount": 21,
+      "gnuMoves": 41,
+      "nodotsMoves": 27,
+      "duration": 5,
+      "status": "completed",
+      "failureReason": null,
+      "failureTurn": null
+    },
+    "slowestGame": {
+      "gameNumber": 200,
+      "gameId": "24eb2e96-bab9-4bec-a6f9-d9b1537147bf",
+      "winner": "GNU",
+      "turnCount": 38,
+      "gnuMoves": 67,
+      "nodotsMoves": 56,
+      "duration": 82,
+      "status": "completed",
+      "failureReason": null,
+      "failureTurn": null
+    }
+  },
+  "reliability": {
+    "successRate": 1,
+    "failureRate": 0,
+    "timeoutRate": 0,
+    "avgFailureTurn": 0
+  },
+  "failureAnalysis": {
+    "staleMovesCount": 0,
+    "timeoutCount": 0,
+    "exceptionCount": 0,
+    "otherFailuresCount": 0
+  }
+}
