@@ -17,10 +17,10 @@ All git repositories in the Nodots Backgammon workspace are now on the `developm
 | **packages/dice** | `development` | ✅ |
 | **packages/marketing** | `development` | ✅ |
 
-### Packages Without Separate Git Repos
-These packages are part of the main workspace and follow the root repository branch:
-
-- **packages/api-utils** - Shared API utilities (workspace-managed)
+### Packages With Independent Git Repos
+| Repository | Branch | Status |
+|------------|--------|---------| 
+| **packages/api-utils** | `development` | ✅ |
 
 ## Branch Migration Summary
 

@@ -7,11 +7,19 @@
     "packages/*"
   ],
   "scripts": {
+    "kill-all": "pkill -f 'nodemon|vite|ts-node.*src/index' 2>/dev/null || true && lsof -ti:3000,5437 | xargs kill -9 2>/dev/null || true",
+    "start": "npm run kill-all && concurrently \"npm run start:api\" \"npm run start:client\"",
+    "start:api": "npm run start --workspace=packages/api",
+    "start:client": "npm run start --workspace=packages/client",
+    "start:api-only": "npm run start --workspace=packages/api",
+    "start:client-only": "npm run start --workspace=packages/client",
+    "start:simple": "echo 'Starting API and CLIENT servers separately...' && npm run start:api-only &",
+    
     "build": "npm run build --workspaces",
     "test": "npm run test --workspaces",
     "lint": "npm run lint --workspaces",
     "clean": "npm run clean --workspaces",
-    "dev": "npm run dev --workspaces",
+    "dev": "npm run start",
     "install:all": "npm install --workspaces",
     
     "test:types": "npm run test --workspace=packages/types",
