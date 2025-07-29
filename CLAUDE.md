@@ -107,9 +107,18 @@ Critical functions that handle state transitions:
 
 1. **Rolling Phase**: Player clicks dice → `api.Game.rollDice(player)` → State: 'rolling' → 'rolled'
 
-2. **Move Generation**: In 'rolled' state, Play module creates `activePlay` object containing all possible legal move sequences
+2. **Move Generation**: In 'rolled' state, API/CORE creates `activePlay` object containing:
+   - `activePlay.moves` array with skeletons for all moves allowed by dice roll (2 or 4 moves)
+   - Each `move` in `moves` array has `possibleMoves` array pre-populated
+   - Each `possibleMove` has:
+     - `origin`: Point or Bar location (not individual checker ID)
+     - `destination`: Target Point, Bar, or Off location  
+     - `dieValue`: Die value used for this move
 
-3. **Move Selection**: Player clicks checker → Client validates origin against `game.activePlay.moves` → If valid, calls API to make move → State: 'rolled' → 'moving'
+3. **Move Selection**: 
+   - Player clicks checker → Client finds checker's current Point/Bar location
+   - Client matches location to `origin` in `activePlay.moves[n].possibleMoves`
+   - Client sends `checkerId` to API → State: 'rolled' → 'moving'
 
 4. **Move Completion**: After all moves completed → State: 'moving' → 'moved' → Player clicks dice to confirm turn end
 
@@ -118,12 +127,15 @@ Critical functions that handle state transitions:
    - Double in progress → 'doubled' state  
    - Normal turn end → 'rolling' state for next player
 
-### Critical State Validation
+### Critical Move Validation Architecture
 
-- Only valid actions are possible at each state
-- Move validation uses correct positional perspective for each player
-- `activePlay` object bridges 'rolled' to 'moving' by defining legal actions
-- State transitions maintain game integrity
+- `activePlay.moves[n].possibleMoves` contains ALL legal moves pre-calculated by CORE
+- Each `possibleMove.origin` corresponds to a Point or Bar location, NOT individual checkers
+- When user clicks checker, client must:
+  1. Determine checker's current Point/Bar location
+  2. Find matching `possibleMove` where `origin` equals that location
+  3. Execute the pre-calculated legal move instantly
+- This architecture enables instant client-side move validation and execution
 
 ## Branch Management
 
@@ -315,6 +327,13 @@ GET /api/v1/game/123
 - **Integration Tests**: Test component interactions
 - **End-to-End Tests**: Test complete user workflows
 - **Performance Tests**: Ensure response times meet requirements
+
+### E2E Testing Browser Configuration
+
+- **REQUIRED**: E2E tests should only run on Chromium for faster development cycles
+- **Playwright Configuration**: Disable Firefox and WebKit projects in playwright.config.ts
+- **Rationale**: Cross-browser testing adds significant time without proportional value during active development
+- **CI/CD**: Can be re-enabled for full browser testing in production deployment pipelines
 
 ### Test Coverage
 
