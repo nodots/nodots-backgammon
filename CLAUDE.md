@@ -278,19 +278,22 @@ GET /api/v1/game/123
 
 ### API Server Management
 
-**CRITICAL**: Never manually restart the API server in nodots-backgammon-api
-- The server runs with nodemon and automatically restarts when code changes are detected
+**CRITICAL**: Never manually restart development servers - let them restart themselves
+- The API server runs with nodemon and automatically restarts when code changes are detected
+- The client dev server also auto-restarts on changes
 - Do not use `kill-all-ports`, `start:dev:ssl`, or any manual restart commands
-- The server will restart itself and show in the logs when it's ready
+- Servers will restart themselves and show in the logs when ready
 - Any attempt to manually restart causes port conflicts and crashes
 - Let the automated restart process handle server lifecycle management
+- **IMPORTANT**: Keep server logs running continuously for real-time monitoring and debugging
 
 ### Development Workflow
 
 - Make code changes and save files
-- Wait for nodemon to detect changes and restart automatically
-- Check logs for confirmation that server is ready
-- Only intervene if server fails to start (check logs for actual errors)
+- Wait for nodemon/dev servers to detect changes and restart automatically
+- Monitor the continuous log output for confirmation that servers are ready
+- Keep log terminals visible at all times for immediate feedback
+- Only intervene if servers fail to start (check logs for actual errors)
 
 ## Git Workflow
 
