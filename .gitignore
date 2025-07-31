@@ -59,8 +59,4 @@ packages/client/.amplify/
 debug-*.js
 test-*.js
 core/
-.claude/
 
-# Documentation drafts
-docs/backgammon-rules-analysis.md
-docs/functional-programming-violations-report.md 
