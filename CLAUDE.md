@@ -192,6 +192,7 @@ interface GameState {
 - Use pure functions when possible
 - Avoid side effects in business logic
 - Use functional composition over inheritance
+- **CRUCIAL**: Always use switch over if/else. If is a code smell in Functional Programming and the existing Claude rules make it clear that our paradigm is FP.
 
 ### Error Handling
 
@@ -507,3 +508,9 @@ This project uses a monorepo structure with the following packages:
 - **packages/cli**: Command-line interface tools
 
 Each package inherits these shared rules but may have additional package-specific guidelines in their respective `.cursor/rules.md` files.
+
+## Type System and State Management
+
+### State Handling Critical Rule
+
+- **CRITICAL**: Always make switch statements on state exhaustive for the state. The type system for this project is very thorough and will save your ass.
