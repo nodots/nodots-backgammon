@@ -36,6 +36,10 @@ Thumbs.db
 *.log
 logs/
 
+# Simulation reports and output (now in scripts/)
+scripts/simulation-reports/
+scripts/game-logs/
+
 # Temporary files
 tmp/
 temp/
@@ -44,25 +48,15 @@ temp/
 package-lock.json
 yarn.lock
 
-# Marketing site specific
-nodots-backgammon-marketing/dist/
-nodots-backgammon-marketing/.netlify/
+# Package-specific outputs (workspace structure)
+packages/*/dist/
+packages/*/lib/
+packages/*/build/
+packages/marketing/.netlify/
+packages/client/.amplify/
 
-# Core library specific
-nodots-backgammon-core/lib/
-nodots-backgammon-core/dist/
+# Debug and test files in root
+debug-*.js
+test-*.js
+core/
 
-# Client specific
-nodots-backgammon-client/build/
-nodots-backgammon-client/.amplify/
-
-# API specific
-nodots-backgammon-api/dist/
-
-# Types specific
-nodots-backgammon-types/lib/
-nodots-backgammon-types/dist/
-
-# AI specific
-nodots-backgammon-ai/lib/
-nodots-backgammon-ai/dist/ 

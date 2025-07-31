@@ -1,0 +1,4791 @@
+[05:11:23] 🎮 ENHANCED ROBOT BACKGAMMON SIMULATION
+[05:11:23] =====================================
+[05:11:23]    📋 Board states will be shown after every move
+[05:11:23]    🎯 Visual game progression included
+[05:11:23] =====================================
+[05:11:23] 🤖 Creating robot players...
+[05:11:23] ✅ Created robot players:
+[05:11:23]    Robot 1: bf682fe9-531a-49bd-85d1-b24d12be9efe (Robot 73b59f68)
+[05:11:23]    Robot 2: dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c (Robot 2375bde6)
+[05:11:23] 
+🎲 Creating new game...
+[05:11:23] ✅ Game created: ebdc1bbb-bf34-4e73-832c-a2348c3fa0f1
+[05:11:23]    Initial state: rolled-for-start
+[05:11:23]    Players: 2
+[05:11:23]    Player 1: white (clockwise) - Robot: true
+[05:11:23]    Player 2: black (counterclockwise) - Robot: true
+[05:11:23] 
+📋 INITIAL BOARD STATE
+[05:11:23] ═══════════════════════
+[05:11:23] Nodots Backgammon
+GNU Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X           O    |   | O                |
+ | X           O    |   | O              X |
+ | X           O    |   | O              X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: ROLLED-FOR-START
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE STATE: INACTIVE
+
+[05:11:23] ═══════════════════════
+[05:11:23] 
+🎯 STARTING ENHANCED GAME LOOP
+[05:11:23] =============================
+[05:11:23] 
+🎯 TURN 1
+[05:11:23]    Current state: rolled-for-start
+[05:11:23]    Active player: white
+[05:11:23]    Action: Rolling dice to begin...
+[05:11:24]    Result: moving
+[05:11:24]    Dice rolled: [4, 6]
+[05:11:24] 
+📋 BOARD AFTER FIRST ROLL
+[05:11:24] ═════════════════════════
+[05:11:24] Nodots Backgammon
+GNU Position ID: yGfwATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X           O    |   | O              X |
+ | X           O    |   | O     O        X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:24] ═════════════════════════
+[05:11:24] 
+🎯 TURN 2
+[05:11:24]    Current state: moving
+[05:11:24]    Active player: white
+[05:11:24]    Action: Executing robot moves...
+[05:11:24] 🤖 ROBOT TURN START
+[05:11:24]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:24]    Dice: [4, 6] 
+[05:11:24]    Expected moves: 2
+[05:11:24]    Initial state: moving
+[05:11:24] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:24] ═══════════════════════════
+[05:11:24] Nodots Backgammon
+GNU Position ID: yGfwATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X           O    |   | O              X |
+ | X           O    |   | O     O        X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:24] ═══════════════════════════
+[05:11:24] 
+🎯 MOVE 1 ATTEMPT
+[05:11:24]    Current game state: moving
+[05:11:24]    Active player: white
+[05:11:24] ✅ Found 3 possible moves
+[05:11:24]    Option 1: die 6, 8 → 2
+[05:11:24]    Option 2: die 6, 13 → 7
+[05:11:24]    Option 3: die 6, 24 → 18
+[05:11:24] 🎯 ROBOT SELECTS MOVE 1:
+[05:11:24]    Die: 6
+[05:11:24]    From: point 8
+[05:11:24]    To: point 2
+[05:11:24]    Checker ID: 903a5c69-61f8-4188-afb0-a384a54e6254
+[05:11:24]    Checker color: white
+[05:11:24] ✅ MOVE 1 COMPLETED SUCCESSFULLY
+[05:11:24]    New game state: moving
+[05:11:24]    Active player: white
+[05:11:24] 
+📋 BOARD AFTER MOVE 1
+[05:11:24] ════════════════════════════
+[05:11:24] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:24] ════════════════════════════
+[05:11:24] 
+🎯 MOVE 2 ATTEMPT
+[05:11:24]    Current game state: moving
+[05:11:24]    Active player: white
+[05:11:27] ❌ ERROR during move 2: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:27] 
+🤖 ROBOT TURN COMPLETE
+[05:11:27]    Moves completed: 1/2
+[05:11:27]    Final state: moving
+[05:11:27]    Duration: 3276ms
+[05:11:27]    Next player: white
+[05:11:27] 
+🎯 TURN 3
+[05:11:27]    Current state: moving
+[05:11:27]    Active player: white
+[05:11:27]    Action: Executing robot moves...
+[05:11:27] 🤖 ROBOT TURN START
+[05:11:27]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:27]    Dice: [4, 6] 
+[05:11:27]    Expected moves: 2
+[05:11:27]    Initial state: moving
+[05:11:27] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:27] ═══════════════════════════
+[05:11:27] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:27] ═══════════════════════════
+[05:11:27] 
+🎯 MOVE 1 ATTEMPT
+[05:11:27]    Current game state: moving
+[05:11:27]    Active player: white
+[05:11:30] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:30] 
+🤖 ROBOT TURN COMPLETE
+[05:11:30]    Moves completed: 0/2
+[05:11:30]    Final state: moving
+[05:11:30]    Duration: 3111ms
+[05:11:30]    Next player: white
+[05:11:31] 
+🎯 TURN 4
+[05:11:31]    Current state: moving
+[05:11:31]    Active player: white
+[05:11:31]    Action: Executing robot moves...
+[05:11:31] 🤖 ROBOT TURN START
+[05:11:31]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:31]    Dice: [4, 6] 
+[05:11:31]    Expected moves: 2
+[05:11:31]    Initial state: moving
+[05:11:31] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:31] ═══════════════════════════
+[05:11:31] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:31] ═══════════════════════════
+[05:11:31] 
+🎯 MOVE 1 ATTEMPT
+[05:11:31]    Current game state: moving
+[05:11:31]    Active player: white
+[05:11:34] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:34] 
+🤖 ROBOT TURN COMPLETE
+[05:11:34]    Moves completed: 0/2
+[05:11:34]    Final state: moving
+[05:11:34]    Duration: 3114ms
+[05:11:34]    Next player: white
+[05:11:34] 
+🎯 TURN 5
+[05:11:34]    Current state: moving
+[05:11:34]    Active player: white
+[05:11:34]    Action: Executing robot moves...
+[05:11:34] 🤖 ROBOT TURN START
+[05:11:34]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:34]    Dice: [4, 6] 
+[05:11:34]    Expected moves: 2
+[05:11:34]    Initial state: moving
+[05:11:34] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:34] ═══════════════════════════
+[05:11:34] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:34] ═══════════════════════════
+[05:11:34] 
+🎯 MOVE 1 ATTEMPT
+[05:11:34]    Current game state: moving
+[05:11:34]    Active player: white
+[05:11:37] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:37] 
+🤖 ROBOT TURN COMPLETE
+[05:11:37]    Moves completed: 0/2
+[05:11:37]    Final state: moving
+[05:11:37]    Duration: 3123ms
+[05:11:37]    Next player: white
+[05:11:37] 
+🎯 TURN 6
+[05:11:37]    Current state: moving
+[05:11:37]    Active player: white
+[05:11:37]    Action: Executing robot moves...
+[05:11:37] 🤖 ROBOT TURN START
+[05:11:37]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:37]    Dice: [4, 6] 
+[05:11:37]    Expected moves: 2
+[05:11:37]    Initial state: moving
+[05:11:37] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:37] ═══════════════════════════
+[05:11:37] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:37] ═══════════════════════════
+[05:11:37] 
+🎯 MOVE 1 ATTEMPT
+[05:11:37]    Current game state: moving
+[05:11:37]    Active player: white
+[05:11:40] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:40] 
+🤖 ROBOT TURN COMPLETE
+[05:11:40]    Moves completed: 0/2
+[05:11:40]    Final state: moving
+[05:11:40]    Duration: 3115ms
+[05:11:40]    Next player: white
+[05:11:40] 
+🎯 TURN 7
+[05:11:40]    Current state: moving
+[05:11:40]    Active player: white
+[05:11:40]    Action: Executing robot moves...
+[05:11:40] 🤖 ROBOT TURN START
+[05:11:40]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:40]    Dice: [4, 6] 
+[05:11:40]    Expected moves: 2
+[05:11:40]    Initial state: moving
+[05:11:40] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:40] ═══════════════════════════
+[05:11:40] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:40] ═══════════════════════════
+[05:11:40] 
+🎯 MOVE 1 ATTEMPT
+[05:11:40]    Current game state: moving
+[05:11:40]    Active player: white
+[05:11:44] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:44] 
+🤖 ROBOT TURN COMPLETE
+[05:11:44]    Moves completed: 0/2
+[05:11:44]    Final state: moving
+[05:11:44]    Duration: 3112ms
+[05:11:44]    Next player: white
+[05:11:44] 
+🎯 TURN 8
+[05:11:44]    Current state: moving
+[05:11:44]    Active player: white
+[05:11:44]    Action: Executing robot moves...
+[05:11:44] 🤖 ROBOT TURN START
+[05:11:44]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:44]    Dice: [4, 6] 
+[05:11:44]    Expected moves: 2
+[05:11:44]    Initial state: moving
+[05:11:44] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:44] ═══════════════════════════
+[05:11:44] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:44] ═══════════════════════════
+[05:11:44] 
+🎯 MOVE 1 ATTEMPT
+[05:11:44]    Current game state: moving
+[05:11:44]    Active player: white
+[05:11:47] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:47] 
+🤖 ROBOT TURN COMPLETE
+[05:11:47]    Moves completed: 0/2
+[05:11:47]    Final state: moving
+[05:11:47]    Duration: 3115ms
+[05:11:47]    Next player: white
+[05:11:47] 
+🎯 TURN 9
+[05:11:47]    Current state: moving
+[05:11:47]    Active player: white
+[05:11:47]    Action: Executing robot moves...
+[05:11:47] 🤖 ROBOT TURN START
+[05:11:47]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:47]    Dice: [4, 6] 
+[05:11:47]    Expected moves: 2
+[05:11:47]    Initial state: moving
+[05:11:47] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:47] ═══════════════════════════
+[05:11:47] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:47] ═══════════════════════════
+[05:11:47] 
+🎯 MOVE 1 ATTEMPT
+[05:11:47]    Current game state: moving
+[05:11:47]    Active player: white
+[05:11:50] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:50] 
+🤖 ROBOT TURN COMPLETE
+[05:11:50]    Moves completed: 0/2
+[05:11:50]    Final state: moving
+[05:11:50]    Duration: 3117ms
+[05:11:50]    Next player: white
+[05:11:50] 
+🎯 TURN 10
+[05:11:50]    Current state: moving
+[05:11:50]    Active player: white
+[05:11:50]    Action: Executing robot moves...
+[05:11:50] 🤖 ROBOT TURN START
+[05:11:50]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:50]    Dice: [4, 6] 
+[05:11:50]    Expected moves: 2
+[05:11:50]    Initial state: moving
+[05:11:50] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:50] ═══════════════════════════
+[05:11:50] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:50] ═══════════════════════════
+[05:11:50] 
+🎯 MOVE 1 ATTEMPT
+[05:11:50]    Current game state: moving
+[05:11:50]    Active player: white
+[05:11:54] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:54] 
+🤖 ROBOT TURN COMPLETE
+[05:11:54]    Moves completed: 0/2
+[05:11:54]    Final state: moving
+[05:11:54]    Duration: 3113ms
+[05:11:54]    Next player: white
+[05:11:54] 
+🎯 TURN 11
+[05:11:54]    Current state: moving
+[05:11:54]    Active player: white
+[05:11:54]    Action: Executing robot moves...
+[05:11:54] 🤖 ROBOT TURN START
+[05:11:54]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:54]    Dice: [4, 6] 
+[05:11:54]    Expected moves: 2
+[05:11:54]    Initial state: moving
+[05:11:54] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:54] ═══════════════════════════
+[05:11:54] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:54] ═══════════════════════════
+[05:11:54] 
+🎯 MOVE 1 ATTEMPT
+[05:11:54]    Current game state: moving
+[05:11:54]    Active player: white
+[05:11:57] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:11:57] 
+🤖 ROBOT TURN COMPLETE
+[05:11:57]    Moves completed: 0/2
+[05:11:57]    Final state: moving
+[05:11:57]    Duration: 3114ms
+[05:11:57]    Next player: white
+[05:11:57] 
+🎯 TURN 12
+[05:11:57]    Current state: moving
+[05:11:57]    Active player: white
+[05:11:57]    Action: Executing robot moves...
+[05:11:57] 🤖 ROBOT TURN START
+[05:11:57]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:11:57]    Dice: [4, 6] 
+[05:11:57]    Expected moves: 2
+[05:11:57]    Initial state: moving
+[05:11:57] 
+📋 BOARD BEFORE ROBOT TURN
+[05:11:57] ═══════════════════════════
+[05:11:57] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:11:57] ═══════════════════════════
+[05:11:57] 
+🎯 MOVE 1 ATTEMPT
+[05:11:57]    Current game state: moving
+[05:11:57]    Active player: white
+[05:12:00] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:00] 
+🤖 ROBOT TURN COMPLETE
+[05:12:00]    Moves completed: 0/2
+[05:12:00]    Final state: moving
+[05:12:00]    Duration: 3117ms
+[05:12:00]    Next player: white
+[05:12:00] 
+🎯 TURN 13
+[05:12:00]    Current state: moving
+[05:12:00]    Active player: white
+[05:12:00]    Action: Executing robot moves...
+[05:12:00] 🤖 ROBOT TURN START
+[05:12:00]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:00]    Dice: [4, 6] 
+[05:12:00]    Expected moves: 2
+[05:12:00]    Initial state: moving
+[05:12:00] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:00] ═══════════════════════════
+[05:12:00] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:00] ═══════════════════════════
+[05:12:00] 
+🎯 MOVE 1 ATTEMPT
+[05:12:00]    Current game state: moving
+[05:12:00]    Active player: white
+[05:12:03] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:03] 
+🤖 ROBOT TURN COMPLETE
+[05:12:03]    Moves completed: 0/2
+[05:12:03]    Final state: moving
+[05:12:03]    Duration: 3115ms
+[05:12:03]    Next player: white
+[05:12:04] 
+🎯 TURN 14
+[05:12:04]    Current state: moving
+[05:12:04]    Active player: white
+[05:12:04]    Action: Executing robot moves...
+[05:12:04] 🤖 ROBOT TURN START
+[05:12:04]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:04]    Dice: [4, 6] 
+[05:12:04]    Expected moves: 2
+[05:12:04]    Initial state: moving
+[05:12:04] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:04] ═══════════════════════════
+[05:12:04] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:04] ═══════════════════════════
+[05:12:04] 
+🎯 MOVE 1 ATTEMPT
+[05:12:04]    Current game state: moving
+[05:12:04]    Active player: white
+[05:12:07] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:07] 
+🤖 ROBOT TURN COMPLETE
+[05:12:07]    Moves completed: 0/2
+[05:12:07]    Final state: moving
+[05:12:07]    Duration: 3114ms
+[05:12:07]    Next player: white
+[05:12:07] 
+🎯 TURN 15
+[05:12:07]    Current state: moving
+[05:12:07]    Active player: white
+[05:12:07]    Action: Executing robot moves...
+[05:12:07] 🤖 ROBOT TURN START
+[05:12:07]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:07]    Dice: [4, 6] 
+[05:12:07]    Expected moves: 2
+[05:12:07]    Initial state: moving
+[05:12:07] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:07] ═══════════════════════════
+[05:12:07] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:07] ═══════════════════════════
+[05:12:07] 
+🎯 MOVE 1 ATTEMPT
+[05:12:07]    Current game state: moving
+[05:12:07]    Active player: white
+[05:12:10] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:10] 
+🤖 ROBOT TURN COMPLETE
+[05:12:10]    Moves completed: 0/2
+[05:12:10]    Final state: moving
+[05:12:10]    Duration: 3106ms
+[05:12:10]    Next player: white
+[05:12:10] 
+🎯 TURN 16
+[05:12:10]    Current state: moving
+[05:12:10]    Active player: white
+[05:12:10]    Action: Executing robot moves...
+[05:12:10] 🤖 ROBOT TURN START
+[05:12:10]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:10]    Dice: [4, 6] 
+[05:12:10]    Expected moves: 2
+[05:12:10]    Initial state: moving
+[05:12:10] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:10] ═══════════════════════════
+[05:12:10] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:10] ═══════════════════════════
+[05:12:10] 
+🎯 MOVE 1 ATTEMPT
+[05:12:10]    Current game state: moving
+[05:12:10]    Active player: white
+[05:12:13] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:13] 
+🤖 ROBOT TURN COMPLETE
+[05:12:13]    Moves completed: 0/2
+[05:12:13]    Final state: moving
+[05:12:13]    Duration: 3117ms
+[05:12:13]    Next player: white
+[05:12:14] 
+🎯 TURN 17
+[05:12:14]    Current state: moving
+[05:12:14]    Active player: white
+[05:12:14]    Action: Executing robot moves...
+[05:12:14] 🤖 ROBOT TURN START
+[05:12:14]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:14]    Dice: [4, 6] 
+[05:12:14]    Expected moves: 2
+[05:12:14]    Initial state: moving
+[05:12:14] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:14] ═══════════════════════════
+[05:12:14] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:14] ═══════════════════════════
+[05:12:14] 
+🎯 MOVE 1 ATTEMPT
+[05:12:14]    Current game state: moving
+[05:12:14]    Active player: white
+[05:12:17] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:17] 
+🤖 ROBOT TURN COMPLETE
+[05:12:17]    Moves completed: 0/2
+[05:12:17]    Final state: moving
+[05:12:17]    Duration: 3114ms
+[05:12:17]    Next player: white
+[05:12:17] 
+🎯 TURN 18
+[05:12:17]    Current state: moving
+[05:12:17]    Active player: white
+[05:12:17]    Action: Executing robot moves...
+[05:12:17] 🤖 ROBOT TURN START
+[05:12:17]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:17]    Dice: [4, 6] 
+[05:12:17]    Expected moves: 2
+[05:12:17]    Initial state: moving
+[05:12:17] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:17] ═══════════════════════════
+[05:12:17] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:17] ═══════════════════════════
+[05:12:17] 
+🎯 MOVE 1 ATTEMPT
+[05:12:17]    Current game state: moving
+[05:12:17]    Active player: white
+[05:12:20] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:20] 
+🤖 ROBOT TURN COMPLETE
+[05:12:20]    Moves completed: 0/2
+[05:12:20]    Final state: moving
+[05:12:20]    Duration: 3117ms
+[05:12:20]    Next player: white
+[05:12:20] 
+🎯 TURN 19
+[05:12:20]    Current state: moving
+[05:12:20]    Active player: white
+[05:12:20]    Action: Executing robot moves...
+[05:12:20] 🤖 ROBOT TURN START
+[05:12:20]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:20]    Dice: [4, 6] 
+[05:12:20]    Expected moves: 2
+[05:12:20]    Initial state: moving
+[05:12:20] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:20] ═══════════════════════════
+[05:12:20] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:20] ═══════════════════════════
+[05:12:20] 
+🎯 MOVE 1 ATTEMPT
+[05:12:20]    Current game state: moving
+[05:12:20]    Active player: white
+[05:12:23] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:23] 
+🤖 ROBOT TURN COMPLETE
+[05:12:23]    Moves completed: 0/2
+[05:12:23]    Final state: moving
+[05:12:23]    Duration: 3115ms
+[05:12:23]    Next player: white
+[05:12:24] 
+🎯 TURN 20
+[05:12:24]    Current state: moving
+[05:12:24]    Active player: white
+[05:12:24]    Action: Executing robot moves...
+[05:12:24] 🤖 ROBOT TURN START
+[05:12:24]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:24]    Dice: [4, 6] 
+[05:12:24]    Expected moves: 2
+[05:12:24]    Initial state: moving
+[05:12:24] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:24] ═══════════════════════════
+[05:12:24] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:24] ═══════════════════════════
+[05:12:24] 
+🎯 MOVE 1 ATTEMPT
+[05:12:24]    Current game state: moving
+[05:12:24]    Active player: white
+[05:12:27] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:27] 
+🤖 ROBOT TURN COMPLETE
+[05:12:27]    Moves completed: 0/2
+[05:12:27]    Final state: moving
+[05:12:27]    Duration: 3113ms
+[05:12:27]    Next player: white
+[05:12:27] 
+🎯 TURN 21
+[05:12:27]    Current state: moving
+[05:12:27]    Active player: white
+[05:12:27]    Action: Executing robot moves...
+[05:12:27] 🤖 ROBOT TURN START
+[05:12:27]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:27]    Dice: [4, 6] 
+[05:12:27]    Expected moves: 2
+[05:12:27]    Initial state: moving
+[05:12:27] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:27] ═══════════════════════════
+[05:12:27] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:27] ═══════════════════════════
+[05:12:27] 
+🎯 MOVE 1 ATTEMPT
+[05:12:27]    Current game state: moving
+[05:12:27]    Active player: white
+[05:12:30] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:30] 
+🤖 ROBOT TURN COMPLETE
+[05:12:30]    Moves completed: 0/2
+[05:12:30]    Final state: moving
+[05:12:30]    Duration: 3117ms
+[05:12:30]    Next player: white
+[05:12:30] 
+🎯 TURN 22
+[05:12:30]    Current state: moving
+[05:12:30]    Active player: white
+[05:12:30]    Action: Executing robot moves...
+[05:12:30] 🤖 ROBOT TURN START
+[05:12:30]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:30]    Dice: [4, 6] 
+[05:12:30]    Expected moves: 2
+[05:12:30]    Initial state: moving
+[05:12:30] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:30] ═══════════════════════════
+[05:12:30] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:30] ═══════════════════════════
+[05:12:30] 
+🎯 MOVE 1 ATTEMPT
+[05:12:30]    Current game state: moving
+[05:12:30]    Active player: white
+[05:12:33] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:33] 
+🤖 ROBOT TURN COMPLETE
+[05:12:33]    Moves completed: 0/2
+[05:12:33]    Final state: moving
+[05:12:33]    Duration: 3113ms
+[05:12:33]    Next player: white
+[05:12:34] 
+🎯 TURN 23
+[05:12:34]    Current state: moving
+[05:12:34]    Active player: white
+[05:12:34]    Action: Executing robot moves...
+[05:12:34] 🤖 ROBOT TURN START
+[05:12:34]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:34]    Dice: [4, 6] 
+[05:12:34]    Expected moves: 2
+[05:12:34]    Initial state: moving
+[05:12:34] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:34] ═══════════════════════════
+[05:12:34] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:34] ═══════════════════════════
+[05:12:34] 
+🎯 MOVE 1 ATTEMPT
+[05:12:34]    Current game state: moving
+[05:12:34]    Active player: white
+[05:12:37] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:37] 
+🤖 ROBOT TURN COMPLETE
+[05:12:37]    Moves completed: 0/2
+[05:12:37]    Final state: moving
+[05:12:37]    Duration: 3121ms
+[05:12:37]    Next player: white
+[05:12:37] 
+🎯 TURN 24
+[05:12:37]    Current state: moving
+[05:12:37]    Active player: white
+[05:12:37]    Action: Executing robot moves...
+[05:12:37] 🤖 ROBOT TURN START
+[05:12:37]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:37]    Dice: [4, 6] 
+[05:12:37]    Expected moves: 2
+[05:12:37]    Initial state: moving
+[05:12:37] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:37] ═══════════════════════════
+[05:12:37] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:37] ═══════════════════════════
+[05:12:37] 
+🎯 MOVE 1 ATTEMPT
+[05:12:37]    Current game state: moving
+[05:12:37]    Active player: white
+[05:12:40] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:40] 
+🤖 ROBOT TURN COMPLETE
+[05:12:40]    Moves completed: 0/2
+[05:12:40]    Final state: moving
+[05:12:40]    Duration: 3119ms
+[05:12:40]    Next player: white
+[05:12:40] 
+🎯 TURN 25
+[05:12:40]    Current state: moving
+[05:12:40]    Active player: white
+[05:12:40]    Action: Executing robot moves...
+[05:12:40] 🤖 ROBOT TURN START
+[05:12:40]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:40]    Dice: [4, 6] 
+[05:12:40]    Expected moves: 2
+[05:12:40]    Initial state: moving
+[05:12:40] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:40] ═══════════════════════════
+[05:12:40] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:40] ═══════════════════════════
+[05:12:40] 
+🎯 MOVE 1 ATTEMPT
+[05:12:40]    Current game state: moving
+[05:12:40]    Active player: white
+[05:12:43] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:43] 
+🤖 ROBOT TURN COMPLETE
+[05:12:43]    Moves completed: 0/2
+[05:12:43]    Final state: moving
+[05:12:43]    Duration: 3115ms
+[05:12:43]    Next player: white
+[05:12:43] 
+🎯 TURN 26
+[05:12:43]    Current state: moving
+[05:12:43]    Active player: white
+[05:12:43]    Action: Executing robot moves...
+[05:12:43] 🤖 ROBOT TURN START
+[05:12:43]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:43]    Dice: [4, 6] 
+[05:12:43]    Expected moves: 2
+[05:12:43]    Initial state: moving
+[05:12:43] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:43] ═══════════════════════════
+[05:12:43] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:43] ═══════════════════════════
+[05:12:43] 
+🎯 MOVE 1 ATTEMPT
+[05:12:43]    Current game state: moving
+[05:12:43]    Active player: white
+[05:12:47] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:47] 
+🤖 ROBOT TURN COMPLETE
+[05:12:47]    Moves completed: 0/2
+[05:12:47]    Final state: moving
+[05:12:47]    Duration: 3115ms
+[05:12:47]    Next player: white
+[05:12:47] 
+🎯 TURN 27
+[05:12:47]    Current state: moving
+[05:12:47]    Active player: white
+[05:12:47]    Action: Executing robot moves...
+[05:12:47] 🤖 ROBOT TURN START
+[05:12:47]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:47]    Dice: [4, 6] 
+[05:12:47]    Expected moves: 2
+[05:12:47]    Initial state: moving
+[05:12:47] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:47] ═══════════════════════════
+[05:12:47] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:47] ═══════════════════════════
+[05:12:47] 
+🎯 MOVE 1 ATTEMPT
+[05:12:47]    Current game state: moving
+[05:12:47]    Active player: white
+[05:12:50] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:50] 
+🤖 ROBOT TURN COMPLETE
+[05:12:50]    Moves completed: 0/2
+[05:12:50]    Final state: moving
+[05:12:50]    Duration: 3115ms
+[05:12:50]    Next player: white
+[05:12:50] 
+🎯 TURN 28
+[05:12:50]    Current state: moving
+[05:12:50]    Active player: white
+[05:12:50]    Action: Executing robot moves...
+[05:12:50] 🤖 ROBOT TURN START
+[05:12:50]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:50]    Dice: [4, 6] 
+[05:12:50]    Expected moves: 2
+[05:12:50]    Initial state: moving
+[05:12:50] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:50] ═══════════════════════════
+[05:12:50] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:50] ═══════════════════════════
+[05:12:50] 
+🎯 MOVE 1 ATTEMPT
+[05:12:50]    Current game state: moving
+[05:12:50]    Active player: white
+[05:12:53] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:53] 
+🤖 ROBOT TURN COMPLETE
+[05:12:53]    Moves completed: 0/2
+[05:12:53]    Final state: moving
+[05:12:53]    Duration: 3120ms
+[05:12:53]    Next player: white
+[05:12:53] 
+🎯 TURN 29
+[05:12:53]    Current state: moving
+[05:12:53]    Active player: white
+[05:12:53]    Action: Executing robot moves...
+[05:12:53] 🤖 ROBOT TURN START
+[05:12:53]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:53]    Dice: [4, 6] 
+[05:12:53]    Expected moves: 2
+[05:12:53]    Initial state: moving
+[05:12:53] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:53] ═══════════════════════════
+[05:12:53] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:53] ═══════════════════════════
+[05:12:53] 
+🎯 MOVE 1 ATTEMPT
+[05:12:53]    Current game state: moving
+[05:12:53]    Active player: white
+[05:12:57] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:12:57] 
+🤖 ROBOT TURN COMPLETE
+[05:12:57]    Moves completed: 0/2
+[05:12:57]    Final state: moving
+[05:12:57]    Duration: 3113ms
+[05:12:57]    Next player: white
+[05:12:57] 
+🎯 TURN 30
+[05:12:57]    Current state: moving
+[05:12:57]    Active player: white
+[05:12:57]    Action: Executing robot moves...
+[05:12:57] 🤖 ROBOT TURN START
+[05:12:57]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:12:57]    Dice: [4, 6] 
+[05:12:57]    Expected moves: 2
+[05:12:57]    Initial state: moving
+[05:12:57] 
+📋 BOARD BEFORE ROBOT TURN
+[05:12:57] ═══════════════════════════
+[05:12:57] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:12:57] ═══════════════════════════
+[05:12:57] 
+🎯 MOVE 1 ATTEMPT
+[05:12:57]    Current game state: moving
+[05:12:57]    Active player: white
+[05:13:00] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:00] 
+🤖 ROBOT TURN COMPLETE
+[05:13:00]    Moves completed: 0/2
+[05:13:00]    Final state: moving
+[05:13:00]    Duration: 3113ms
+[05:13:00]    Next player: white
+[05:13:00] 
+🎯 TURN 31
+[05:13:00]    Current state: moving
+[05:13:00]    Active player: white
+[05:13:00]    Action: Executing robot moves...
+[05:13:00] 🤖 ROBOT TURN START
+[05:13:00]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:00]    Dice: [4, 6] 
+[05:13:00]    Expected moves: 2
+[05:13:00]    Initial state: moving
+[05:13:00] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:00] ═══════════════════════════
+[05:13:00] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:00] ═══════════════════════════
+[05:13:00] 
+🎯 MOVE 1 ATTEMPT
+[05:13:00]    Current game state: moving
+[05:13:00]    Active player: white
+[05:13:03] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:03] 
+🤖 ROBOT TURN COMPLETE
+[05:13:03]    Moves completed: 0/2
+[05:13:03]    Final state: moving
+[05:13:03]    Duration: 3118ms
+[05:13:03]    Next player: white
+[05:13:03] 
+🎯 TURN 32
+[05:13:03]    Current state: moving
+[05:13:03]    Active player: white
+[05:13:03]    Action: Executing robot moves...
+[05:13:03] 🤖 ROBOT TURN START
+[05:13:03]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:03]    Dice: [4, 6] 
+[05:13:03]    Expected moves: 2
+[05:13:03]    Initial state: moving
+[05:13:03] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:03] ═══════════════════════════
+[05:13:03] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:03] ═══════════════════════════
+[05:13:03] 
+🎯 MOVE 1 ATTEMPT
+[05:13:03]    Current game state: moving
+[05:13:03]    Active player: white
+[05:13:07] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:07] 
+🤖 ROBOT TURN COMPLETE
+[05:13:07]    Moves completed: 0/2
+[05:13:07]    Final state: moving
+[05:13:07]    Duration: 3118ms
+[05:13:07]    Next player: white
+[05:13:07] 
+🎯 TURN 33
+[05:13:07]    Current state: moving
+[05:13:07]    Active player: white
+[05:13:07]    Action: Executing robot moves...
+[05:13:07] 🤖 ROBOT TURN START
+[05:13:07]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:07]    Dice: [4, 6] 
+[05:13:07]    Expected moves: 2
+[05:13:07]    Initial state: moving
+[05:13:07] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:07] ═══════════════════════════
+[05:13:07] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:07] ═══════════════════════════
+[05:13:07] 
+🎯 MOVE 1 ATTEMPT
+[05:13:07]    Current game state: moving
+[05:13:07]    Active player: white
+[05:13:10] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:10] 
+🤖 ROBOT TURN COMPLETE
+[05:13:10]    Moves completed: 0/2
+[05:13:10]    Final state: moving
+[05:13:10]    Duration: 3118ms
+[05:13:10]    Next player: white
+[05:13:10] 
+🎯 TURN 34
+[05:13:10]    Current state: moving
+[05:13:10]    Active player: white
+[05:13:10]    Action: Executing robot moves...
+[05:13:10] 🤖 ROBOT TURN START
+[05:13:10]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:10]    Dice: [4, 6] 
+[05:13:10]    Expected moves: 2
+[05:13:10]    Initial state: moving
+[05:13:10] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:10] ═══════════════════════════
+[05:13:10] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:10] ═══════════════════════════
+[05:13:10] 
+🎯 MOVE 1 ATTEMPT
+[05:13:10]    Current game state: moving
+[05:13:10]    Active player: white
+[05:13:13] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:13] 
+🤖 ROBOT TURN COMPLETE
+[05:13:13]    Moves completed: 0/2
+[05:13:13]    Final state: moving
+[05:13:13]    Duration: 3114ms
+[05:13:13]    Next player: white
+[05:13:13] 
+🎯 TURN 35
+[05:13:13]    Current state: moving
+[05:13:13]    Active player: white
+[05:13:13]    Action: Executing robot moves...
+[05:13:13] 🤖 ROBOT TURN START
+[05:13:13]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:13]    Dice: [4, 6] 
+[05:13:13]    Expected moves: 2
+[05:13:13]    Initial state: moving
+[05:13:13] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:13] ═══════════════════════════
+[05:13:13] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:13] ═══════════════════════════
+[05:13:13] 
+🎯 MOVE 1 ATTEMPT
+[05:13:13]    Current game state: moving
+[05:13:13]    Active player: white
+[05:13:16] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:16] 
+🤖 ROBOT TURN COMPLETE
+[05:13:16]    Moves completed: 0/2
+[05:13:16]    Final state: moving
+[05:13:16]    Duration: 3116ms
+[05:13:16]    Next player: white
+[05:13:17] 
+🎯 TURN 36
+[05:13:17]    Current state: moving
+[05:13:17]    Active player: white
+[05:13:17]    Action: Executing robot moves...
+[05:13:17] 🤖 ROBOT TURN START
+[05:13:17]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:17]    Dice: [4, 6] 
+[05:13:17]    Expected moves: 2
+[05:13:17]    Initial state: moving
+[05:13:17] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:17] ═══════════════════════════
+[05:13:17] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:17] ═══════════════════════════
+[05:13:17] 
+🎯 MOVE 1 ATTEMPT
+[05:13:17]    Current game state: moving
+[05:13:17]    Active player: white
+[05:13:20] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:20] 
+🤖 ROBOT TURN COMPLETE
+[05:13:20]    Moves completed: 0/2
+[05:13:20]    Final state: moving
+[05:13:20]    Duration: 3107ms
+[05:13:20]    Next player: white
+[05:13:20] 
+🎯 TURN 37
+[05:13:20]    Current state: moving
+[05:13:20]    Active player: white
+[05:13:20]    Action: Executing robot moves...
+[05:13:20] 🤖 ROBOT TURN START
+[05:13:20]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:20]    Dice: [4, 6] 
+[05:13:20]    Expected moves: 2
+[05:13:20]    Initial state: moving
+[05:13:20] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:20] ═══════════════════════════
+[05:13:20] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:20] ═══════════════════════════
+[05:13:20] 
+🎯 MOVE 1 ATTEMPT
+[05:13:20]    Current game state: moving
+[05:13:20]    Active player: white
+[05:13:23] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:23] 
+🤖 ROBOT TURN COMPLETE
+[05:13:23]    Moves completed: 0/2
+[05:13:23]    Final state: moving
+[05:13:23]    Duration: 3123ms
+[05:13:23]    Next player: white
+[05:13:23] 
+🎯 TURN 38
+[05:13:23]    Current state: moving
+[05:13:23]    Active player: white
+[05:13:23]    Action: Executing robot moves...
+[05:13:23] 🤖 ROBOT TURN START
+[05:13:23]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:23]    Dice: [4, 6] 
+[05:13:23]    Expected moves: 2
+[05:13:23]    Initial state: moving
+[05:13:23] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:23] ═══════════════════════════
+[05:13:23] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:23] ═══════════════════════════
+[05:13:23] 
+🎯 MOVE 1 ATTEMPT
+[05:13:23]    Current game state: moving
+[05:13:23]    Active player: white
+[05:13:26] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:26] 
+🤖 ROBOT TURN COMPLETE
+[05:13:26]    Moves completed: 0/2
+[05:13:26]    Final state: moving
+[05:13:26]    Duration: 3117ms
+[05:13:26]    Next player: white
+[05:13:27] 
+🎯 TURN 39
+[05:13:27]    Current state: moving
+[05:13:27]    Active player: white
+[05:13:27]    Action: Executing robot moves...
+[05:13:27] 🤖 ROBOT TURN START
+[05:13:27]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:27]    Dice: [4, 6] 
+[05:13:27]    Expected moves: 2
+[05:13:27]    Initial state: moving
+[05:13:27] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:27] ═══════════════════════════
+[05:13:27] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:27] ═══════════════════════════
+[05:13:27] 
+🎯 MOVE 1 ATTEMPT
+[05:13:27]    Current game state: moving
+[05:13:27]    Active player: white
+[05:13:30] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:30] 
+🤖 ROBOT TURN COMPLETE
+[05:13:30]    Moves completed: 0/2
+[05:13:30]    Final state: moving
+[05:13:30]    Duration: 3109ms
+[05:13:30]    Next player: white
+[05:13:30] 
+🎯 TURN 40
+[05:13:30]    Current state: moving
+[05:13:30]    Active player: white
+[05:13:30]    Action: Executing robot moves...
+[05:13:30] 🤖 ROBOT TURN START
+[05:13:30]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:30]    Dice: [4, 6] 
+[05:13:30]    Expected moves: 2
+[05:13:30]    Initial state: moving
+[05:13:30] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:30] ═══════════════════════════
+[05:13:30] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:30] ═══════════════════════════
+[05:13:30] 
+🎯 MOVE 1 ATTEMPT
+[05:13:30]    Current game state: moving
+[05:13:30]    Active player: white
+[05:13:33] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:33] 
+🤖 ROBOT TURN COMPLETE
+[05:13:33]    Moves completed: 0/2
+[05:13:33]    Final state: moving
+[05:13:33]    Duration: 3121ms
+[05:13:33]    Next player: white
+[05:13:33] 
+🎯 TURN 41
+[05:13:33]    Current state: moving
+[05:13:33]    Active player: white
+[05:13:33]    Action: Executing robot moves...
+[05:13:33] 🤖 ROBOT TURN START
+[05:13:33]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:33]    Dice: [4, 6] 
+[05:13:33]    Expected moves: 2
+[05:13:33]    Initial state: moving
+[05:13:33] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:33] ═══════════════════════════
+[05:13:33] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:33] ═══════════════════════════
+[05:13:33] 
+🎯 MOVE 1 ATTEMPT
+[05:13:33]    Current game state: moving
+[05:13:33]    Active player: white
+[05:13:36] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:36] 
+🤖 ROBOT TURN COMPLETE
+[05:13:36]    Moves completed: 0/2
+[05:13:36]    Final state: moving
+[05:13:36]    Duration: 3108ms
+[05:13:36]    Next player: white
+[05:13:37] 
+🎯 TURN 42
+[05:13:37]    Current state: moving
+[05:13:37]    Active player: white
+[05:13:37]    Action: Executing robot moves...
+[05:13:37] 🤖 ROBOT TURN START
+[05:13:37]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:37]    Dice: [4, 6] 
+[05:13:37]    Expected moves: 2
+[05:13:37]    Initial state: moving
+[05:13:37] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:37] ═══════════════════════════
+[05:13:37] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:37] ═══════════════════════════
+[05:13:37] 
+🎯 MOVE 1 ATTEMPT
+[05:13:37]    Current game state: moving
+[05:13:37]    Active player: white
+[05:13:40] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:40] 
+🤖 ROBOT TURN COMPLETE
+[05:13:40]    Moves completed: 0/2
+[05:13:40]    Final state: moving
+[05:13:40]    Duration: 3118ms
+[05:13:40]    Next player: white
+[05:13:40] 
+🎯 TURN 43
+[05:13:40]    Current state: moving
+[05:13:40]    Active player: white
+[05:13:40]    Action: Executing robot moves...
+[05:13:40] 🤖 ROBOT TURN START
+[05:13:40]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:40]    Dice: [4, 6] 
+[05:13:40]    Expected moves: 2
+[05:13:40]    Initial state: moving
+[05:13:40] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:40] ═══════════════════════════
+[05:13:40] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:40] ═══════════════════════════
+[05:13:40] 
+🎯 MOVE 1 ATTEMPT
+[05:13:40]    Current game state: moving
+[05:13:40]    Active player: white
+[05:13:43] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:43] 
+🤖 ROBOT TURN COMPLETE
+[05:13:43]    Moves completed: 0/2
+[05:13:43]    Final state: moving
+[05:13:43]    Duration: 3115ms
+[05:13:43]    Next player: white
+[05:13:43] 
+🎯 TURN 44
+[05:13:43]    Current state: moving
+[05:13:43]    Active player: white
+[05:13:43]    Action: Executing robot moves...
+[05:13:43] 🤖 ROBOT TURN START
+[05:13:43]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:43]    Dice: [4, 6] 
+[05:13:43]    Expected moves: 2
+[05:13:43]    Initial state: moving
+[05:13:43] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:43] ═══════════════════════════
+[05:13:43] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:43] ═══════════════════════════
+[05:13:43] 
+🎯 MOVE 1 ATTEMPT
+[05:13:43]    Current game state: moving
+[05:13:43]    Active player: white
+[05:13:46] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:46] 
+🤖 ROBOT TURN COMPLETE
+[05:13:46]    Moves completed: 0/2
+[05:13:46]    Final state: moving
+[05:13:46]    Duration: 3107ms
+[05:13:46]    Next player: white
+[05:13:47] 
+🎯 TURN 45
+[05:13:47]    Current state: moving
+[05:13:47]    Active player: white
+[05:13:47]    Action: Executing robot moves...
+[05:13:47] 🤖 ROBOT TURN START
+[05:13:47]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:47]    Dice: [4, 6] 
+[05:13:47]    Expected moves: 2
+[05:13:47]    Initial state: moving
+[05:13:47] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:47] ═══════════════════════════
+[05:13:47] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:47] ═══════════════════════════
+[05:13:47] 
+🎯 MOVE 1 ATTEMPT
+[05:13:47]    Current game state: moving
+[05:13:47]    Active player: white
+[05:13:50] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:50] 
+🤖 ROBOT TURN COMPLETE
+[05:13:50]    Moves completed: 0/2
+[05:13:50]    Final state: moving
+[05:13:50]    Duration: 3099ms
+[05:13:50]    Next player: white
+[05:13:50] 
+🎯 TURN 46
+[05:13:50]    Current state: moving
+[05:13:50]    Active player: white
+[05:13:50]    Action: Executing robot moves...
+[05:13:50] 🤖 ROBOT TURN START
+[05:13:50]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:50]    Dice: [4, 6] 
+[05:13:50]    Expected moves: 2
+[05:13:50]    Initial state: moving
+[05:13:50] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:50] ═══════════════════════════
+[05:13:50] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:50] ═══════════════════════════
+[05:13:50] 
+🎯 MOVE 1 ATTEMPT
+[05:13:50]    Current game state: moving
+[05:13:50]    Active player: white
+[05:13:53] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:53] 
+🤖 ROBOT TURN COMPLETE
+[05:13:53]    Moves completed: 0/2
+[05:13:53]    Final state: moving
+[05:13:53]    Duration: 3097ms
+[05:13:53]    Next player: white
+[05:13:53] 
+🎯 TURN 47
+[05:13:53]    Current state: moving
+[05:13:53]    Active player: white
+[05:13:53]    Action: Executing robot moves...
+[05:13:53] 🤖 ROBOT TURN START
+[05:13:53]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:53]    Dice: [4, 6] 
+[05:13:53]    Expected moves: 2
+[05:13:53]    Initial state: moving
+[05:13:53] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:53] ═══════════════════════════
+[05:13:53] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:53] ═══════════════════════════
+[05:13:53] 
+🎯 MOVE 1 ATTEMPT
+[05:13:53]    Current game state: moving
+[05:13:53]    Active player: white
+[05:13:56] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:13:56] 
+🤖 ROBOT TURN COMPLETE
+[05:13:56]    Moves completed: 0/2
+[05:13:56]    Final state: moving
+[05:13:56]    Duration: 3102ms
+[05:13:56]    Next player: white
+[05:13:56] 
+🎯 TURN 48
+[05:13:56]    Current state: moving
+[05:13:56]    Active player: white
+[05:13:56]    Action: Executing robot moves...
+[05:13:56] 🤖 ROBOT TURN START
+[05:13:56]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:13:56]    Dice: [4, 6] 
+[05:13:56]    Expected moves: 2
+[05:13:56]    Initial state: moving
+[05:13:56] 
+📋 BOARD BEFORE ROBOT TURN
+[05:13:56] ═══════════════════════════
+[05:13:56] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:13:56] ═══════════════════════════
+[05:13:56] 
+🎯 MOVE 1 ATTEMPT
+[05:13:56]    Current game state: moving
+[05:13:56]    Active player: white
+[05:14:00] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:00] 
+🤖 ROBOT TURN COMPLETE
+[05:14:00]    Moves completed: 0/2
+[05:14:00]    Final state: moving
+[05:14:00]    Duration: 3104ms
+[05:14:00]    Next player: white
+[05:14:00] 
+🎯 TURN 49
+[05:14:00]    Current state: moving
+[05:14:00]    Active player: white
+[05:14:00]    Action: Executing robot moves...
+[05:14:00] 🤖 ROBOT TURN START
+[05:14:00]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:00]    Dice: [4, 6] 
+[05:14:00]    Expected moves: 2
+[05:14:00]    Initial state: moving
+[05:14:00] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:00] ═══════════════════════════
+[05:14:00] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:00] ═══════════════════════════
+[05:14:00] 
+🎯 MOVE 1 ATTEMPT
+[05:14:00]    Current game state: moving
+[05:14:00]    Active player: white
+[05:14:03] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:03] 
+🤖 ROBOT TURN COMPLETE
+[05:14:03]    Moves completed: 0/2
+[05:14:03]    Final state: moving
+[05:14:03]    Duration: 3103ms
+[05:14:03]    Next player: white
+[05:14:03] 
+🎯 TURN 50
+[05:14:03]    Current state: moving
+[05:14:03]    Active player: white
+[05:14:03]    Action: Executing robot moves...
+[05:14:03] 🤖 ROBOT TURN START
+[05:14:03]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:03]    Dice: [4, 6] 
+[05:14:03]    Expected moves: 2
+[05:14:03]    Initial state: moving
+[05:14:03] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:03] ═══════════════════════════
+[05:14:03] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:03] ═══════════════════════════
+[05:14:03] 
+🎯 MOVE 1 ATTEMPT
+[05:14:03]    Current game state: moving
+[05:14:03]    Active player: white
+[05:14:06] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:06] 
+🤖 ROBOT TURN COMPLETE
+[05:14:06]    Moves completed: 0/2
+[05:14:06]    Final state: moving
+[05:14:06]    Duration: 3100ms
+[05:14:06]    Next player: white
+[05:14:06] 
+🎯 TURN 51
+[05:14:06]    Current state: moving
+[05:14:06]    Active player: white
+[05:14:06]    Action: Executing robot moves...
+[05:14:06] 🤖 ROBOT TURN START
+[05:14:06]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:06]    Dice: [4, 6] 
+[05:14:06]    Expected moves: 2
+[05:14:06]    Initial state: moving
+[05:14:06] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:06] ═══════════════════════════
+[05:14:06] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:06] ═══════════════════════════
+[05:14:06] 
+🎯 MOVE 1 ATTEMPT
+[05:14:06]    Current game state: moving
+[05:14:06]    Active player: white
+[05:14:09] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:09] 
+🤖 ROBOT TURN COMPLETE
+[05:14:09]    Moves completed: 0/2
+[05:14:09]    Final state: moving
+[05:14:09]    Duration: 3097ms
+[05:14:09]    Next player: white
+[05:14:10] 
+🎯 TURN 52
+[05:14:10]    Current state: moving
+[05:14:10]    Active player: white
+[05:14:10]    Action: Executing robot moves...
+[05:14:10] 🤖 ROBOT TURN START
+[05:14:10]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:10]    Dice: [4, 6] 
+[05:14:10]    Expected moves: 2
+[05:14:10]    Initial state: moving
+[05:14:10] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:10] ═══════════════════════════
+[05:14:10] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:10] ═══════════════════════════
+[05:14:10] 
+🎯 MOVE 1 ATTEMPT
+[05:14:10]    Current game state: moving
+[05:14:10]    Active player: white
+[05:14:13] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:13] 
+🤖 ROBOT TURN COMPLETE
+[05:14:13]    Moves completed: 0/2
+[05:14:13]    Final state: moving
+[05:14:13]    Duration: 3099ms
+[05:14:13]    Next player: white
+[05:14:13] 
+🎯 TURN 53
+[05:14:13]    Current state: moving
+[05:14:13]    Active player: white
+[05:14:13]    Action: Executing robot moves...
+[05:14:13] 🤖 ROBOT TURN START
+[05:14:13]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:13]    Dice: [4, 6] 
+[05:14:13]    Expected moves: 2
+[05:14:13]    Initial state: moving
+[05:14:13] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:13] ═══════════════════════════
+[05:14:13] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:13] ═══════════════════════════
+[05:14:13] 
+🎯 MOVE 1 ATTEMPT
+[05:14:13]    Current game state: moving
+[05:14:13]    Active player: white
+[05:14:16] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:16] 
+🤖 ROBOT TURN COMPLETE
+[05:14:16]    Moves completed: 0/2
+[05:14:16]    Final state: moving
+[05:14:16]    Duration: 3115ms
+[05:14:16]    Next player: white
+[05:14:16] 
+🎯 TURN 54
+[05:14:16]    Current state: moving
+[05:14:16]    Active player: white
+[05:14:16]    Action: Executing robot moves...
+[05:14:16] 🤖 ROBOT TURN START
+[05:14:16]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:16]    Dice: [4, 6] 
+[05:14:16]    Expected moves: 2
+[05:14:16]    Initial state: moving
+[05:14:16] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:16] ═══════════════════════════
+[05:14:16] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:16] ═══════════════════════════
+[05:14:16] 
+🎯 MOVE 1 ATTEMPT
+[05:14:16]    Current game state: moving
+[05:14:16]    Active player: white
+[05:14:19] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:19] 
+🤖 ROBOT TURN COMPLETE
+[05:14:19]    Moves completed: 0/2
+[05:14:19]    Final state: moving
+[05:14:19]    Duration: 3120ms
+[05:14:19]    Next player: white
+[05:14:20] 
+🎯 TURN 55
+[05:14:20]    Current state: moving
+[05:14:20]    Active player: white
+[05:14:20]    Action: Executing robot moves...
+[05:14:20] 🤖 ROBOT TURN START
+[05:14:20]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:20]    Dice: [4, 6] 
+[05:14:20]    Expected moves: 2
+[05:14:20]    Initial state: moving
+[05:14:20] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:20] ═══════════════════════════
+[05:14:20] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:20] ═══════════════════════════
+[05:14:20] 
+🎯 MOVE 1 ATTEMPT
+[05:14:20]    Current game state: moving
+[05:14:20]    Active player: white
+[05:14:23] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:23] 
+🤖 ROBOT TURN COMPLETE
+[05:14:23]    Moves completed: 0/2
+[05:14:23]    Final state: moving
+[05:14:23]    Duration: 3117ms
+[05:14:23]    Next player: white
+[05:14:23] 
+🎯 TURN 56
+[05:14:23]    Current state: moving
+[05:14:23]    Active player: white
+[05:14:23]    Action: Executing robot moves...
+[05:14:23] 🤖 ROBOT TURN START
+[05:14:23]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:23]    Dice: [4, 6] 
+[05:14:23]    Expected moves: 2
+[05:14:23]    Initial state: moving
+[05:14:23] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:23] ═══════════════════════════
+[05:14:23] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:23] ═══════════════════════════
+[05:14:23] 
+🎯 MOVE 1 ATTEMPT
+[05:14:23]    Current game state: moving
+[05:14:23]    Active player: white
+[05:14:26] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:26] 
+🤖 ROBOT TURN COMPLETE
+[05:14:26]    Moves completed: 0/2
+[05:14:26]    Final state: moving
+[05:14:26]    Duration: 3109ms
+[05:14:26]    Next player: white
+[05:14:26] 
+🎯 TURN 57
+[05:14:26]    Current state: moving
+[05:14:26]    Active player: white
+[05:14:26]    Action: Executing robot moves...
+[05:14:26] 🤖 ROBOT TURN START
+[05:14:26]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:26]    Dice: [4, 6] 
+[05:14:26]    Expected moves: 2
+[05:14:26]    Initial state: moving
+[05:14:26] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:26] ═══════════════════════════
+[05:14:26] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:26] ═══════════════════════════
+[05:14:26] 
+🎯 MOVE 1 ATTEMPT
+[05:14:26]    Current game state: moving
+[05:14:26]    Active player: white
+[05:14:29] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:29] 
+🤖 ROBOT TURN COMPLETE
+[05:14:29]    Moves completed: 0/2
+[05:14:29]    Final state: moving
+[05:14:29]    Duration: 3108ms
+[05:14:29]    Next player: white
+[05:14:29] 
+🎯 TURN 58
+[05:14:29]    Current state: moving
+[05:14:29]    Active player: white
+[05:14:29]    Action: Executing robot moves...
+[05:14:29] 🤖 ROBOT TURN START
+[05:14:29]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:29]    Dice: [4, 6] 
+[05:14:29]    Expected moves: 2
+[05:14:29]    Initial state: moving
+[05:14:29] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:29] ═══════════════════════════
+[05:14:29] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:29] ═══════════════════════════
+[05:14:29] 
+🎯 MOVE 1 ATTEMPT
+[05:14:29]    Current game state: moving
+[05:14:29]    Active player: white
+[05:14:33] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:33] 
+🤖 ROBOT TURN COMPLETE
+[05:14:33]    Moves completed: 0/2
+[05:14:33]    Final state: moving
+[05:14:33]    Duration: 3110ms
+[05:14:33]    Next player: white
+[05:14:33] 
+🎯 TURN 59
+[05:14:33]    Current state: moving
+[05:14:33]    Active player: white
+[05:14:33]    Action: Executing robot moves...
+[05:14:33] 🤖 ROBOT TURN START
+[05:14:33]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:33]    Dice: [4, 6] 
+[05:14:33]    Expected moves: 2
+[05:14:33]    Initial state: moving
+[05:14:33] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:33] ═══════════════════════════
+[05:14:33] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:33] ═══════════════════════════
+[05:14:33] 
+🎯 MOVE 1 ATTEMPT
+[05:14:33]    Current game state: moving
+[05:14:33]    Active player: white
+[05:14:36] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:36] 
+🤖 ROBOT TURN COMPLETE
+[05:14:36]    Moves completed: 0/2
+[05:14:36]    Final state: moving
+[05:14:36]    Duration: 3112ms
+[05:14:36]    Next player: white
+[05:14:36] 
+🎯 TURN 60
+[05:14:36]    Current state: moving
+[05:14:36]    Active player: white
+[05:14:36]    Action: Executing robot moves...
+[05:14:36] 🤖 ROBOT TURN START
+[05:14:36]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:36]    Dice: [4, 6] 
+[05:14:36]    Expected moves: 2
+[05:14:36]    Initial state: moving
+[05:14:36] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:36] ═══════════════════════════
+[05:14:36] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:36] ═══════════════════════════
+[05:14:36] 
+🎯 MOVE 1 ATTEMPT
+[05:14:36]    Current game state: moving
+[05:14:36]    Active player: white
+[05:14:39] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:39] 
+🤖 ROBOT TURN COMPLETE
+[05:14:39]    Moves completed: 0/2
+[05:14:39]    Final state: moving
+[05:14:39]    Duration: 3112ms
+[05:14:39]    Next player: white
+[05:14:39] 
+🎯 TURN 61
+[05:14:39]    Current state: moving
+[05:14:39]    Active player: white
+[05:14:39]    Action: Executing robot moves...
+[05:14:39] 🤖 ROBOT TURN START
+[05:14:39]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:39]    Dice: [4, 6] 
+[05:14:39]    Expected moves: 2
+[05:14:39]    Initial state: moving
+[05:14:39] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:39] ═══════════════════════════
+[05:14:39] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:39] ═══════════════════════════
+[05:14:39] 
+🎯 MOVE 1 ATTEMPT
+[05:14:39]    Current game state: moving
+[05:14:39]    Active player: white
+[05:14:43] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:43] 
+🤖 ROBOT TURN COMPLETE
+[05:14:43]    Moves completed: 0/2
+[05:14:43]    Final state: moving
+[05:14:43]    Duration: 3111ms
+[05:14:43]    Next player: white
+[05:14:43] 
+🎯 TURN 62
+[05:14:43]    Current state: moving
+[05:14:43]    Active player: white
+[05:14:43]    Action: Executing robot moves...
+[05:14:43] 🤖 ROBOT TURN START
+[05:14:43]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:43]    Dice: [4, 6] 
+[05:14:43]    Expected moves: 2
+[05:14:43]    Initial state: moving
+[05:14:43] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:43] ═══════════════════════════
+[05:14:43] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:43] ═══════════════════════════
+[05:14:43] 
+🎯 MOVE 1 ATTEMPT
+[05:14:43]    Current game state: moving
+[05:14:43]    Active player: white
+[05:14:46] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:46] 
+🤖 ROBOT TURN COMPLETE
+[05:14:46]    Moves completed: 0/2
+[05:14:46]    Final state: moving
+[05:14:46]    Duration: 3113ms
+[05:14:46]    Next player: white
+[05:14:46] 
+🎯 TURN 63
+[05:14:46]    Current state: moving
+[05:14:46]    Active player: white
+[05:14:46]    Action: Executing robot moves...
+[05:14:46] 🤖 ROBOT TURN START
+[05:14:46]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:46]    Dice: [4, 6] 
+[05:14:46]    Expected moves: 2
+[05:14:46]    Initial state: moving
+[05:14:46] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:46] ═══════════════════════════
+[05:14:46] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:46] ═══════════════════════════
+[05:14:46] 
+🎯 MOVE 1 ATTEMPT
+[05:14:46]    Current game state: moving
+[05:14:46]    Active player: white
+[05:14:49] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:49] 
+🤖 ROBOT TURN COMPLETE
+[05:14:49]    Moves completed: 0/2
+[05:14:49]    Final state: moving
+[05:14:49]    Duration: 3115ms
+[05:14:49]    Next player: white
+[05:14:49] 
+🎯 TURN 64
+[05:14:49]    Current state: moving
+[05:14:49]    Active player: white
+[05:14:49]    Action: Executing robot moves...
+[05:14:49] 🤖 ROBOT TURN START
+[05:14:49]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:49]    Dice: [4, 6] 
+[05:14:49]    Expected moves: 2
+[05:14:49]    Initial state: moving
+[05:14:49] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:49] ═══════════════════════════
+[05:14:49] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:49] ═══════════════════════════
+[05:14:49] 
+🎯 MOVE 1 ATTEMPT
+[05:14:49]    Current game state: moving
+[05:14:49]    Active player: white
+[05:14:52] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:52] 
+🤖 ROBOT TURN COMPLETE
+[05:14:52]    Moves completed: 0/2
+[05:14:52]    Final state: moving
+[05:14:52]    Duration: 3109ms
+[05:14:52]    Next player: white
+[05:14:53] 
+🎯 TURN 65
+[05:14:53]    Current state: moving
+[05:14:53]    Active player: white
+[05:14:53]    Action: Executing robot moves...
+[05:14:53] 🤖 ROBOT TURN START
+[05:14:53]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:53]    Dice: [4, 6] 
+[05:14:53]    Expected moves: 2
+[05:14:53]    Initial state: moving
+[05:14:53] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:53] ═══════════════════════════
+[05:14:53] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:53] ═══════════════════════════
+[05:14:53] 
+🎯 MOVE 1 ATTEMPT
+[05:14:53]    Current game state: moving
+[05:14:53]    Active player: white
+[05:14:56] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:56] 
+🤖 ROBOT TURN COMPLETE
+[05:14:56]    Moves completed: 0/2
+[05:14:56]    Final state: moving
+[05:14:56]    Duration: 3114ms
+[05:14:56]    Next player: white
+[05:14:56] 
+🎯 TURN 66
+[05:14:56]    Current state: moving
+[05:14:56]    Active player: white
+[05:14:56]    Action: Executing robot moves...
+[05:14:56] 🤖 ROBOT TURN START
+[05:14:56]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:56]    Dice: [4, 6] 
+[05:14:56]    Expected moves: 2
+[05:14:56]    Initial state: moving
+[05:14:56] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:56] ═══════════════════════════
+[05:14:56] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:56] ═══════════════════════════
+[05:14:56] 
+🎯 MOVE 1 ATTEMPT
+[05:14:56]    Current game state: moving
+[05:14:56]    Active player: white
+[05:14:59] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:14:59] 
+🤖 ROBOT TURN COMPLETE
+[05:14:59]    Moves completed: 0/2
+[05:14:59]    Final state: moving
+[05:14:59]    Duration: 3114ms
+[05:14:59]    Next player: white
+[05:14:59] 
+🎯 TURN 67
+[05:14:59]    Current state: moving
+[05:14:59]    Active player: white
+[05:14:59]    Action: Executing robot moves...
+[05:14:59] 🤖 ROBOT TURN START
+[05:14:59]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:14:59]    Dice: [4, 6] 
+[05:14:59]    Expected moves: 2
+[05:14:59]    Initial state: moving
+[05:14:59] 
+📋 BOARD BEFORE ROBOT TURN
+[05:14:59] ═══════════════════════════
+[05:14:59] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:14:59] ═══════════════════════════
+[05:14:59] 
+🎯 MOVE 1 ATTEMPT
+[05:14:59]    Current game state: moving
+[05:14:59]    Active player: white
+[05:15:02] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:02] 
+🤖 ROBOT TURN COMPLETE
+[05:15:02]    Moves completed: 0/2
+[05:15:02]    Final state: moving
+[05:15:02]    Duration: 3114ms
+[05:15:02]    Next player: white
+[05:15:03] 
+🎯 TURN 68
+[05:15:03]    Current state: moving
+[05:15:03]    Active player: white
+[05:15:03]    Action: Executing robot moves...
+[05:15:03] 🤖 ROBOT TURN START
+[05:15:03]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:03]    Dice: [4, 6] 
+[05:15:03]    Expected moves: 2
+[05:15:03]    Initial state: moving
+[05:15:03] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:03] ═══════════════════════════
+[05:15:03] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:03] ═══════════════════════════
+[05:15:03] 
+🎯 MOVE 1 ATTEMPT
+[05:15:03]    Current game state: moving
+[05:15:03]    Active player: white
+[05:15:06] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:06] 
+🤖 ROBOT TURN COMPLETE
+[05:15:06]    Moves completed: 0/2
+[05:15:06]    Final state: moving
+[05:15:06]    Duration: 3112ms
+[05:15:06]    Next player: white
+[05:15:06] 
+🎯 TURN 69
+[05:15:06]    Current state: moving
+[05:15:06]    Active player: white
+[05:15:06]    Action: Executing robot moves...
+[05:15:06] 🤖 ROBOT TURN START
+[05:15:06]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:06]    Dice: [4, 6] 
+[05:15:06]    Expected moves: 2
+[05:15:06]    Initial state: moving
+[05:15:06] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:06] ═══════════════════════════
+[05:15:06] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:06] ═══════════════════════════
+[05:15:06] 
+🎯 MOVE 1 ATTEMPT
+[05:15:06]    Current game state: moving
+[05:15:06]    Active player: white
+[05:15:09] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:09] 
+🤖 ROBOT TURN COMPLETE
+[05:15:09]    Moves completed: 0/2
+[05:15:09]    Final state: moving
+[05:15:09]    Duration: 3117ms
+[05:15:09]    Next player: white
+[05:15:09] 
+🎯 TURN 70
+[05:15:09]    Current state: moving
+[05:15:09]    Active player: white
+[05:15:09]    Action: Executing robot moves...
+[05:15:09] 🤖 ROBOT TURN START
+[05:15:09]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:09]    Dice: [4, 6] 
+[05:15:09]    Expected moves: 2
+[05:15:09]    Initial state: moving
+[05:15:09] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:09] ═══════════════════════════
+[05:15:09] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:09] ═══════════════════════════
+[05:15:09] 
+🎯 MOVE 1 ATTEMPT
+[05:15:09]    Current game state: moving
+[05:15:09]    Active player: white
+[05:15:12] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:12] 
+🤖 ROBOT TURN COMPLETE
+[05:15:12]    Moves completed: 0/2
+[05:15:12]    Final state: moving
+[05:15:12]    Duration: 3101ms
+[05:15:12]    Next player: white
+[05:15:13] 
+🎯 TURN 71
+[05:15:13]    Current state: moving
+[05:15:13]    Active player: white
+[05:15:13]    Action: Executing robot moves...
+[05:15:13] 🤖 ROBOT TURN START
+[05:15:13]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:13]    Dice: [4, 6] 
+[05:15:13]    Expected moves: 2
+[05:15:13]    Initial state: moving
+[05:15:13] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:13] ═══════════════════════════
+[05:15:13] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:13] ═══════════════════════════
+[05:15:13] 
+🎯 MOVE 1 ATTEMPT
+[05:15:13]    Current game state: moving
+[05:15:13]    Active player: white
+[05:15:16] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:16] 
+🤖 ROBOT TURN COMPLETE
+[05:15:16]    Moves completed: 0/2
+[05:15:16]    Final state: moving
+[05:15:16]    Duration: 3113ms
+[05:15:16]    Next player: white
+[05:15:16] 
+🎯 TURN 72
+[05:15:16]    Current state: moving
+[05:15:16]    Active player: white
+[05:15:16]    Action: Executing robot moves...
+[05:15:16] 🤖 ROBOT TURN START
+[05:15:16]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:16]    Dice: [4, 6] 
+[05:15:16]    Expected moves: 2
+[05:15:16]    Initial state: moving
+[05:15:16] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:16] ═══════════════════════════
+[05:15:16] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:16] ═══════════════════════════
+[05:15:16] 
+🎯 MOVE 1 ATTEMPT
+[05:15:16]    Current game state: moving
+[05:15:16]    Active player: white
+[05:15:19] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:19] 
+🤖 ROBOT TURN COMPLETE
+[05:15:19]    Moves completed: 0/2
+[05:15:19]    Final state: moving
+[05:15:19]    Duration: 3115ms
+[05:15:19]    Next player: white
+[05:15:19] 
+🎯 TURN 73
+[05:15:19]    Current state: moving
+[05:15:19]    Active player: white
+[05:15:19]    Action: Executing robot moves...
+[05:15:19] 🤖 ROBOT TURN START
+[05:15:19]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:19]    Dice: [4, 6] 
+[05:15:19]    Expected moves: 2
+[05:15:19]    Initial state: moving
+[05:15:19] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:19] ═══════════════════════════
+[05:15:19] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:19] ═══════════════════════════
+[05:15:19] 
+🎯 MOVE 1 ATTEMPT
+[05:15:19]    Current game state: moving
+[05:15:19]    Active player: white
+[05:15:22] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:22] 
+🤖 ROBOT TURN COMPLETE
+[05:15:22]    Moves completed: 0/2
+[05:15:22]    Final state: moving
+[05:15:22]    Duration: 3106ms
+[05:15:22]    Next player: white
+[05:15:23] 
+🎯 TURN 74
+[05:15:23]    Current state: moving
+[05:15:23]    Active player: white
+[05:15:23]    Action: Executing robot moves...
+[05:15:23] 🤖 ROBOT TURN START
+[05:15:23]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:23]    Dice: [4, 6] 
+[05:15:23]    Expected moves: 2
+[05:15:23]    Initial state: moving
+[05:15:23] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:23] ═══════════════════════════
+[05:15:23] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:23] ═══════════════════════════
+[05:15:23] 
+🎯 MOVE 1 ATTEMPT
+[05:15:23]    Current game state: moving
+[05:15:23]    Active player: white
+[05:15:26] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:26] 
+🤖 ROBOT TURN COMPLETE
+[05:15:26]    Moves completed: 0/2
+[05:15:26]    Final state: moving
+[05:15:26]    Duration: 3112ms
+[05:15:26]    Next player: white
+[05:15:26] 
+🎯 TURN 75
+[05:15:26]    Current state: moving
+[05:15:26]    Active player: white
+[05:15:26]    Action: Executing robot moves...
+[05:15:26] 🤖 ROBOT TURN START
+[05:15:26]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:26]    Dice: [4, 6] 
+[05:15:26]    Expected moves: 2
+[05:15:26]    Initial state: moving
+[05:15:26] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:26] ═══════════════════════════
+[05:15:26] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:26] ═══════════════════════════
+[05:15:26] 
+🎯 MOVE 1 ATTEMPT
+[05:15:26]    Current game state: moving
+[05:15:26]    Active player: white
+[05:15:29] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:29] 
+🤖 ROBOT TURN COMPLETE
+[05:15:29]    Moves completed: 0/2
+[05:15:29]    Final state: moving
+[05:15:29]    Duration: 3112ms
+[05:15:29]    Next player: white
+[05:15:29] 
+🎯 TURN 76
+[05:15:29]    Current state: moving
+[05:15:29]    Active player: white
+[05:15:29]    Action: Executing robot moves...
+[05:15:29] 🤖 ROBOT TURN START
+[05:15:29]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:29]    Dice: [4, 6] 
+[05:15:29]    Expected moves: 2
+[05:15:29]    Initial state: moving
+[05:15:29] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:29] ═══════════════════════════
+[05:15:29] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:29] ═══════════════════════════
+[05:15:29] 
+🎯 MOVE 1 ATTEMPT
+[05:15:29]    Current game state: moving
+[05:15:29]    Active player: white
+[05:15:32] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:32] 
+🤖 ROBOT TURN COMPLETE
+[05:15:32]    Moves completed: 0/2
+[05:15:32]    Final state: moving
+[05:15:32]    Duration: 3110ms
+[05:15:32]    Next player: white
+[05:15:32] 
+🎯 TURN 77
+[05:15:32]    Current state: moving
+[05:15:32]    Active player: white
+[05:15:32]    Action: Executing robot moves...
+[05:15:32] 🤖 ROBOT TURN START
+[05:15:32]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:32]    Dice: [4, 6] 
+[05:15:32]    Expected moves: 2
+[05:15:32]    Initial state: moving
+[05:15:32] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:32] ═══════════════════════════
+[05:15:32] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:32] ═══════════════════════════
+[05:15:32] 
+🎯 MOVE 1 ATTEMPT
+[05:15:32]    Current game state: moving
+[05:15:32]    Active player: white
+[05:15:36] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:36] 
+🤖 ROBOT TURN COMPLETE
+[05:15:36]    Moves completed: 0/2
+[05:15:36]    Final state: moving
+[05:15:36]    Duration: 3111ms
+[05:15:36]    Next player: white
+[05:15:36] 
+🎯 TURN 78
+[05:15:36]    Current state: moving
+[05:15:36]    Active player: white
+[05:15:36]    Action: Executing robot moves...
+[05:15:36] 🤖 ROBOT TURN START
+[05:15:36]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:36]    Dice: [4, 6] 
+[05:15:36]    Expected moves: 2
+[05:15:36]    Initial state: moving
+[05:15:36] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:36] ═══════════════════════════
+[05:15:36] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:36] ═══════════════════════════
+[05:15:36] 
+🎯 MOVE 1 ATTEMPT
+[05:15:36]    Current game state: moving
+[05:15:36]    Active player: white
+[05:15:39] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:39] 
+🤖 ROBOT TURN COMPLETE
+[05:15:39]    Moves completed: 0/2
+[05:15:39]    Final state: moving
+[05:15:39]    Duration: 3115ms
+[05:15:39]    Next player: white
+[05:15:39] 
+🎯 TURN 79
+[05:15:39]    Current state: moving
+[05:15:39]    Active player: white
+[05:15:39]    Action: Executing robot moves...
+[05:15:39] 🤖 ROBOT TURN START
+[05:15:39]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:39]    Dice: [4, 6] 
+[05:15:39]    Expected moves: 2
+[05:15:39]    Initial state: moving
+[05:15:39] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:39] ═══════════════════════════
+[05:15:39] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:39] ═══════════════════════════
+[05:15:39] 
+🎯 MOVE 1 ATTEMPT
+[05:15:39]    Current game state: moving
+[05:15:39]    Active player: white
+[05:15:42] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:42] 
+🤖 ROBOT TURN COMPLETE
+[05:15:42]    Moves completed: 0/2
+[05:15:42]    Final state: moving
+[05:15:42]    Duration: 3115ms
+[05:15:42]    Next player: white
+[05:15:42] 
+🎯 TURN 80
+[05:15:42]    Current state: moving
+[05:15:42]    Active player: white
+[05:15:42]    Action: Executing robot moves...
+[05:15:42] 🤖 ROBOT TURN START
+[05:15:42]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:42]    Dice: [4, 6] 
+[05:15:42]    Expected moves: 2
+[05:15:42]    Initial state: moving
+[05:15:42] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:42] ═══════════════════════════
+[05:15:42] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:42] ═══════════════════════════
+[05:15:42] 
+🎯 MOVE 1 ATTEMPT
+[05:15:42]    Current game state: moving
+[05:15:42]    Active player: white
+[05:15:45] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:45] 
+🤖 ROBOT TURN COMPLETE
+[05:15:45]    Moves completed: 0/2
+[05:15:45]    Final state: moving
+[05:15:45]    Duration: 3112ms
+[05:15:45]    Next player: white
+[05:15:46] 
+🎯 TURN 81
+[05:15:46]    Current state: moving
+[05:15:46]    Active player: white
+[05:15:46]    Action: Executing robot moves...
+[05:15:46] 🤖 ROBOT TURN START
+[05:15:46]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:46]    Dice: [4, 6] 
+[05:15:46]    Expected moves: 2
+[05:15:46]    Initial state: moving
+[05:15:46] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:46] ═══════════════════════════
+[05:15:46] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:46] ═══════════════════════════
+[05:15:46] 
+🎯 MOVE 1 ATTEMPT
+[05:15:46]    Current game state: moving
+[05:15:46]    Active player: white
+[05:15:49] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:49] 
+🤖 ROBOT TURN COMPLETE
+[05:15:49]    Moves completed: 0/2
+[05:15:49]    Final state: moving
+[05:15:49]    Duration: 3104ms
+[05:15:49]    Next player: white
+[05:15:49] 
+🎯 TURN 82
+[05:15:49]    Current state: moving
+[05:15:49]    Active player: white
+[05:15:49]    Action: Executing robot moves...
+[05:15:49] 🤖 ROBOT TURN START
+[05:15:49]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:49]    Dice: [4, 6] 
+[05:15:49]    Expected moves: 2
+[05:15:49]    Initial state: moving
+[05:15:49] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:49] ═══════════════════════════
+[05:15:49] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:49] ═══════════════════════════
+[05:15:49] 
+🎯 MOVE 1 ATTEMPT
+[05:15:49]    Current game state: moving
+[05:15:49]    Active player: white
+[05:15:52] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:52] 
+🤖 ROBOT TURN COMPLETE
+[05:15:52]    Moves completed: 0/2
+[05:15:52]    Final state: moving
+[05:15:52]    Duration: 3111ms
+[05:15:52]    Next player: white
+[05:15:52] 
+🎯 TURN 83
+[05:15:52]    Current state: moving
+[05:15:52]    Active player: white
+[05:15:52]    Action: Executing robot moves...
+[05:15:52] 🤖 ROBOT TURN START
+[05:15:52]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:52]    Dice: [4, 6] 
+[05:15:52]    Expected moves: 2
+[05:15:52]    Initial state: moving
+[05:15:52] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:52] ═══════════════════════════
+[05:15:52] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:52] ═══════════════════════════
+[05:15:52] 
+🎯 MOVE 1 ATTEMPT
+[05:15:52]    Current game state: moving
+[05:15:52]    Active player: white
+[05:15:55] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:55] 
+🤖 ROBOT TURN COMPLETE
+[05:15:55]    Moves completed: 0/2
+[05:15:55]    Final state: moving
+[05:15:55]    Duration: 3105ms
+[05:15:55]    Next player: white
+[05:15:56] 
+🎯 TURN 84
+[05:15:56]    Current state: moving
+[05:15:56]    Active player: white
+[05:15:56]    Action: Executing robot moves...
+[05:15:56] 🤖 ROBOT TURN START
+[05:15:56]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:56]    Dice: [4, 6] 
+[05:15:56]    Expected moves: 2
+[05:15:56]    Initial state: moving
+[05:15:56] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:56] ═══════════════════════════
+[05:15:56] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:56] ═══════════════════════════
+[05:15:56] 
+🎯 MOVE 1 ATTEMPT
+[05:15:56]    Current game state: moving
+[05:15:56]    Active player: white
+[05:15:59] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:15:59] 
+🤖 ROBOT TURN COMPLETE
+[05:15:59]    Moves completed: 0/2
+[05:15:59]    Final state: moving
+[05:15:59]    Duration: 3112ms
+[05:15:59]    Next player: white
+[05:15:59] 
+🎯 TURN 85
+[05:15:59]    Current state: moving
+[05:15:59]    Active player: white
+[05:15:59]    Action: Executing robot moves...
+[05:15:59] 🤖 ROBOT TURN START
+[05:15:59]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:15:59]    Dice: [4, 6] 
+[05:15:59]    Expected moves: 2
+[05:15:59]    Initial state: moving
+[05:15:59] 
+📋 BOARD BEFORE ROBOT TURN
+[05:15:59] ═══════════════════════════
+[05:15:59] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:15:59] ═══════════════════════════
+[05:15:59] 
+🎯 MOVE 1 ATTEMPT
+[05:15:59]    Current game state: moving
+[05:15:59]    Active player: white
+[05:16:02] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:02] 
+🤖 ROBOT TURN COMPLETE
+[05:16:02]    Moves completed: 0/2
+[05:16:02]    Final state: moving
+[05:16:02]    Duration: 3124ms
+[05:16:02]    Next player: white
+[05:16:02] 
+🎯 TURN 86
+[05:16:02]    Current state: moving
+[05:16:02]    Active player: white
+[05:16:02]    Action: Executing robot moves...
+[05:16:02] 🤖 ROBOT TURN START
+[05:16:02]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:02]    Dice: [4, 6] 
+[05:16:02]    Expected moves: 2
+[05:16:02]    Initial state: moving
+[05:16:02] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:02] ═══════════════════════════
+[05:16:02] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:02] ═══════════════════════════
+[05:16:02] 
+🎯 MOVE 1 ATTEMPT
+[05:16:02]    Current game state: moving
+[05:16:02]    Active player: white
+[05:16:05] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:05] 
+🤖 ROBOT TURN COMPLETE
+[05:16:05]    Moves completed: 0/2
+[05:16:05]    Final state: moving
+[05:16:05]    Duration: 3116ms
+[05:16:05]    Next player: white
+[05:16:06] 
+🎯 TURN 87
+[05:16:06]    Current state: moving
+[05:16:06]    Active player: white
+[05:16:06]    Action: Executing robot moves...
+[05:16:06] 🤖 ROBOT TURN START
+[05:16:06]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:06]    Dice: [4, 6] 
+[05:16:06]    Expected moves: 2
+[05:16:06]    Initial state: moving
+[05:16:06] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:06] ═══════════════════════════
+[05:16:06] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:06] ═══════════════════════════
+[05:16:06] 
+🎯 MOVE 1 ATTEMPT
+[05:16:06]    Current game state: moving
+[05:16:06]    Active player: white
+[05:16:09] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:09] 
+🤖 ROBOT TURN COMPLETE
+[05:16:09]    Moves completed: 0/2
+[05:16:09]    Final state: moving
+[05:16:09]    Duration: 3110ms
+[05:16:09]    Next player: white
+[05:16:09] 
+🎯 TURN 88
+[05:16:09]    Current state: moving
+[05:16:09]    Active player: white
+[05:16:09]    Action: Executing robot moves...
+[05:16:09] 🤖 ROBOT TURN START
+[05:16:09]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:09]    Dice: [4, 6] 
+[05:16:09]    Expected moves: 2
+[05:16:09]    Initial state: moving
+[05:16:09] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:09] ═══════════════════════════
+[05:16:09] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:09] ═══════════════════════════
+[05:16:09] 
+🎯 MOVE 1 ATTEMPT
+[05:16:09]    Current game state: moving
+[05:16:09]    Active player: white
+[05:16:12] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:12] 
+🤖 ROBOT TURN COMPLETE
+[05:16:12]    Moves completed: 0/2
+[05:16:12]    Final state: moving
+[05:16:12]    Duration: 3114ms
+[05:16:12]    Next player: white
+[05:16:12] 
+🎯 TURN 89
+[05:16:12]    Current state: moving
+[05:16:12]    Active player: white
+[05:16:12]    Action: Executing robot moves...
+[05:16:12] 🤖 ROBOT TURN START
+[05:16:12]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:12]    Dice: [4, 6] 
+[05:16:12]    Expected moves: 2
+[05:16:12]    Initial state: moving
+[05:16:12] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:12] ═══════════════════════════
+[05:16:12] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:12] ═══════════════════════════
+[05:16:12] 
+🎯 MOVE 1 ATTEMPT
+[05:16:12]    Current game state: moving
+[05:16:12]    Active player: white
+[05:16:15] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:15] 
+🤖 ROBOT TURN COMPLETE
+[05:16:15]    Moves completed: 0/2
+[05:16:15]    Final state: moving
+[05:16:15]    Duration: 3105ms
+[05:16:15]    Next player: white
+[05:16:16] 
+🎯 TURN 90
+[05:16:16]    Current state: moving
+[05:16:16]    Active player: white
+[05:16:16]    Action: Executing robot moves...
+[05:16:16] 🤖 ROBOT TURN START
+[05:16:16]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:16]    Dice: [4, 6] 
+[05:16:16]    Expected moves: 2
+[05:16:16]    Initial state: moving
+[05:16:16] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:16] ═══════════════════════════
+[05:16:16] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:16] ═══════════════════════════
+[05:16:16] 
+🎯 MOVE 1 ATTEMPT
+[05:16:16]    Current game state: moving
+[05:16:16]    Active player: white
+[05:16:19] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:19] 
+🤖 ROBOT TURN COMPLETE
+[05:16:19]    Moves completed: 0/2
+[05:16:19]    Final state: moving
+[05:16:19]    Duration: 3103ms
+[05:16:19]    Next player: white
+[05:16:19] 
+🎯 TURN 91
+[05:16:19]    Current state: moving
+[05:16:19]    Active player: white
+[05:16:19]    Action: Executing robot moves...
+[05:16:19] 🤖 ROBOT TURN START
+[05:16:19]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:19]    Dice: [4, 6] 
+[05:16:19]    Expected moves: 2
+[05:16:19]    Initial state: moving
+[05:16:19] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:19] ═══════════════════════════
+[05:16:19] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:19] ═══════════════════════════
+[05:16:19] 
+🎯 MOVE 1 ATTEMPT
+[05:16:19]    Current game state: moving
+[05:16:19]    Active player: white
+[05:16:22] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:22] 
+🤖 ROBOT TURN COMPLETE
+[05:16:22]    Moves completed: 0/2
+[05:16:22]    Final state: moving
+[05:16:22]    Duration: 3112ms
+[05:16:22]    Next player: white
+[05:16:22] 
+🎯 TURN 92
+[05:16:22]    Current state: moving
+[05:16:22]    Active player: white
+[05:16:22]    Action: Executing robot moves...
+[05:16:22] 🤖 ROBOT TURN START
+[05:16:22]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:22]    Dice: [4, 6] 
+[05:16:22]    Expected moves: 2
+[05:16:22]    Initial state: moving
+[05:16:22] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:22] ═══════════════════════════
+[05:16:22] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:22] ═══════════════════════════
+[05:16:22] 
+🎯 MOVE 1 ATTEMPT
+[05:16:22]    Current game state: moving
+[05:16:22]    Active player: white
+[05:16:25] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:25] 
+🤖 ROBOT TURN COMPLETE
+[05:16:25]    Moves completed: 0/2
+[05:16:25]    Final state: moving
+[05:16:25]    Duration: 3109ms
+[05:16:25]    Next player: white
+[05:16:25] 
+🎯 TURN 93
+[05:16:25]    Current state: moving
+[05:16:25]    Active player: white
+[05:16:25]    Action: Executing robot moves...
+[05:16:25] 🤖 ROBOT TURN START
+[05:16:25]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:25]    Dice: [4, 6] 
+[05:16:25]    Expected moves: 2
+[05:16:25]    Initial state: moving
+[05:16:25] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:25] ═══════════════════════════
+[05:16:25] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:25] ═══════════════════════════
+[05:16:25] 
+🎯 MOVE 1 ATTEMPT
+[05:16:25]    Current game state: moving
+[05:16:25]    Active player: white
+[05:16:29] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:29] 
+🤖 ROBOT TURN COMPLETE
+[05:16:29]    Moves completed: 0/2
+[05:16:29]    Final state: moving
+[05:16:29]    Duration: 3107ms
+[05:16:29]    Next player: white
+[05:16:29] 
+🎯 TURN 94
+[05:16:29]    Current state: moving
+[05:16:29]    Active player: white
+[05:16:29]    Action: Executing robot moves...
+[05:16:29] 🤖 ROBOT TURN START
+[05:16:29]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:29]    Dice: [4, 6] 
+[05:16:29]    Expected moves: 2
+[05:16:29]    Initial state: moving
+[05:16:29] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:29] ═══════════════════════════
+[05:16:29] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:29] ═══════════════════════════
+[05:16:29] 
+🎯 MOVE 1 ATTEMPT
+[05:16:29]    Current game state: moving
+[05:16:29]    Active player: white
+[05:16:32] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:32] 
+🤖 ROBOT TURN COMPLETE
+[05:16:32]    Moves completed: 0/2
+[05:16:32]    Final state: moving
+[05:16:32]    Duration: 3104ms
+[05:16:32]    Next player: white
+[05:16:32] 
+🎯 TURN 95
+[05:16:32]    Current state: moving
+[05:16:32]    Active player: white
+[05:16:32]    Action: Executing robot moves...
+[05:16:32] 🤖 ROBOT TURN START
+[05:16:32]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:32]    Dice: [4, 6] 
+[05:16:32]    Expected moves: 2
+[05:16:32]    Initial state: moving
+[05:16:32] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:32] ═══════════════════════════
+[05:16:32] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:32] ═══════════════════════════
+[05:16:32] 
+🎯 MOVE 1 ATTEMPT
+[05:16:32]    Current game state: moving
+[05:16:32]    Active player: white
+[05:16:35] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:35] 
+🤖 ROBOT TURN COMPLETE
+[05:16:35]    Moves completed: 0/2
+[05:16:35]    Final state: moving
+[05:16:35]    Duration: 3099ms
+[05:16:35]    Next player: white
+[05:16:35] 
+🎯 TURN 96
+[05:16:35]    Current state: moving
+[05:16:35]    Active player: white
+[05:16:35]    Action: Executing robot moves...
+[05:16:35] 🤖 ROBOT TURN START
+[05:16:35]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:35]    Dice: [4, 6] 
+[05:16:35]    Expected moves: 2
+[05:16:35]    Initial state: moving
+[05:16:35] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:35] ═══════════════════════════
+[05:16:35] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:35] ═══════════════════════════
+[05:16:35] 
+🎯 MOVE 1 ATTEMPT
+[05:16:35]    Current game state: moving
+[05:16:35]    Active player: white
+[05:16:38] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:38] 
+🤖 ROBOT TURN COMPLETE
+[05:16:38]    Moves completed: 0/2
+[05:16:38]    Final state: moving
+[05:16:38]    Duration: 3118ms
+[05:16:38]    Next player: white
+[05:16:39] 
+🎯 TURN 97
+[05:16:39]    Current state: moving
+[05:16:39]    Active player: white
+[05:16:39]    Action: Executing robot moves...
+[05:16:39] 🤖 ROBOT TURN START
+[05:16:39]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:39]    Dice: [4, 6] 
+[05:16:39]    Expected moves: 2
+[05:16:39]    Initial state: moving
+[05:16:39] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:39] ═══════════════════════════
+[05:16:39] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:39] ═══════════════════════════
+[05:16:39] 
+🎯 MOVE 1 ATTEMPT
+[05:16:39]    Current game state: moving
+[05:16:39]    Active player: white
+[05:16:42] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:42] 
+🤖 ROBOT TURN COMPLETE
+[05:16:42]    Moves completed: 0/2
+[05:16:42]    Final state: moving
+[05:16:42]    Duration: 3109ms
+[05:16:42]    Next player: white
+[05:16:42] 
+🎯 TURN 98
+[05:16:42]    Current state: moving
+[05:16:42]    Active player: white
+[05:16:42]    Action: Executing robot moves...
+[05:16:42] 🤖 ROBOT TURN START
+[05:16:42]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:42]    Dice: [4, 6] 
+[05:16:42]    Expected moves: 2
+[05:16:42]    Initial state: moving
+[05:16:42] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:42] ═══════════════════════════
+[05:16:42] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:42] ═══════════════════════════
+[05:16:42] 
+🎯 MOVE 1 ATTEMPT
+[05:16:42]    Current game state: moving
+[05:16:42]    Active player: white
+[05:16:45] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:45] 
+🤖 ROBOT TURN COMPLETE
+[05:16:45]    Moves completed: 0/2
+[05:16:45]    Final state: moving
+[05:16:45]    Duration: 3113ms
+[05:16:45]    Next player: white
+[05:16:45] 
+🎯 TURN 99
+[05:16:45]    Current state: moving
+[05:16:45]    Active player: white
+[05:16:45]    Action: Executing robot moves...
+[05:16:45] 🤖 ROBOT TURN START
+[05:16:45]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:45]    Dice: [4, 6] 
+[05:16:45]    Expected moves: 2
+[05:16:45]    Initial state: moving
+[05:16:45] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:45] ═══════════════════════════
+[05:16:45] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:45] ═══════════════════════════
+[05:16:45] 
+🎯 MOVE 1 ATTEMPT
+[05:16:45]    Current game state: moving
+[05:16:45]    Active player: white
+[05:16:48] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:48] 
+🤖 ROBOT TURN COMPLETE
+[05:16:48]    Moves completed: 0/2
+[05:16:48]    Final state: moving
+[05:16:48]    Duration: 3105ms
+[05:16:48]    Next player: white
+[05:16:49] 
+🎯 TURN 100
+[05:16:49]    Current state: moving
+[05:16:49]    Active player: white
+[05:16:49]    Action: Executing robot moves...
+[05:16:49] 🤖 ROBOT TURN START
+[05:16:49]    Player: 92a408fe-a812-432e-994e-27eda29cce8a (white)
+[05:16:49]    Dice: [4, 6] 
+[05:16:49]    Expected moves: 2
+[05:16:49]    Initial state: moving
+[05:16:49] 
+📋 BOARD BEFORE ROBOT TURN
+[05:16:49] ═══════════════════════════
+[05:16:49] Nodots Backgammon
+GNU Position ID: kk/wATDgc/ABMA
+                 Match ID   : cAkAAAAAAAAA
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: WHITE (O) *ACTIVE* - bf682fe9-531a-49bd-85d1-b24d12be9efe
+ | O           X    |   | X              O |
+ | O           X    |   | X              O |
+ | O           X    |   | X                |
+ | O                |   | X                |
+ | O                |   | X                |
+v|                  |BAR|                  |     0 points
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O                |
+ | X                |   | O              X |
+ | X           O    |   | O     O     O  X |
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: BLACK (X) - dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c
+                              0 points
+
+GAME STATE: MOVING
+ACTIVE PLAYER: WHITE (O) [clockwise]
+DICE ROLL: [4, 6] (Total: 10)
+
+[05:16:49] ═══════════════════════════
+[05:16:49] 
+🎯 MOVE 1 ATTEMPT
+[05:16:49]    Current game state: moving
+[05:16:49]    Active player: white
+[05:16:52] ❌ ERROR during move 1: 400 BAD REQUEST - SIMULATION STOPPED: Game is not in a state where possible moves can be calculated
+[05:16:52] 
+🤖 ROBOT TURN COMPLETE
+[05:16:52]    Moves completed: 0/2
+[05:16:52]    Final state: moving
+[05:16:52]    Duration: 3117ms
+[05:16:52]    Next player: white
+[05:16:52] 
+🏁 ENHANCED GAME SIMULATION COMPLETE
+[05:16:52] ===================================
+[05:16:52] ⚠️  Game ended without completion after 100 turns
+[05:16:52]    Final state: moving
+[05:16:52]    Max turns limit: 100
+[05:16:52]    This may indicate a bug or infinite loop
+[05:16:52] 
+📊 GAME STATISTICS
+[05:16:52] ==================
+[05:16:52]    Game ID: ebdc1bbb-bf34-4e73-832c-a2348c3fa0f1
+[05:16:52]    Robot 1: Robot 73b59f68 (bf682fe9-531a-49bd-85d1-b24d12be9efe)
+[05:16:52]    Robot 2: Robot 2375bde6 (dffe9a15-b8ae-4f1b-9a9d-83be1a1db88c)
+[05:16:52]    Total turns: 100
+[05:16:52]    Duration: 328.43 seconds
+[05:16:52]    Avg time per turn: 3284ms
+[05:16:52]    Final state: moving

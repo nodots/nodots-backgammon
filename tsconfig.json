@@ -1,0 +1,32 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/types"
+    },
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/ai"
+    },
+    {
+      "path": "./packages/api-utils"
+    },
+    {
+      "path": "./packages/api"
+    },
+    {
+      "path": "./packages/client"
+    },
+    {
+      "path": "./packages/cli"
+    },
+    {
+      "path": "./packages/dice"
+    },
+    {
+      "path": "./packages/marketing"
+    }
+  ]
+}

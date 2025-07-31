@@ -1,15 +1,70 @@
 {
+  "name": "nodots-backgammon-workspace",
+  "version": "1.0.0",
+  "description": "Nodots Backgammon Development Workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "npm run test:types && npm run test:core && npm run test:api && npm run test:cli && npm run test:ai",
-    "test:types": "cd nodots-backgammon-types && npm test",
-    "test:core": "cd nodots-backgammon-core && npm test",
-    "test:api": "cd nodots-backgammon-api && npm test",
-    "test:cli": "cd nodots-backgammon-cli && npm test",
-    "test:ai": "cd nodots-backgammon-ai && npm test",
-    "test:client": "cd nodots-backgammon-client && npm test"
+    "kill-all": "pkill -f 'nodemon|vite|ts-node.*src/index' 2>/dev/null || true && lsof -ti:3000,5437 | xargs kill -9 2>/dev/null || true",
+    "start": "npm run kill-all && concurrently \"npm run start:api\" \"npm run start:client\"",
+    "start:api": "npm run start --workspace=packages/api",
+    "start:client": "npm run start --workspace=packages/client",
+    "start:api-only": "npm run start --workspace=packages/api",
+    "start:client-only": "npm run start --workspace=packages/client",
+    "start:simple": "echo 'Starting API and CLIENT servers separately...' && npm run start:api-only &",
+    
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "clean": "npm run clean --workspaces",
+    "dev": "npm run start",
+    "install:all": "npm install --workspaces",
+    
+    "test:types": "npm run test --workspace=packages/types",
+    "test:core": "npm run test --workspace=packages/core",
+    "test:ai": "npm run test --workspace=packages/ai",
+    "test:api": "npm run test --workspace=packages/api",
+    "test:client": "npm run test --workspace=packages/client",
+    "test:cli": "npm run test --workspace=packages/cli",
+    
+    "build:types": "npm run build --workspace=packages/types",
+    "build:core": "npm run build --workspace=packages/core",
+    "build:ai": "npm run build --workspace=packages/ai",
+    "build:api": "npm run build --workspace=packages/api",
+    "build:client": "npm run build --workspace=packages/client",
+    "build:cli": "npm run build --workspace=packages/cli",
+    
+    "simulate:1000": "node run-1000-simulations-stats.js",
+    "simulate:100": "node run-100-simulations.js",
+    "simulate:10": "node run-10-simulations.js",
+    "simulate": "npm run simulate:1000",
+    
+    "test:e2e": "playwright test e2e-robot-simulation.test.ts",
+    "test:e2e:headed": "playwright test e2e-robot-simulation.test.ts --headed",
+    "test:e2e:debug": "playwright test e2e-robot-simulation.test.ts --debug",
+    "test:e2e:robot-moving": "playwright test e2e-robot-moving-automation.test.ts",
+    "test:e2e:robot-moving:headed": "playwright test e2e-robot-moving-automation.test.ts --headed",
+    "test:e2e:robot-moving:debug": "playwright test e2e-robot-moving-automation.test.ts --debug"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^20.19.8",
+    "png-to-ico": "^2.1.8",
+    "typescript": "^5.7.3",
+    "eslint": "^9.19.0"
   },
   "dependencies": {
     "axios": "^1.10.0",
-    "node-fetch": "^2.7.0"
-  }
+    "dotenv": "^17.1.0",
+    "node-fetch": "^2.7.0",
+    "socket.io-client": "^4.8.1",
+    "ws": "^8.18.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Ken Riley <kenr@nodots.com>",
+  "license": "MIT"
 }

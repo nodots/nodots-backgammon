@@ -1,10 +1,16 @@
 const { simulateCompleteGame } = require('./complete-robot-simulation.js')
 const fetch = require('node-fetch')
+const https = require('https')
 
 // Check if API server is running
 async function checkApiServer() {
   try {
-    const response = await fetch('http://localhost:3000/api/v1/users')
+    const agent = new https.Agent({
+      rejectUnauthorized: false, // Ignore SSL certificate errors for development
+    })
+    const response = await fetch('https://localhost:3443/api/v3.2/health', {
+      agent,
+    })
     return response.ok
   } catch (error) {
     return false
@@ -23,7 +29,7 @@ async function runMultipleSimulations(count = 3) {
   if (!apiRunning) {
     console.error('❌ API server is not running!')
     console.error('   Please start the API server first:')
-    console.error('   cd nodots-backgammon-api && npm run dev')
+    console.error('   cd nodots-backgammon-api && npm start')
     process.exit(1)
   }
 
