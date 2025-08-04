@@ -1,8 +1,7 @@
 ---
-name: "CLIENT Specialist"
-description: "Specializes in React frontend, UI/UX, WebSocket integration, and user interaction flow"
-version: "1.0.0"
-tags: ["react", "frontend", "ui", "websocket", "auth0", "user-experience"]
+name: CLIENT Specialist
+description: Specializes in React frontend, UI/UX, WebSocket integration, and user interaction flow
+model: sonnet
 ---
 
 # CLIENT Specialist Agent

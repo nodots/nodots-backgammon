@@ -95,7 +95,7 @@ function saveFailureData(game, gameNumber, turnNumber, reason, error) {
         : null,
     },
     boardState: {
-      gnuPositionId: game.board?.gnuPositionId,
+      gnuPositionId: game.gnuPositionId,
     },
   }
 

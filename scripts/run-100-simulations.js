@@ -102,7 +102,7 @@ function dumpGameState(game, gameNumber, turnNumber, reason, error) {
         : null,
     },
     boardState: {
-      gnuPositionId: game.board?.gnuPositionId,
+      gnuPositionId: game.gnuPositionId,
       points: game.board?.points?.map((point) => ({
         id: point.id,
         position: point.position,
@@ -286,7 +286,7 @@ async function runSingleSimulation(gameNumber) {
             console.log(`   Game ID: ${currentGame.id}`)
             console.log(`   State: ${currentGame.stateKind}`)
             console.log(`   Active: ${activeBot} (${currentGame.activeColor})`)
-            console.log(`   GNU Position: ${currentGame.board?.gnuPositionId}`)
+            console.log(`   GNU Position: ${currentGame.gnuPositionId}`)
 
             if (currentGame.activePlay?.moves) {
               const movesArray = Array.from(currentGame.activePlay.moves)

@@ -21,6 +21,7 @@ The foundation of the entire ecosystem - implements all backgammon game mechanic
 **Key Features:**
 
 - Complete backgammon rules implementation
+- **Robot Automation** - Fully functional AI opponents that actually move pieces
 - Board state management and move validation
 - Support for doubles, bar entry, and bearing off
 - GNU Position ID support for board serialization
@@ -36,12 +37,18 @@ npm install @nodots-llc/backgammon-core
 **Usage:**
 
 ```typescript
-import { Board, Game, Play } from '@nodots-llc/backgammon-core'
+import { Board, Game, Robot } from '@nodots-llc/backgammon-core'
 
 // Initialize a new game
 const board = Board.initialize()
 const game = Game.initialize(players)
-const play = Play.initialize(board, player)
+
+// Robot automation (v3.7.0+)
+const robotResult = await Robot.makeOptimalMove(game, 'intermediate')
+if (robotResult.success) {
+  console.log('Robot completed turn successfully!')
+  // robotResult.game contains updated board with robot's moves
+}
 ```
 
 ### [@nodots-llc/backgammon-types](nodots-backgammon-types/)
@@ -201,6 +208,38 @@ npm install @nodots-llc/backgammon-ai
                     │  │Logic)  │Types)  │Backgam.)│ │
                     │  └────────┴────────┴────────┘ │
                     └───────────────────────────────┘
+```
+
+## 🤖 Robot Automation (v3.7.0+)
+
+The robot automation system provides fully functional AI opponents:
+
+**Features:**
+- **Functional Programming Architecture** - Uses discriminated unions and pure functions
+- **Three Difficulty Levels** - Beginner, Intermediate, Advanced
+- **Complete Turn Automation** - Handles rolling, moving, and turn completion
+- **Real Piece Movement** - Actually moves checkers on the board (fixed in v3.7.0)
+
+**Usage:**
+```typescript
+import { Robot } from '@nodots-llc/backgammon-core'
+
+// Execute complete robot turn
+const result = await Robot.makeOptimalMove(game, 'intermediate')
+
+if (result.success) {
+  // Robot successfully completed turn and moved pieces
+  const updatedGame = result.game
+} else {
+  console.error('Robot turn failed:', result.error)
+}
+```
+
+**E2E Testing:**
+```bash
+# Test robot automation end-to-end
+cd packages/api
+NODE_ENV=test node test-robot-automation-e2e.js
 ```
 
 ## 🧪 Testing
