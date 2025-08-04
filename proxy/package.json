@@ -1,0 +1,33 @@
+{
+  "name": "nodots-backgammon-proxy",
+  "version": "1.0.0",
+  "description": "SSL proxy servers for Nodots Backgammon development",
+  "type": "module",
+  "main": "proxy-server.js",
+  "scripts": {
+    "setup": "./setup-certs.sh",
+    "start": "node proxy-server.js",
+    "dev": "nodemon proxy-server.js",
+    "health": "curl -s http://localhost:8080/health | jq .",
+    "install-ca-macos": "sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain certs/ca/ca.crt",
+    "install-ca-linux": "sudo cp certs/ca/ca.crt /usr/local/share/ca-certificates/nodots-dev-ca.crt && sudo update-ca-certificates",
+    "add-hosts": "echo '# Nodots Development Domains' | sudo tee -a /etc/hosts && echo '127.0.0.1 nodots.home' | sudo tee -a /etc/hosts && echo '127.0.0.1 api.nodots.home' | sudo tee -a /etc/hosts",
+    "clean": "rm -rf certs/ node_modules/",
+    "test": "node test-proxy.js"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "keywords": [
+    "proxy",
+    "ssl",
+    "development",
+    "https",
+    "backgammon"
+  ],
+  "author": "Ken Riley <kenr@nodots.com>",
+  "license": "MIT"
+}

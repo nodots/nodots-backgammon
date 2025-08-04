@@ -2,6 +2,15 @@
 
 This document analyzes the current state of backgammon rule implementation in Nodots Backgammon, identifying rules that are either not implemented at all or implemented incorrectly according to official backgammon rules (referenced from https://www.bkgm.com/rules.html).
 
+## 🎯 Recent Updates (January 2025)
+
+**Major Improvements Completed:**
+- ✅ **Pip Count Calculations**: Fully implemented via `PositionAnalyzer.calculatePipCount()` with proper directional logic
+- ✅ **Real-time Board Analysis**: Dynamic calculation based on actual checker positions, not hardcoded values
+- ✅ **Position Analysis Infrastructure**: Comprehensive position analysis tools including distribution metrics, anchor detection, and game phase analysis
+- ✅ **GNU Position ID Support**: Proper GNU Position ID constants and integration for position serialization
+- ✅ **Automated Human vs Robot Play**: Working end-to-end gameplay between human and AI players
+
 ## Summary
 
 Based on the codebase analysis, Nodots Backgammon implements the core movement mechanics correctly but lacks many standard backgammon rules and tournament features. The implementation focuses primarily on basic gameplay with some support for the doubling cube.
@@ -97,14 +106,15 @@ Based on the codebase analysis, Nodots Backgammon implements the core movement m
 
 ### Pip Count and Statistics
 
-#### 9. **Pip Count Calculation** - INCOMPLETE
+#### 9. **Pip Count Calculation** - ✅ IMPLEMENTED
 **What it is**: Running count of total distance all checkers must travel to bear off.
 
 **Current Status**:
-- Basic pip count infrastructure exists
-- `Board.getPipCounts()` returns hardcoded values (167, 167)
-- No actual pip count calculation implemented
-- UI elements exist but may not display accurate values
+- ✅ Pip count calculation fully implemented via `PositionAnalyzer.calculatePipCount()`
+- ✅ `Board.getPipCounts()` calls actual calculation method for each player
+- ✅ Proper directional logic using `player.direction` for accurate positioning
+- ✅ Handles checkers on points, bar (value = 25), and defensive checks for missing data
+- ✅ UI elements should now display accurate real-time pip count values
 
 #### 10. **Game Statistics and Timing** - PARTIALLY IMPLEMENTED
 **What it is**: Detailed game statistics including move times, turn counts, cube history.
@@ -130,19 +140,21 @@ Based on the codebase analysis, Nodots Backgammon implements the core movement m
 - Settings include `allowUndo?: boolean`
 - No undo implementation in move logic
 
-#### 13. **Draw Offers** - NOT IMPLEMENTED
-**What it is**: Players can offer draws in certain situations.
+#### 13. **Draw Offers** - ❌ INVALID RULE
+**What it is**: ~~Players can offer draws in certain situations.~~ **This is NOT a legitimate backgammon rule.**
 
-**Current Status**:
-- Settings include `allowDraw?: boolean`
-- No draw offer/acceptance logic
+**Research Findings**:
+- ❌ Draw offers do not exist in official backgammon rules (bkgm.com, USBGF, WBF)
+- ❌ Game design makes draws technically impossible (both players cannot be simultaneously closed out)
+- ❌ Tournament rules explicitly require games to be "played to completion"
+- ✅ **RECOMMENDATION**: Remove `allowDraw?: boolean` setting as it represents a non-existent rule
 
 ## Rules Implemented Incorrectly ⚠️
 
-### 1. **Pip Count Display** - INCORRECT VALUES
-**Issue**: `Board.getPipCounts()` returns hardcoded values instead of calculating actual pip counts.
+### 1. **Pip Count Display** - ✅ FIXED
+**Issue**: Previously `Board.getPipCounts()` returned hardcoded values instead of calculating actual pip counts.
 
-**Fix Needed**: Implement proper pip count calculation based on checker positions.
+**Status**: ✅ **RESOLVED** - Now implements proper pip count calculation via `PositionAnalyzer.calculatePipCount()` based on real checker positions.
 
 ### 2. **Game State Management** - OVERLY COMPLEX
 **Issue**: The state machine has many intermediate states that don't align with standard backgammon rules.
@@ -156,7 +168,7 @@ Based on the codebase analysis, Nodots Backgammon implements the core movement m
 
 ### High Priority (Essential for Tournament Play)
 1. **Gammon/Backgammon Detection and Scoring**
-2. **Proper Pip Count Calculation**  
+2. ✅ ~~**Proper Pip Count Calculation**~~ - **COMPLETED**
 3. **Crawford Rule Implementation**
 4. **Resignation System**
 
@@ -170,17 +182,20 @@ Based on the codebase analysis, Nodots Backgammon implements the core movement m
 1. **Beaver/Raccoon Rules**
 2. **Undo Functionality**
 3. **Automatic Play Features**
-4. **Draw Offers**
+
+### Invalid Rules (Should Not Be Implemented)
+1. ❌ **Draw Offers** - Not a legitimate backgammon rule; game design makes draws impossible
 
 ## Technical Debt and Architecture Issues
 
-### 1. **Hardcoded Values**
-- Pip counts return static values (167, 167)
-- Need dynamic calculation based on actual board state
+### 1. **Hardcoded Values** - ✅ RESOLVED
+- ✅ **FIXED**: Pip counts now calculated dynamically via `PositionAnalyzer.calculatePipCount()`
+- ✅ **IMPROVED**: Real-time calculation based on actual board state and checker positions
 
 ### 2. **Unused Type Definitions**
 - Many advanced rule flags exist in types but have no implementation
 - Should either implement or remove to avoid confusion
+- ⚠️ **URGENT**: Remove `allowDraw?: boolean` setting - represents invalid backgammon rule
 
 ### 3. **Rule Configuration Not Enforced**
 - Game has `rules` object with various flags but they don't affect gameplay

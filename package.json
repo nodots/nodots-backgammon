@@ -15,6 +15,15 @@
     "start:client-only": "npm run start --workspace=packages/client",
     "start:simple": "echo 'Starting API and CLIENT servers separately...' && npm run start:api-only &",
     
+    "proxy:setup": "cd proxy && npm install && npm run setup",
+    "proxy:start": "cd proxy && npm start",
+    "proxy:dev": "cd proxy && npm run dev",
+    "proxy:test": "cd proxy && npm test",
+    "proxy:health": "cd proxy && npm run health",
+    "proxy:install-ca": "cd proxy && npm run install-ca-macos",
+    "proxy:add-hosts": "cd proxy && npm run add-hosts",
+    "start:with-proxy": "concurrently \"npm run start\" \"npm run proxy:start\"",
+    
     "build": "npm run build --workspaces",
     "test": "npm run test --workspaces",
     "lint": "npm run lint --workspaces",

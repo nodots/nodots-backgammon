@@ -101,7 +101,7 @@ function saveFailureData(
         : null,
     },
     boardState: {
-      gnuPositionId: game.board?.gnuPositionId,
+      gnuPositionId: game.gnuPositionId,
     },
   }
 
