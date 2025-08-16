@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Undo Button Test</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #0f0;
+        }
+        .log-entry {
+            margin: 5px 0;
+            padding: 5px;
+            border-left: 3px solid #0f0;
+            background: rgba(0, 255, 0, 0.05);
+        }
+        .error {
+            color: #f00;
+            border-color: #f00;
+            background: rgba(255, 0, 0, 0.05);
+        }
+        .success {
+            color: #0f0;
+            font-weight: bold;
+        }
+        h2 {
+            color: #0ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Undo Button Visibility Test</h1>
+    <div id="status">Checking game state...</div>
+    <div id="logs"></div>
+
+    <script>
+        const API_URL = 'http://localhost:3000/api/v3.6';
+        const logs = document.getElementById('logs');
+        const status = document.getElementById('status');
+
+        function log(message, isError = false) {
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${isError ? 'error' : ''}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logs.insertBefore(entry, logs.firstChild);
+        }
+
+        async function checkGameState() {
+            try {
+                // Get all games
+                const gamesRes = await fetch(`${API_URL}/games`);
+                const games = await gamesRes.json();
+                
+                if (games.length === 0) {
+                    status.textContent = '❌ No games found. Please create a game first.';
+                    return;
+                }
+
+                const game = games[0]; // Use the first game
+                log(`Found game: ${game.id}`);
+                log(`Game state: ${game.stateKind}`);
+                log(`Active player: ${game.activePlayer?.nickname || 'N/A'} (${game.activePlayer?.color})`);
+                log(`Is robot: ${game.activePlayer?.isRobot}`);
+
+                // Check activePlay
+                if (game.activePlay) {
+                    log(`ActivePlay exists: YES`);
+                    if (game.activePlay.moves) {
+                        const moves = Array.isArray(game.activePlay.moves) ? game.activePlay.moves : [];
+                        log(`Total moves: ${moves.length}`);
+                        const completedMoves = moves.filter(m => m.stateKind === 'completed');
+                        log(`Completed moves: ${completedMoves.length}`);
+                        
+                        // Check undo button visibility conditions
+                        const canUndo = checkUndoConditions(game);
+                        if (canUndo) {
+                            log('✅ Undo button SHOULD be visible', false);
+                            status.innerHTML = '<span class="success">✅ Undo button should be visible!</span>';
+                        } else {
+                            log('❌ Undo button should NOT be visible');
+                            status.textContent = '❌ Undo button conditions not met';
+                        }
+                    } else {
+                        log(`ActivePlay has no moves`);
+                    }
+                } else {
+                    log(`ActivePlay: NONE`);
+                }
+
+                // Display current conditions
+                displayConditions(game);
+
+            } catch (error) {
+                log(`Error: ${error.message}`, true);
+                status.textContent = `❌ Error: ${error.message}`;
+            }
+        }
+
+        function checkUndoConditions(game) {
+            // Mirror the logic from UndoButton component
+            if (!game) return false;
+            
+            const activePlayer = game.activePlayer;
+            if (!activePlayer || activePlayer.isRobot) {
+                log('Cannot undo: No active player or player is robot');
+                return false;
+            }
+
+            if (game.stateKind === 'rolling') {
+                log('Cannot undo: In rolling state - no moves made yet');
+                return false;
+            }
+
+            const validStates = ['rolled', 'moving', 'moved'];
+            if (!validStates.includes(game.stateKind)) {
+                log(`Cannot undo: Invalid state '${game.stateKind}'`);
+                return false;
+            }
+
+            const activePlay = game.activePlay;
+            if (!activePlay) {
+                log('Cannot undo: No activePlay exists');
+                return false;
+            }
+
+            let completedMoves = [];
+            let allMoves = [];
+
+            if (activePlay.moves) {
+                const movesArray = Array.isArray(activePlay.moves) ? activePlay.moves : [];
+                allMoves = movesArray;
+                completedMoves = movesArray.filter(move => move && move.stateKind === 'completed');
+            }
+
+            let shouldShowUndo = false;
+            if (game.stateKind === 'rolled') {
+                shouldShowUndo = completedMoves.length > 0;
+                log(`Rolled state: ${completedMoves.length} completed moves, show undo: ${shouldShowUndo}`);
+            } else if (['moving', 'moved'].includes(game.stateKind)) {
+                shouldShowUndo = allMoves.length > 0;
+                log(`${game.stateKind} state: ${allMoves.length} total moves, show undo: ${shouldShowUndo}`);
+            }
+
+            return shouldShowUndo;
+        }
+
+        function displayConditions(game) {
+            const conditions = document.createElement('div');
+            conditions.innerHTML = `
+                <h2>Current Conditions:</h2>
+                <ul>
+                    <li>Game State: <strong>${game.stateKind}</strong></li>
+                    <li>Active Player: <strong>${game.activePlayer?.nickname || 'N/A'}</strong></li>
+                    <li>Is Robot: <strong>${game.activePlayer?.isRobot ? 'YES' : 'NO'}</strong></li>
+                    <li>Has ActivePlay: <strong>${game.activePlay ? 'YES' : 'NO'}</strong></li>
+                    <li>Moves Count: <strong>${game.activePlay?.moves ? (Array.isArray(game.activePlay.moves) ? game.activePlay.moves.length : 0) : 0}</strong></li>
+                </ul>
+                <h2>Requirements for Undo Button:</h2>
+                <ul>
+                    <li>✅ Human player (not robot)</li>
+                    <li>✅ Game in 'rolled', 'moving', or 'moved' state</li>
+                    <li>✅ Has activePlay with moves</li>
+                    <li>✅ For 'rolled' state: At least 1 completed move</li>
+                    <li>✅ For 'moving'/'moved' states: At least 1 move (any state)</li>
+                </ul>
+            `;
+            document.body.appendChild(conditions);
+        }
+
+        // Check immediately and every 2 seconds
+        checkGameState();
+        setInterval(checkGameState, 2000);
+    </script>
+</body>
+</html>

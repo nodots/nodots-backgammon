@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- heading "Roll History 2" [level=6]
+- text: GNU Position ID
+- paragraph: 4HPwATDgc/AJBA
+- list:
+  - listitem:
+    - paragraph: e2e-tests rolled 3, 5
+    - text: roll-dice
+    - paragraph: "Move #6 6:14:18 PM"
+  - separator
+  - listitem:
+    - paragraph: Robot (white) rolled 3, 3 (double)
+    - text: roll-dice
+    - paragraph: "Move #1 6:14:11 PM"
+- text: "Game started: 8/15/2025, 6:14:10 PM 13 14 15 16 17 18"
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- img
+- img
+- text: 7 8 9 10 11 12
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- text: 167 167 19 20 21 22 23 24
+- button
+- button
+- button
+- button
+- button
+- button
+- button
+- text: 1 2 3 4 5 6
+- button
+- button
+- button
+- button
+- button
+- button
+- text: "1"
+```

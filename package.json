@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Nodots Backgammon Development Workspace",
   "private": true,
+  "config": {
+    "apiVersion": "3.7"
+  },
   "workspaces": [
     "packages/*"
   ],
@@ -24,6 +27,7 @@
     "proxy:add-hosts": "cd proxy && npm run add-hosts",
     "start:with-proxy": "concurrently \"npm run start\" \"npm run proxy:start\"",
     
+    "prebuild": "npm run update:individual-locks",
     "build": "npm run build --workspaces",
     "test": "npm run test --workspaces",
     "lint": "npm run lint --workspaces",
@@ -55,7 +59,10 @@
     "test:e2e:debug": "playwright test e2e-robot-simulation.test.ts --debug",
     "test:e2e:robot-moving": "playwright test e2e-robot-moving-automation.test.ts",
     "test:e2e:robot-moving:headed": "playwright test e2e-robot-moving-automation.test.ts --headed",
-    "test:e2e:robot-moving:debug": "playwright test e2e-robot-moving-automation.test.ts --debug"
+    "test:e2e:robot-moving:debug": "playwright test e2e-robot-moving-automation.test.ts --debug",
+    
+    "install:individual-locks": "cd packages/ai && npm install --no-workspaces && cd ../api && npm install --no-workspaces && cd ../client && npm install --no-workspaces && cd ../core && npm install --no-workspaces",
+    "update:individual-locks": "npm run install:individual-locks"
   },
   "devDependencies": {
     "@playwright/test": "^1.54.1",
