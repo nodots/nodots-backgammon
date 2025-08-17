@@ -3,18 +3,18 @@
 ```yaml
 - heading "Roll History 2" [level=6]
 - text: GNU Position ID
-- paragraph: 4HPwATDgc/AJBA
+- paragraph: 4HPkATDgc/ABBQ
 - list:
   - listitem:
-    - paragraph: e2e-tests rolled 3, 5
+    - paragraph: e2e-tests rolled 2, 5
     - text: roll-dice
-    - paragraph: "Move #6 6:14:18 PM"
+    - paragraph: "Move #4 5:26:06 PM"
   - separator
   - listitem:
-    - paragraph: Robot (white) rolled 3, 3 (double)
+    - paragraph: Robot (white) rolled 4, 3
     - text: roll-dice
-    - paragraph: "Move #1 6:14:11 PM"
-- text: "Game started: 8/15/2025, 6:14:10 PM 13 14 15 16 17 18"
+    - paragraph: "Move #1 5:26:04 PM"
+- text: "Game started: 8/16/2025, 5:26:03 PM 13 14 15 16 17 18"
 - button
 - button
 - button
@@ -34,8 +34,7 @@
 - button
 - button
 - button
-- button
-- text: 167 167 19 20 21 22 23 24
+- text: 160 167 19 20 21 22 23 24
 - button
 - button
 - button
@@ -44,6 +43,7 @@
 - button
 - button
 - text: 1 2 3 4 5 6
+- button
 - button
 - button
 - button

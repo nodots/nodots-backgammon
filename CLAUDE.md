@@ -444,3 +444,4 @@ Support multiple languages through proper i18n configuration:
 - Anything that can be derived from gameState must be derived from gameState.
 - NEVER claim something is fixed until you have verified with a browser-based E2E test that SHOWS the fix.
 - ALWAYS create new branches from `development` branch
+- Always create github issues in this repo: https://github.com/nodots/nodots-backgammon
