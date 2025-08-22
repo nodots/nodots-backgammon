@@ -223,6 +223,21 @@ In nodots-backgammon-core, the activePlay.moves property is stored as a Set, not
 
 The core library should handle this conversion internally rather than exposing Set complexity to consuming applications.
 
+## Authentication and Testing
+
+### API Authentication Requirements
+
+When testing API endpoints, authentication is REQUIRED for all requests:
+
+1. **Development Environment**: The API uses Auth0 for authentication
+2. **API Endpoints**: All endpoints require an authorization header except for health checks
+3. **Testing Strategy**: 
+   - For automated tests, use test tokens or bypass authentication in test environment
+   - For manual testing, obtain proper Auth0 tokens or use test users
+   - Never attempt to test authenticated endpoints without proper credentials
+4. **Error Handling**: "No authorization header provided" indicates missing authentication
+5. **Test Data**: Use existing robot users (gbg-bot, nbg-bot-v1) for robot testing scenarios
+
 ## Development Workflow Rules
 
 ### Status Updates and Communication
@@ -445,3 +460,5 @@ Support multiple languages through proper i18n configuration:
 - NEVER claim something is fixed until you have verified with a browser-based E2E test that SHOWS the fix.
 - ALWAYS create new branches from `development` branch
 - Always create github issues in this repo: https://github.com/nodots/nodots-backgammon
+- REST and WS methods both must always be updated when we make API changes.
+- Make changes to WS methods before making changes to REST methods.

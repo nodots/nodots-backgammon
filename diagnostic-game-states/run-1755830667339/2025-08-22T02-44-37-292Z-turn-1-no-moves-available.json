@@ -1,0 +1,416 @@
+{
+  "diceValues": [
+    "2",
+    "2"
+  ],
+  "canRoll": false,
+  "clickableDice": 0,
+  "moveableCheckersCount": 15,
+  "moveableCheckers": [
+    {
+      "id": "c6b05de0-ce1d-4c81-aeca-d8e5b31bcb18",
+      "color": "white",
+      "position": "13"
+    },
+    {
+      "id": "f2ae0aec-4f3e-40a3-af89-5a42bd3592eb",
+      "color": "white",
+      "position": "13"
+    },
+    {
+      "id": "92f7124a-a4c3-4b85-b2a9-a4537d92b6f5",
+      "color": "white",
+      "position": "13"
+    },
+    {
+      "id": "136f0833-b8d7-4334-92d4-33e4f3957371",
+      "color": "white",
+      "position": "13"
+    },
+    {
+      "id": "03697a51-c37b-4985-bac7-a0e5c0661d7e",
+      "color": "white",
+      "position": "13"
+    },
+    {
+      "id": "f3a4bb7b-277e-4536-90ef-7f554ce153a4",
+      "color": "white",
+      "position": "8"
+    },
+    {
+      "id": "a91b0c0c-c368-4a8f-b635-ba5de6160d23",
+      "color": "white",
+      "position": "8"
+    },
+    {
+      "id": "9c4902f8-c66c-4a74-b5e8-14e8ceef4648",
+      "color": "white",
+      "position": "8"
+    },
+    {
+      "id": "55767347-5b0f-4256-ba4c-49df0baab2d2",
+      "color": "white",
+      "position": "24"
+    },
+    {
+      "id": "2a039af2-61ce-40db-8ec9-33c248a6fac9",
+      "color": "white",
+      "position": "24"
+    },
+    {
+      "id": "2ce0ccbe-12e8-41c1-ab7c-5fb72bba60a8",
+      "color": "white",
+      "position": "6"
+    },
+    {
+      "id": "25ceb602-02e7-486c-9166-8fb5d2d5bd83",
+      "color": "white",
+      "position": "6"
+    },
+    {
+      "id": "06bcafe6-5623-41d1-bec6-73f9150b9331",
+      "color": "white",
+      "position": "6"
+    },
+    {
+      "id": "697649da-25a6-4daf-a24c-982e9818f070",
+      "color": "white",
+      "position": "6"
+    },
+    {
+      "id": "7a706f95-7e5b-44d7-b579-1c21e27d73cb",
+      "color": "white",
+      "position": "6"
+    }
+  ],
+  "totalCheckers": 30,
+  "allCheckers": [
+    {
+      "id": "c6b05de0-ce1d-4c81-aeca-d8e5b31bcb18",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "cc860712-9c90-45f2-921c-b6577cb9c1cb",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "f2ae0aec-4f3e-40a3-af89-5a42bd3592eb",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "cc860712-9c90-45f2-921c-b6577cb9c1cb",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "92f7124a-a4c3-4b85-b2a9-a4537d92b6f5",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "cc860712-9c90-45f2-921c-b6577cb9c1cb",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "136f0833-b8d7-4334-92d4-33e4f3957371",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "cc860712-9c90-45f2-921c-b6577cb9c1cb",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "03697a51-c37b-4985-bac7-a0e5c0661d7e",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "cc860712-9c90-45f2-921c-b6577cb9c1cb",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "87280d73-27a5-447b-82c0-f4aaa01b0bbb",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "65e11f5c-672a-46b8-85b8-646fb321c880",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "1fc90350-965e-4ebc-af0c-3a72f621bc87",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "65e11f5c-672a-46b8-85b8-646fb321c880",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "db083969-44ff-4a46-8f3e-d3f21f63138a",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "65e11f5c-672a-46b8-85b8-646fb321c880",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "f3a4bb7b-277e-4536-90ef-7f554ce153a4",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "7ef5300e-176d-420b-ad73-8098f0cf791c",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "a91b0c0c-c368-4a8f-b635-ba5de6160d23",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "7ef5300e-176d-420b-ad73-8098f0cf791c",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "9c4902f8-c66c-4a74-b5e8-14e8ceef4648",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "7ef5300e-176d-420b-ad73-8098f0cf791c",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "f7c40b59-d3aa-4fbd-ad0a-12060f803865",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "69f9d97e-462b-49e7-8e19-914ac24a5d9c",
+        "pointPosition": "10"
+      }
+    },
+    {
+      "id": "2063294f-24a2-49aa-bccc-e7154dcd371c",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4d3f650d-c653-4a59-a0cd-dd8250b137be",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "ed4e920f-0d7a-4244-8f36-2d75c968b9a1",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4d3f650d-c653-4a59-a0cd-dd8250b137be",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "078eb142-111a-4597-ad4c-4255bad99c9a",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4d3f650d-c653-4a59-a0cd-dd8250b137be",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "657a9719-06f4-4cd2-9ba8-b91b1dcfd581",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4d3f650d-c653-4a59-a0cd-dd8250b137be",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "e180e6ca-2067-4554-9805-76a25d8f33fd",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4d3f650d-c653-4a59-a0cd-dd8250b137be",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "0a72c40b-63d0-4e4b-9dd9-17a1be498029",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4933bd11-dba4-40e8-9f02-7cc1d14cea99",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "0f86718e-5505-45fa-b200-d7a84d744c66",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4933bd11-dba4-40e8-9f02-7cc1d14cea99",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "33da72f2-1074-4c82-a6a6-80369cd7eaf5",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4933bd11-dba4-40e8-9f02-7cc1d14cea99",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "66bbfc65-bfa0-4829-8b67-ebf62c23d2de",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4933bd11-dba4-40e8-9f02-7cc1d14cea99",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "d8a5b0ce-9082-48fd-8307-1b61a6efbf10",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "4933bd11-dba4-40e8-9f02-7cc1d14cea99",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "55767347-5b0f-4256-ba4c-49df0baab2d2",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "d5c6fbbd-c798-4cd9-a3e8-754e01941da5",
+        "pointPosition": "24"
+      }
+    },
+    {
+      "id": "2a039af2-61ce-40db-8ec9-33c248a6fac9",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "d5c6fbbd-c798-4cd9-a3e8-754e01941da5",
+        "pointPosition": "24"
+      }
+    },
+    {
+      "id": "727d7cac-f92b-4fba-a098-5643e8e7599e",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "c71bdadf-84be-463e-8752-172720bcdcb0",
+        "pointPosition": "4"
+      }
+    },
+    {
+      "id": "2ce0ccbe-12e8-41c1-ab7c-5fb72bba60a8",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "14a1e71b-02fc-41cf-b001-5e28d09a54c2",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "25ceb602-02e7-486c-9166-8fb5d2d5bd83",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "14a1e71b-02fc-41cf-b001-5e28d09a54c2",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "06bcafe6-5623-41d1-bec6-73f9150b9331",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "14a1e71b-02fc-41cf-b001-5e28d09a54c2",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "697649da-25a6-4daf-a24c-982e9818f070",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "14a1e71b-02fc-41cf-b001-5e28d09a54c2",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "7a706f95-7e5b-44d7-b579-1c21e27d73cb",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "14a1e71b-02fc-41cf-b001-5e28d09a54c2",
+        "pointPosition": "6"
+      }
+    }
+  ],
+  "windowGame": null,
+  "captureTime": "2025-08-22T02:44:37.293Z",
+  "contextInfo": "turn-1-no-moves-available",
+  "errorInfo": {
+    "turnNumber": 1,
+    "moveCount": 0,
+    "diceValues": [
+      "2",
+      "2"
+    ],
+    "state": {
+      "gameId": "3b5b950b-3f87-4df4-a22b-eba9670830dc",
+      "stateKind": "rolled",
+      "activeColor": "white",
+      "hasActivePlay": true,
+      "activePlayer": {
+        "id": "5b153f6b-25a9-41be-821e-c28264afcc0f",
+        "color": "white",
+        "isRobot": false
+      },
+      "players": [
+        {
+          "id": "5b153f6b-25a9-41be-821e-c28264afcc0f",
+          "color": "white",
+          "isRobot": false
+        },
+        {
+          "id": "b7227a3c-b850-4941-bf3b-8fa51d7c968c",
+          "color": "black",
+          "isRobot": true
+        }
+      ],
+      "canRoll": false,
+      "moveableCheckers": 15,
+      "clickableDice": 0,
+      "diceValues": [
+        "2",
+        "2"
+      ],
+      "websocketConnected": false,
+      "activePlayMoves": [],
+      "readyMoves": 0,
+      "completedMoves": 0,
+      "totalMoves": 0,
+      "activePlay": {
+        "moves": []
+      },
+      "isRobot": false,
+      "robotAutomation": {
+        "isCurrentPlayerRobot": false,
+        "robotState": "idle",
+        "actionsRemaining": 0,
+        "isRobotTurn": false
+      }
+    }
+  },
+  "url": "http://localhost:5437/game/3b5b950b-3f87-4df4-a22b-eba9670830dc"
+}

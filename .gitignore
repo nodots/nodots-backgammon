@@ -9,6 +9,11 @@ dist/
 build/
 coverage/
 
+# TypeScript build artifacts
+plugins/*.d.ts
+plugins/*.d.ts.map
+plugins/*.js
+
 # Environment variables
 .env
 .env.local

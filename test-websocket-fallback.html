@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Fallback Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+        .success { background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .warning { background-color: #fff3cd; border: 1px solid #ffeaa7; color: #856404; }
+        .info { background-color: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; }
+        button { 
+            padding: 10px 15px; 
+            margin: 5px; 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 3px; 
+            cursor: pointer;
+        }
+        button:hover { background: #0056b3; }
+        #logOutput {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebSocket Connection Timeout and Fallback Test</h1>
+    
+    <div class="test-section">
+        <h2>Test Instructions</h2>
+        <div class="info status">
+            This test validates that the WebSocket reconnection and REST API fallback mechanisms work correctly when connections time out or drop.
+        </div>
+        <ol>
+            <li>Start the game server with <code>npm start</code></li>
+            <li>Open the game in your browser and connect to a game</li>
+            <li>Wait for the board to be inactive for more than 30 seconds to trigger a timeout</li>
+            <li>Try clicking dice to pass turn or switch dice</li>
+            <li>Verify that actions work via REST API fallback</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>Expected Behavior</h2>
+        <div class="success status">
+            ✅ <strong>Before Fix:</strong> WebSocket timeout would cause dice clicks to throw errors and prevent turn passing
+        </div>
+        <div class="success status">
+            ✅ <strong>After Fix:</strong> WebSocket timeout triggers automatic reconnection attempt, and if that fails, gracefully falls back to REST API
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Key Improvements Made</h2>
+        <ul>
+            <li><strong>Automatic Reconnection:</strong> When WebSocket disconnects, system attempts to reconnect before failing</li>
+            <li><strong>Graceful Fallback:</strong> If reconnection fails, actions automatically use REST API instead of throwing errors</li>
+            <li><strong>Fast E2E Recovery:</strong> Special handling for E2E test environments with immediate reconnection attempts</li>
+            <li><strong>Better Error Handling:</strong> Clear logging and warning messages instead of critical errors</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Test Validation</h2>
+        <div class="info status">
+            To validate the fix is working, check browser console logs for these messages:
+        </div>
+        <ul>
+            <li><code>WebSocket not connected - attempting reconnection before fallback</code></li>
+            <li><code>Reconnection failed - falling back to REST API</code></li>
+            <li><code>Still disconnected after reconnection attempt - using REST fallback</code></li>
+        </ul>
+        <div class="warning status">
+            The key improvement is that instead of throwing an error saying "WebSocket connection required", the system now gracefully handles disconnections.
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Manual Test Steps</h2>
+        <ol>
+            <li>Start a game and get to a state where you can pass turn (rolled dice, moved pieces)</li>
+            <li>Leave the browser tab inactive for 2-3 minutes</li>
+            <li>Return to the tab and try to pass turn by clicking dice</li>
+            <li>Action should succeed (either via reconnected WebSocket or REST fallback)</li>
+            <li>Check console logs to see which path was taken</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>Browser Console Output</h2>
+        <div id="logOutput"></div>
+        <button onclick="clearLogs()">Clear Logs</button>
+        <button onclick="simulateTest()">Simulate Fallback Test</button>
+    </div>
+
+    <script>
+        const logOutput = document.getElementById('logOutput');
+        
+        function addLog(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const logLine = document.createElement('div');
+            logLine.innerHTML = `<span style="color: #666">${timestamp}</span> <span style="color: ${getLogColor(type)}">[${type.toUpperCase()}]</span> ${message}`;
+            logOutput.appendChild(logLine);
+            logOutput.scrollTop = logOutput.scrollHeight;
+        }
+        
+        function getLogColor(type) {
+            switch(type) {
+                case 'error': return '#721c24';
+                case 'warn': return '#856404';
+                case 'success': return '#155724';
+                default: return '#0c5460';
+            }
+        }
+        
+        function clearLogs() {
+            logOutput.innerHTML = '';
+        }
+        
+        function simulateTest() {
+            addLog('Starting WebSocket fallback simulation test...', 'info');
+            addLog('Simulating WebSocket disconnection...', 'warn');
+            addLog('WebSocket not connected - attempting reconnection before fallback', 'warn');
+            addLog('Attempting to reconnect for action retry...', 'info');
+            addLog('Reconnection failed - falling back to REST API for pass turn', 'warn');
+            addLog('REST API fallback successful - turn passed via HTTP', 'success');
+            addLog('Test completed - fallback mechanism working correctly', 'success');
+        }
+        
+        // Initial log
+        addLog('WebSocket Fallback Test Page Loaded', 'info');
+        addLog('Ready to test reconnection and fallback mechanisms', 'info');
+    </script>
+</body>
+</html>

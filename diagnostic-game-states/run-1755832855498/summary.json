@@ -1,0 +1,52 @@
+{
+  "testRunId": "run-1755832855498",
+  "totalTurns": 1,
+  "finalState": {
+    "gameId": "d4791895-222a-4921-99bd-f38561760a96",
+    "stateKind": "rolled",
+    "activeColor": "white",
+    "hasActivePlay": true,
+    "activePlayer": {
+      "id": "bfb66375-9e5f-4b3b-ac9f-b5a996520ff6",
+      "color": "white",
+      "isRobot": false
+    },
+    "players": [
+      {
+        "id": "bfb66375-9e5f-4b3b-ac9f-b5a996520ff6",
+        "color": "white",
+        "isRobot": false
+      },
+      {
+        "id": "34d23560-41a8-42ff-84d1-07b766249af6",
+        "color": "black",
+        "isRobot": true
+      }
+    ],
+    "canRoll": false,
+    "moveableCheckers": 13,
+    "clickableDice": 0,
+    "diceValues": [
+      "5",
+      "1"
+    ],
+    "websocketConnected": false,
+    "activePlayMoves": [],
+    "readyMoves": 0,
+    "completedMoves": 0,
+    "totalMoves": 0,
+    "activePlay": {
+      "moves": []
+    },
+    "isRobot": false,
+    "robotAutomation": {
+      "isCurrentPlayerRobot": false,
+      "robotState": "idle",
+      "actionsRemaining": 0,
+      "isRobotTurn": false
+    }
+  },
+  "completedSuccessfully": false,
+  "diagnosticDirectory": "/Users/kenr/Code/nodots-backgammon/diagnostic-game-states/run-1755832855498",
+  "timestamp": "2025-08-22T03:21:04.637Z"
+}

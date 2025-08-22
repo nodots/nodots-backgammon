@@ -1,0 +1,346 @@
+{
+  "diceValues": [
+    "5",
+    "1"
+  ],
+  "canRoll": false,
+  "clickableDice": 2,
+  "moveableCheckersCount": 11,
+  "moveableCheckers": [
+    {
+      "id": "58ca0c0e-729d-4ee4-80de-17ca3bb31bb6",
+      "color": "white",
+      "position": "17"
+    },
+    {
+      "id": "49e52664-c33e-4e6a-9b10-3192d29a6889",
+      "color": "white",
+      "position": "17"
+    },
+    {
+      "id": "ab413c73-0a30-46d3-bdc3-53ae236773eb",
+      "color": "white",
+      "position": "17"
+    },
+    {
+      "id": "5a605b3e-6994-423c-9da9-972701b83bc4",
+      "color": "white",
+      "position": "17"
+    },
+    {
+      "id": "cd2bad04-ef95-4f5a-97e7-0d7b6bf2522f",
+      "color": "white",
+      "position": "19"
+    },
+    {
+      "id": "b4dfc132-1577-450c-99d2-2fce4f339888",
+      "color": "white",
+      "position": "19"
+    },
+    {
+      "id": "6db02c0a-8676-45bc-917e-ef3dce28b4d4",
+      "color": "white",
+      "position": "19"
+    },
+    {
+      "id": "46cd767c-b80d-47c0-a512-e352ac5366f7",
+      "color": "white",
+      "position": "19"
+    },
+    {
+      "id": "535d54e5-b75e-4b23-a5c1-96c104f0a354",
+      "color": "white",
+      "position": "19"
+    },
+    {
+      "id": "3812dc1d-346c-449f-8820-2fe00843176f",
+      "color": "white",
+      "position": "1"
+    },
+    {
+      "id": "f2045c40-3f1a-456b-b793-c40246af6730",
+      "color": "white",
+      "position": "1"
+    }
+  ],
+  "totalCheckers": 30,
+  "allCheckers": [
+    {
+      "id": "c23d3f8c-6233-451a-be1b-a9c8797767f1",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "2321ac49-c9ea-478d-9024-1566885007dc",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "a51d6e1d-d329-4d63-ad23-5259c3470d03",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "2321ac49-c9ea-478d-9024-1566885007dc",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "7e27120a-29af-4a76-9dab-6c9ae594b4c3",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "2321ac49-c9ea-478d-9024-1566885007dc",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "9307896b-76c3-4714-bbfb-3bf904404136",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "2321ac49-c9ea-478d-9024-1566885007dc",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "e7b9b034-1093-4de2-a331-3a0bc9d60a43",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "2321ac49-c9ea-478d-9024-1566885007dc",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "58ca0c0e-729d-4ee4-80de-17ca3bb31bb6",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "1fa361df-fc43-42de-b6d2-ce357f7130f9",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "49e52664-c33e-4e6a-9b10-3192d29a6889",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "1fa361df-fc43-42de-b6d2-ce357f7130f9",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "ab413c73-0a30-46d3-bdc3-53ae236773eb",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "1fa361df-fc43-42de-b6d2-ce357f7130f9",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "5a605b3e-6994-423c-9da9-972701b83bc4",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "1fa361df-fc43-42de-b6d2-ce357f7130f9",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "8c74c650-6fd1-4d01-86d4-b56d4d5fba11",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "ce9675e4-633c-4390-a5a5-ea1294d5a2e4",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "8d1c4843-b01d-4475-8a41-8a9f7eb0f7f5",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "ce9675e4-633c-4390-a5a5-ea1294d5a2e4",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "b3759cf5-aad7-460f-b4a6-c3aac866ea80",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "ce9675e4-633c-4390-a5a5-ea1294d5a2e4",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "d912e2de-7b7f-4656-82b9-966dcea12ce2",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "e9310070-1a71-49c4-aa3e-4c04ec73865c",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "9b084ebb-6d00-445e-8a7b-250278ca5e6b",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "e9310070-1a71-49c4-aa3e-4c04ec73865c",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "f226fa42-acbc-4fcc-82e2-93df966803d4",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "e9310070-1a71-49c4-aa3e-4c04ec73865c",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "98a5ac40-d4ad-45ec-bb4b-ab49e7961d93",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "e9310070-1a71-49c4-aa3e-4c04ec73865c",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "cd2bad04-ef95-4f5a-97e7-0d7b6bf2522f",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "d95bc488-31ab-4ab3-80d4-f0c74e09f1ec",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "b4dfc132-1577-450c-99d2-2fce4f339888",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "d95bc488-31ab-4ab3-80d4-f0c74e09f1ec",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "6db02c0a-8676-45bc-917e-ef3dce28b4d4",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "d95bc488-31ab-4ab3-80d4-f0c74e09f1ec",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "46cd767c-b80d-47c0-a512-e352ac5366f7",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "d95bc488-31ab-4ab3-80d4-f0c74e09f1ec",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "535d54e5-b75e-4b23-a5c1-96c104f0a354",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "d95bc488-31ab-4ab3-80d4-f0c74e09f1ec",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "4c4a64a9-a9da-409a-8b16-07262e2953eb",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "abe68169-20d1-41fc-bc8e-de855c77037f",
+        "pointPosition": "24"
+      }
+    },
+    {
+      "id": "85284508-37a9-493d-8151-a0421bdd73e4",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "abe68169-20d1-41fc-bc8e-de855c77037f",
+        "pointPosition": "24"
+      }
+    },
+    {
+      "id": "3812dc1d-346c-449f-8820-2fe00843176f",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "e74e7be0-47f1-4100-8bce-ffda085cd247",
+        "pointPosition": "1"
+      }
+    },
+    {
+      "id": "f2045c40-3f1a-456b-b793-c40246af6730",
+      "color": "white",
+      "moveable": "true",
+      "position": {
+        "pointId": "e74e7be0-47f1-4100-8bce-ffda085cd247",
+        "pointPosition": "1"
+      }
+    },
+    {
+      "id": "47562d85-1d11-4951-a08a-123b5574c23f",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "e00167fe-bc2f-4cbc-a964-1d661e3c744f",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "e5b08a13-893b-4793-a882-7fb3c7b2157f",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "e00167fe-bc2f-4cbc-a964-1d661e3c744f",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "dc5b6afd-4d3a-48e3-b9e4-f62e42d3af17",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "e00167fe-bc2f-4cbc-a964-1d661e3c744f",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "a38ab332-9b0d-4d0c-979f-6d3d518bf31a",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "e00167fe-bc2f-4cbc-a964-1d661e3c744f",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "740ae4eb-f9bf-4262-8d66-c2e79c324990",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "e00167fe-bc2f-4cbc-a964-1d661e3c744f",
+        "pointPosition": "6"
+      }
+    }
+  ],
+  "windowGame": null,
+  "captureTime": "2025-08-22T01:25:38.641Z",
+  "contextInfo": "browser-error",
+  "errorInfo": {
+    "message": "[ERROR] ❌ Error making WebSocket move: Error: No legal moves available from this position\n    at http://localhost:5437/src/hooks/useWebSocketGameActions.ts:242:21\n    at react-stack-bottom-frame (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:17478:20)\n    at runWithFiberInDEV (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:1485:72)\n    at commitHookEffectListMount (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:8460:122)\n    at commitHookPassiveMountEffects (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:8518:60)\n    at commitPassiveMountOnFiber (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:9887:29)\n    at recursivelyTraversePassiveMountEffects (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:9868:13)\n    at commitPassiveMountOnFiber (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:9984:13)\n    at recursivelyTraversePassiveMountEffects (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:9868:13)\n    at commitPassiveMountOnFiber (http://localhost:5437/node_modules/.vite/deps/react-dom_client.js?v=88649cef:9984:13)"
+  },
+  "url": "http://localhost:5437/game/70c2e08b-a8cc-4d46-aa0e-8ceac92fa544"
+}

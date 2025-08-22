@@ -1,0 +1,16 @@
+{
+  "diceValues": [],
+  "canRoll": false,
+  "clickableDice": 0,
+  "moveableCheckersCount": 0,
+  "moveableCheckers": [],
+  "totalCheckers": 0,
+  "allCheckers": [],
+  "windowGame": null,
+  "captureTime": "2025-08-22T18:35:03.634Z",
+  "contextInfo": "browser-error",
+  "errorInfo": {
+    "message": "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  },
+  "url": "http://localhost:5437/lobby"
+}
