@@ -1,0 +1,16 @@
+{
+  "diceValues": [],
+  "canRoll": false,
+  "clickableDice": 0,
+  "moveableCheckersCount": 0,
+  "moveableCheckers": [],
+  "totalCheckers": 0,
+  "allCheckers": [],
+  "windowGame": null,
+  "captureTime": "2025-08-29T19:28:37.921Z",
+  "contextInfo": "browser-error",
+  "errorInfo": {
+    "message": "[vite] Failed to reload /src/Components/BoardComponent/BoardComponent.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)"
+  },
+  "url": "http://localhost:5437/game/80d9ca10-efbe-4d7d-a6d1-a28c35879cb0"
+}

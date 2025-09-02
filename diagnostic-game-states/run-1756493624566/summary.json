@@ -1,0 +1,11 @@
+{
+  "testRunId": "run-1756493624566",
+  "totalTurns": 1,
+  "finalState": {
+    "error": "Game state access error: locator.textContent: Target page, context or browser has been closed",
+    "canRoll": false
+  },
+  "completedSuccessfully": false,
+  "diagnosticDirectory": "/Users/kenr/Code/nodots-backgammon/diagnostic-game-states/run-1756493624566",
+  "timestamp": "2025-08-29T19:03:44.594Z"
+}
