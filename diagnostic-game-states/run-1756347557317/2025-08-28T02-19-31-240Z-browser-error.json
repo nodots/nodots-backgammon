@@ -1,0 +1,346 @@
+{
+  "diceValues": [
+    "5",
+    "1"
+  ],
+  "canRoll": false,
+  "clickableDice": 0,
+  "moveableCheckersCount": 11,
+  "moveableCheckers": [
+    {
+      "id": "ac1568b7-03f9-49f0-9913-98af889f07fb",
+      "color": "black",
+      "position": "17"
+    },
+    {
+      "id": "b08b7f26-6760-4370-ac03-d839addb7fe1",
+      "color": "black",
+      "position": "17"
+    },
+    {
+      "id": "65b99cc7-6e14-482c-87b9-c8d88d06612d",
+      "color": "black",
+      "position": "17"
+    },
+    {
+      "id": "e86441c1-620b-4caf-a80e-7d878db20aa7",
+      "color": "black",
+      "position": "17"
+    },
+    {
+      "id": "a5db9068-98a1-417d-b78d-a07e3490f29d",
+      "color": "black",
+      "position": "19"
+    },
+    {
+      "id": "3e64b0ff-68a7-477e-9027-af1d45ed70cd",
+      "color": "black",
+      "position": "19"
+    },
+    {
+      "id": "5f990a13-ea76-4e10-9ff0-728b193de82b",
+      "color": "black",
+      "position": "19"
+    },
+    {
+      "id": "1d4446c5-8825-4fcf-8a9b-264a14652ff0",
+      "color": "black",
+      "position": "19"
+    },
+    {
+      "id": "bb5498f0-f5ed-42fa-9c7b-0f8c5fc7ac68",
+      "color": "black",
+      "position": "19"
+    },
+    {
+      "id": "2a808085-0f40-465b-b795-08563826ded3",
+      "color": "black",
+      "position": "1"
+    },
+    {
+      "id": "a54c8231-cb51-471a-a28c-fb5b2b888710",
+      "color": "black",
+      "position": "1"
+    }
+  ],
+  "totalCheckers": 30,
+  "allCheckers": [
+    {
+      "id": "b69170c9-c18f-4580-830e-21180e30b6ec",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "31c7d882-93b0-4331-9b93-5fcf0379904b",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "99ef885a-46f1-4661-934c-18970724e6f2",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "31c7d882-93b0-4331-9b93-5fcf0379904b",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "fb31ae4f-2a06-4bb0-8646-f00a1dae6195",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "31c7d882-93b0-4331-9b93-5fcf0379904b",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "c91b7253-a967-4da5-ac4a-50d61816e7d2",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "31c7d882-93b0-4331-9b93-5fcf0379904b",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "f2a4f3ef-1818-4ab9-9ce1-f0612c70127c",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "31c7d882-93b0-4331-9b93-5fcf0379904b",
+        "pointPosition": "13"
+      }
+    },
+    {
+      "id": "ac1568b7-03f9-49f0-9913-98af889f07fb",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "43709b1d-df8d-4905-bbe6-50ec4014aa18",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "b08b7f26-6760-4370-ac03-d839addb7fe1",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "43709b1d-df8d-4905-bbe6-50ec4014aa18",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "65b99cc7-6e14-482c-87b9-c8d88d06612d",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "43709b1d-df8d-4905-bbe6-50ec4014aa18",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "e86441c1-620b-4caf-a80e-7d878db20aa7",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "43709b1d-df8d-4905-bbe6-50ec4014aa18",
+        "pointPosition": "17"
+      }
+    },
+    {
+      "id": "db1c5cf7-2c8f-4f2c-b8cc-2859bfc5065f",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "22a85ab6-a0f6-4121-99ce-ef696d198bf2",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "852c3fa6-61b0-4baf-a6ba-ec6005f86806",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "22a85ab6-a0f6-4121-99ce-ef696d198bf2",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "74f353fb-855f-4dac-a123-226b99c62818",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "22a85ab6-a0f6-4121-99ce-ef696d198bf2",
+        "pointPosition": "8"
+      }
+    },
+    {
+      "id": "d3c9923b-51e8-4392-be07-cf3f436263e3",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "543f15a3-5e4c-48be-b0ad-ffe136611a7a",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "c66c8e9a-f971-442a-9dfc-852ce419c996",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "543f15a3-5e4c-48be-b0ad-ffe136611a7a",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "1822a249-0a08-4cf7-988a-f76458b41b85",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "543f15a3-5e4c-48be-b0ad-ffe136611a7a",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "3fc8914f-b6fc-4ac6-b6f9-034de9872809",
+      "color": "black",
+      "moveable": "false",
+      "position": {
+        "pointId": "543f15a3-5e4c-48be-b0ad-ffe136611a7a",
+        "pointPosition": "12"
+      }
+    },
+    {
+      "id": "a5db9068-98a1-417d-b78d-a07e3490f29d",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "01b993c3-23f2-4d11-a560-a546db880152",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "3e64b0ff-68a7-477e-9027-af1d45ed70cd",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "01b993c3-23f2-4d11-a560-a546db880152",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "5f990a13-ea76-4e10-9ff0-728b193de82b",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "01b993c3-23f2-4d11-a560-a546db880152",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "1d4446c5-8825-4fcf-8a9b-264a14652ff0",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "01b993c3-23f2-4d11-a560-a546db880152",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "bb5498f0-f5ed-42fa-9c7b-0f8c5fc7ac68",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "01b993c3-23f2-4d11-a560-a546db880152",
+        "pointPosition": "19"
+      }
+    },
+    {
+      "id": "28d59800-ecea-4f88-b993-d06cff35cf13",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "f5fe84a9-2710-4fda-91b2-b0c104810f63",
+        "pointPosition": "24"
+      }
+    },
+    {
+      "id": "81c1bfaf-9eae-49ab-99b7-15a051cb21c0",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "f5fe84a9-2710-4fda-91b2-b0c104810f63",
+        "pointPosition": "24"
+      }
+    },
+    {
+      "id": "2a808085-0f40-465b-b795-08563826ded3",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "06f6e6f1-e566-4cae-9c9b-3f103d0e7638",
+        "pointPosition": "1"
+      }
+    },
+    {
+      "id": "a54c8231-cb51-471a-a28c-fb5b2b888710",
+      "color": "black",
+      "moveable": "true",
+      "position": {
+        "pointId": "06f6e6f1-e566-4cae-9c9b-3f103d0e7638",
+        "pointPosition": "1"
+      }
+    },
+    {
+      "id": "c2907379-58a8-4f9b-a175-03cbcf81985e",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "87991e60-ead6-4d41-bf99-7b74ac1084de",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "dde450fc-275c-45ef-a3d0-05667c9d89a5",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "87991e60-ead6-4d41-bf99-7b74ac1084de",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "00aa6364-f17c-4552-835f-3f726f327b90",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "87991e60-ead6-4d41-bf99-7b74ac1084de",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "b74c9df3-e9f4-405c-aa5a-131195012437",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "87991e60-ead6-4d41-bf99-7b74ac1084de",
+        "pointPosition": "6"
+      }
+    },
+    {
+      "id": "d75a00e5-3951-43ba-bc97-c5f8f1e9ab05",
+      "color": "white",
+      "moveable": "false",
+      "position": {
+        "pointId": "87991e60-ead6-4d41-bf99-7b74ac1084de",
+        "pointPosition": "6"
+      }
+    }
+  ],
+  "windowGame": null,
+  "captureTime": "2025-08-28T02:19:31.244Z",
+  "contextInfo": "browser-error",
+  "errorInfo": {
+    "message": "[ERROR] [GamePage] Failed to trigger roll-for-start via WebSocket: Error: Roll for start timeout\n    at http://localhost:5437/src/hooks/useWebSocketGameActions.ts?t=1756346863980:519:18"
+  },
+  "url": "http://localhost:5437/game/8ad99af7-75da-4647-a2c1-7427abc7e674"
+}

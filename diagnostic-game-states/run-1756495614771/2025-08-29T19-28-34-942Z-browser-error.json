@@ -1,0 +1,16 @@
+{
+  "diceValues": [],
+  "canRoll": false,
+  "clickableDice": 0,
+  "moveableCheckersCount": 0,
+  "moveableCheckers": [],
+  "totalCheckers": 0,
+  "allCheckers": [],
+  "windowGame": null,
+  "captureTime": "2025-08-29T19:28:34.956Z",
+  "contextInfo": "browser-error",
+  "errorInfo": {
+    "message": "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  },
+  "url": "http://localhost:5437/game/97493333-2369-4599-b49b-f28ff1c13527"
+}
