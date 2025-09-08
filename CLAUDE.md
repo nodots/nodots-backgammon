@@ -462,3 +462,4 @@ Support multiple languages through proper i18n configuration:
 - Always create github issues in this repo: https://github.com/nodots/nodots-backgammon
 - REST and WS methods both must always be updated when we make API changes.
 - Make changes to WS methods before making changes to REST methods.
+- CRITICAL: TypeScript compilation errors in tests are test failures. Ignoring them often hides underlying problems. When there is a TS compilation error, fix it.
