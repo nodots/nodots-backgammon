@@ -7,16 +7,8 @@ console.log('=' .repeat(50))
 
 // Create a new game
 let game = Game.createNewGame(
-  'player1',
-  'player2', 
-  true, // auto roll for start
-  false, // player1 is not robot
-  false, // player2 is not robot
-  {
-    blackDirection: 'clockwise',
-    whiteDirection: 'counterclockwise', 
-    blackFirst: true
-  }
+  { userId: 'player1', isRobot: false },
+  { userId: 'player2', isRobot: false }
 )
 
 // Advance to moving state

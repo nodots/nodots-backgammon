@@ -24,11 +24,8 @@ async function runSingleSimulation(simulationNumber) {
 
   // Create game with two robot players
   let game = Game.createNewGame(
-    player1Id,
-    player2Id,
-    true, // auto roll for start
-    true, // player 1 is robot
-    true // player 2 is robot
+    { userId: player1Id, isRobot: true },
+    { userId: player2Id, isRobot: true }
   )
 
   console.log(`🎮 Game created with ID: ${game.id}`)
