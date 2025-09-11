@@ -128,17 +128,17 @@ When `Move.moveChecker()` is called, it performs these transitions internally:
 For robot players, the UI interactions are replaced by automated AI decisions:
 
 ```
-'rolled' → **Robot.makeOptimalMove()** → API: /games/:id/move → Move.moveChecker() → 'moved' (automatic)
+'moving' → **Robot.makeOptimalMove()** → API: /games/:id/move → Move.moveChecker() → 'moved' (automatic)
 'moved' → **robot automation loop** → API: /games/:id/roll → 'rolling' (next player) OR continue turn
 ```
 
-**Note**: Robot players use the same API endpoints (/move, /roll, /double) as humans, but the decisions are made by AI analysis rather than user clicks. The robot automation happens server-side and continues automatically until the robot's turn is complete. The same internal state transitions ('rolled' → 'preparing-move' → 'moving' → 'moved') happen automatically within `Move.moveChecker()`.
+**Note**: Robot players use the same API endpoints (/move, /roll, /double) as humans, but the decisions are made by AI analysis rather than user clicks. The robot automation happens server-side and continues automatically until the robot's turn is complete. The same internal state transitions ('moving' → 'moved') happen automatically within `Move.moveChecker()`.
 
 ### Dice Click Behavior by Game State
 
 Dice clicks have different behaviors depending on the current game state:
 
-- **'rolling' state**: Clicking dice → rolls the dice → transitions to 'rolled'
+- **'rolling' state**: Clicking dice → rolls the dice → transitions to 'moving'
 - **'moved' state**: Clicking dice → confirms turn completion → transitions to next player's turn or game end
 
 ## State Transition Methods

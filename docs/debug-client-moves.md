@@ -11,7 +11,7 @@ After investigating the click handling flow, I've identified several potential i
 The client expects the game state to have:
 - `stateKind` (not `kind`)
 - `activeColor` to determine which player's turn it is
-- Game must be in state `'rolled'` or `'moving'` to allow moves
+- Game must be in state `'moving'` to allow moves
 
 ### 2. Click Handler Flow
 The flow is:
@@ -19,13 +19,13 @@ The flow is:
 2. `NodotsPointComponent.handleCheckerClick` validates:
    - Game exists
    - Checker color matches `activeColor`
-   - Game state is `'rolled'` or `'moving'`
+   - Game state is `'moving'`
 3. API call is made with `{ checkerId: string }`
 
 ### 3. Potential Issues Found
 
 #### A. Game State Not in Correct State
-The code only allows moves when `game.stateKind` is `'rolled'` or `'moving'`. If the game is in any other state (like `'rolling'`, `'rolled-for-start'`, etc.), clicks will be ignored.
+The code only allows moves when `game.stateKind` is `'moving'`. If the game is in any other state (like `'rolling'`, `'rolled-for-start'`, etc.), clicks will be ignored.
 
 #### B. Active Color Mismatch
 The code checks if `checker.color !== game.activeColor`. If the game state doesn't properly set `activeColor`, all moves will be rejected.
@@ -50,7 +50,7 @@ The code has extensive console logging that should show:
 2. **Verify Game State**
    - In browser console, check the game state:
    - Look for `stateKind`, `activeColor`, and checker colors
-   - Ensure game is in 'rolled' or 'moving' state
+   - Ensure game is in 'moving' state
 
 3. **Check Network Tab**
    - See if API calls to `/games/{id}/move` are being made

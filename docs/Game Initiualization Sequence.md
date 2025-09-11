@@ -6,7 +6,7 @@
 2. Triggers call to API CREATE GAME endpoint POST /game which creates a game that is in the 'rolling-for-start' state.
 3. API broadcasts new game state via WebSocket
 4. CLIENT detects a game in 'rolling-for-start' state and makes API request to POST /game/:id/roll-for-start which returns a game in the 'rolled-for-start' state.
-5. CLIENT detects a game in the 'rolled-for-start' state and makes API request to POST /game/:id/roll which updates the game, player, and dice states. Game is in 'rolled' state
+5. CLIENT detects a game in the 'rolled-for-start' state and makes API request to POST /game/:id/roll which updates the game, player, and dice states. Game is in 'moving' state
 6. API broadcasts new game state via WebSocket
 
 ## Paths Diverge for Human and Robot Here
@@ -20,12 +20,12 @@
 
 ## The Problem
 
-We need a way to handle the transition(s) between the rolled and moving states that is based on the possibility that a user might DOUBLE before MOVING.
+We need a way to handle actions within the moving state that is based on the possibility that a user might DOUBLE before MOVING.
 
-In a 'rolled' state a player can take three actions:
+In a 'moving' state a player can take three actions:
 
-1. SWITCH DICE by clicking the DiceSwitcher component. Game remains in 'rolled' state but with updated activePlay and dice
-2. DOUBLE by clicking the Cube component. Game remains in a 'rolled' state but with updated game and cube states. (Note: This is not currently implemented)
+1. SWITCH DICE by clicking the DiceSwitcher component. Game remains in 'moving' state but with updated activePlay and dice
+2. DOUBLE by clicking the Cube component. Game remains in a 'moving' state but with updated game and cube states. (Note: This is not currently implemented)
 3. MOVE by clicking a Checker component
 
 Suggest approaches for handling this problem using the following principles:
