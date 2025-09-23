@@ -1,0 +1,94 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e7]:
+  - text: "active player: white | game state: moving ( c: 31 | rfs: 31 ) | play state: moving | dice state: rolled"
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: "13"
+          - generic [ref=e13]: "14"
+          - generic [ref=e14]: "15"
+          - generic [ref=e15]: "16"
+          - generic [ref=e16]: "17"
+          - generic [ref=e17]: "18"
+        - generic [ref=e18]:
+          - generic [ref=e21]:
+            - button [ref=e22] [cursor=pointer]
+            - button [ref=e23] [cursor=pointer]
+            - button [ref=e24] [cursor=pointer]
+            - button [ref=e25] [cursor=pointer]
+            - button [ref=e26] [cursor=pointer]
+          - generic [ref=e35]:
+            - button [ref=e36] [cursor=pointer]
+            - button [ref=e37] [cursor=pointer]
+            - button [ref=e38] [cursor=pointer]
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: "7"
+          - generic [ref=e45]: "8"
+          - generic [ref=e46]: "9"
+          - generic [ref=e47]: "10"
+          - generic [ref=e48]: "11"
+          - generic [ref=e49]: "12"
+        - generic [ref=e50]:
+          - generic [ref=e55]:
+            - button [ref=e56] [cursor=pointer]
+            - button [ref=e57] [cursor=pointer]
+            - button [ref=e58] [cursor=pointer]
+          - generic [ref=e67]:
+            - button [ref=e68] [cursor=pointer]
+            - button [ref=e69] [cursor=pointer]
+            - button [ref=e70] [cursor=pointer]
+            - button [ref=e71] [cursor=pointer]
+            - button [ref=e72] [cursor=pointer]
+    - generic [ref=e73]:
+      - generic [ref=e75]: "167"
+      - button [ref=e79] [cursor=pointer]:
+        - img [ref=e81] [cursor=pointer]
+      - generic [ref=e85]: "167"
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - generic [ref=e89]: "19"
+          - generic [ref=e90]: "20"
+          - generic [ref=e91]: "21"
+          - generic [ref=e92]: "22"
+          - generic [ref=e93]: "23"
+          - generic [ref=e94]: "24"
+        - generic [ref=e95]:
+          - generic [ref=e98]:
+            - button [ref=e99] [cursor=pointer]
+            - button [ref=e100] [cursor=pointer]
+            - button [ref=e101] [cursor=pointer]
+            - button [ref=e102] [cursor=pointer]
+            - button [ref=e103] [cursor=pointer]
+          - generic [ref=e114]:
+            - button [ref=e115] [cursor=pointer]
+            - button [ref=e116] [cursor=pointer]
+      - generic [ref=e119]:
+        - img [ref=e121] [cursor=pointer]
+        - button [ref=e125] [cursor=pointer]:
+          - img [ref=e126] [cursor=pointer]
+        - img [ref=e129] [cursor=pointer]
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]: "1"
+          - generic [ref=e136]: "2"
+          - generic [ref=e137]: "3"
+          - generic [ref=e138]: "4"
+          - generic [ref=e139]: "5"
+          - generic [ref=e140]: "6"
+        - generic [ref=e141]:
+          - generic [ref=e144]:
+            - button [ref=e145] [cursor=pointer]
+            - button [ref=e146] [cursor=pointer]
+          - generic [ref=e157]:
+            - button [ref=e158] [cursor=pointer]
+            - button [ref=e159] [cursor=pointer]
+            - button [ref=e160] [cursor=pointer]
+            - button [ref=e161] [cursor=pointer]
+            - button [ref=e162] [cursor=pointer]
+    - generic [ref=e168]: "1"
+```

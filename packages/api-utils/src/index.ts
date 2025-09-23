@@ -1,9 +1,39 @@
-export interface ApiResponse<T = any> {
-  success: boolean
-  data?: T
-  error?: string
-  message?: string
-}
+// Re-export user types
+export type {
+  UserPreferences,
+  UserState,
+  UserType,
+  User,
+  ExternalUser,
+  AuthenticatedRequest,
+  Preference,
+  BackgammonGamePreferences,
+  GamePreferences
+} from './users'
+
+// Re-export request types
+export type {
+  CreateGameRequest,
+  CreateUserRequest,
+  UpdateUserRequest
+} from './requests'
+
+// Re-export response types
+export type {
+  ApiResponse,
+  SerializedBackgammonPlay,
+  SerializedBackgammonGame,
+  GameResponse,
+  GamesListResponse,
+  WebSocketEvent,
+  GameStateUpdateEvent,
+  GameUpdatedEvent,
+  MoveMadeEvent,
+  GameCompletedEvent
+} from './responses'
+
+// Import ApiResponse for use in our functions
+import type { ApiResponse } from './responses'
 
 export interface ApiErrorResponse {
   success: false

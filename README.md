@@ -12,6 +12,11 @@ Nodots Backgammon is a complete backgammon platform that provides:
 - **Type Definitions** - Comprehensive TypeScript types for all components
 - **Web Client** - Modern React-based frontend application
 
+## 🔧 Open Lint Tasks
+
+- Core: packages/core lint failures – parser config + rule violations (see issue #148)
+- AI: packages/ai lint failures – test env + Function type usage (see issue #149)
+
 ## 📦 Packages
 
 ### [@nodots-llc/backgammon-core](nodots-backgammon-core/)
